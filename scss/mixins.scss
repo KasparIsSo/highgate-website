@@ -1,0 +1,32 @@
+$break-desktop: 1024px;
+$break-tablet: 720px;
+$break-mobileL: 420px;
+$break-mobileS: 320px;
+
+// $pFont: "Libre Baskerville", "Times New Roman", Serif;
+// $sFont: Roboto, Helvetica, Sans-serif;
+$pFont: "Playfair Display", "Times New Roman", Serif;
+$sFont: Karla, Helvetica, Sans-serif;
+
+$dtd: .3s;
+
+$white: #ffffff;
+$black: #000000;
+$lGrey: #9B9B9B;
+$black80op: hsla(0, 0, 0, .8);
+$pColor: #FF005B;
+$sColor: #FFE1E1;
+
+$duration: .4s;
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
