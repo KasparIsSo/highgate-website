@@ -1,0 +1,21 @@
+.nav {
+	@include e('logo') {
+
+	}
+
+	@include e('menu') {
+		list-style: none;
+	}
+
+	@include e('menuOption') {
+		display: inline-block;
+		text-decoration: none;
+
+		// &>li {
+		// 	text-decoration: none;
+		// }
+		&.active {
+
+		}
+	}
+}

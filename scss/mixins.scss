@@ -5,17 +5,18 @@ $break-mobileS: 320px;
 
 // $pFont: "Libre Baskerville", "Times New Roman", Serif;
 // $sFont: Roboto, Helvetica, Sans-serif;
-$pFont: "Playfair Display", "Times New Roman", Serif;
-$sFont: Karla, Helvetica, Sans-serif;
+$pFont: "PT Sans", Helvetica, Sans-Serif;
+$sFont: Lato, Helvetica, Sans-serif;
 
 $dtd: .3s;
 
-$white: #ffffff;
+$white: #f5f5f5;
+$gunmetal: #454545;
+$greyBlue: #687f8f;
+$sienna: #a74f25;
+$lightGrey: #5d5d5d;
+$darkGrey: #384045;
 $black: #000000;
-$lGrey: #9B9B9B;
-$black80op: hsla(0, 0, 0, .8);
-$pColor: #FF005B;
-$sColor: #FFE1E1;
 
 $duration: .4s;
 
@@ -29,4 +30,9 @@ $duration: .4s;
     &--#{$modifier} {
         @content;
     }
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
 }
