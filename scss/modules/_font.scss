@@ -1,0 +1,35 @@
+@mixin f-size-l {
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 1.5px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 1.5px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 1.5px;
+  }
+
+  @media screen and (max-width: $break-tablet) {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1.2px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: .8px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: .8px;
+  }
+}

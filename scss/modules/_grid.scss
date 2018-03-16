@@ -1,3 +1,14 @@
+$col-desktop-l: 70px;
+$col-desktop-s: 60px;
+$col-tablet-l: 45px;
+$col-tablet-s: 50px;
+$col-mobile-l: 34px;
+$col-mobile-s: 30px;
+
+$margin-desktop-l: 12px;
+$margin-desktop-s: 10px;
+$margin-mobile-s: 8px;
+
 .col_1,
 .col_2,
 .col_3,
@@ -12,14 +23,21 @@
 .col_12 {
 
   margin: {
-  	left: 10px;
-  	right: 10px;
+  	left: $margin-desktop-l;
+  	right: $margin-desktop-l;
   }
 
-  @media screen and (max-width: $break-mobileS) {
+  @media screen and (max-width: $break-desktop-s) {
 		margin: {
-			left: 8px;
-			right: 8px;
+			left: $margin-desktop-s;
+			right: $margin-desktop-s;
+		}
+	}
+
+  @media screen and (max-width: $break-mobile-s) {
+		margin: {
+			left: $margin-mobile-s;
+			right: $margin-mobile-s;
 		}
 	}
 
@@ -38,343 +56,322 @@
 
 .col_1 {
 
-	width: 60px;
+	width: $col-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 40px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: $col-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 45px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: $col-tablet-l;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 30px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: $col-tablet-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 30px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: $col-mobile-l;
+	}
+
+	@media screen and (max-width: $break-mobile-s) {
+		width: $col-mobile-s;
 	}
 }
 
 .col_2 {
 
-	width: 140px;
+	width: 2 * $col-desktop-l + 1 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 100px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 2 * $col-desktop-s + 1 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 45px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 2 * $col-tablet-l + 1 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 30px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: $col-tablet-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 30px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: $col-mobile-l;
+	}
+
+	@media screen and (max-width: $break-mobile-s) {
+		width: $col-mobile-s;
 	}
 }
 
 .col_3 {
 
-	width: 220px;
+	width: 3 * $col-desktop-l + 2 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 160px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 3 * $col-desktop-s + 2 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 110px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 3 * $col-tablet-l + 2 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 80px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 2 * $col-tablet-s + 1 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 76px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 2 * $col-mobile-l + 1 * $margin-desktop-s;
+	}
+
+	@media screen and (max-width: $break-mobile-s) {
+		width: 2 * $col-mobile-s + 1 * $margin-mobile-s;
 	}
 }
 
 .col_4 {
 
-	width: 300px;
+	width: 4 * $col-desktop-l + 3 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 220px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 4 * $col-desktop-s + 3 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 110px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 4 * $col-tablet-l + 3 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 80px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 2 * $col-tablet-s + 1 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 76px;
-
+	@media screen and (max-width: $break-mobile-l) {
+		width: 2 * $col-mobile-l + 1 * $margin-desktop-s;
 	}
 
+	@media screen and (max-width: $break-mobile-s) {
+		width: 2 * $col-mobile-s + 1 * $margin-mobile-s;
+	}
 }
 
 .col_5 {
 
-	width: 380px;
+	width: 5 * $col-desktop-l + 4 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 280px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 5 * $col-desktop-s + 4 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 175px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 5 * $col-tablet-l + 4 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 130px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 3 * $col-tablet-s + 2 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 122px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 3 * $col-mobile-l + 2 * $margin-desktop-s;
 	}
 
-	@include m('half') {
-		@media screen and (max-width: $break-mobileL) {
-			width: 280px;
-		}
-
-		@media screen and (max-width: $break-mobileS) {
-			width: 260px;
-		}
+	@media screen and (max-width: $break-mobile-s) {
+		width: 3 * $col-mobile-s + 2 * $margin-mobile-s;
 	}
 }
 
 .col_6 {
 
-	width: 460px;
+	width: 6 * $col-desktop-l + 5 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 340px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 6 * $col-desktop-s + 5 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 175px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 6 * $col-tablet-l + 5 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 130px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 3 * $col-tablet-s + 2 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 122px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 3 * $col-mobile-l + 2 * $margin-desktop-s;
 	}
 
+	@media screen and (max-width: $break-mobile-s) {
+		width: 3 * $col-mobile-s + 2 * $margin-mobile-s;
+	}
 }
 
 .col_7 {
 
-	width: 540px;
+	width: 7 * $col-desktop-l + 6 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 400px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 7 * $col-desktop-s + 6 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 240px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 7 * $col-tablet-l + 6 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 180px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 4 * $col-tablet-s + 3 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 168px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 4 * $col-mobile-l + 3 * $margin-desktop-s;
 	}
 
-	@include m('fullBleed') {
-
-		// @media screen and (max-width: $break-tablet) {
-		// 	width: 100vw;
-		// 	margin: {
-		// 		left: calc(-1 * (100vw - 390px)/2);
-		// 		right: 0;
-		// 	}
-		// }
-
-		@media screen and (max-width: $break-mobileL) {
-			width: 100vw;
-			margin: {
-				left: calc(-1 * (100vw - 320px)/2);
-				right: 0;
-			}
-		}
-
-		@media screen and (max-width: $break-mobileS) {
-			width: 100vw;
-			margin: {
-				left: calc(-1 * (100vw - 280px)/2);
-				right: 0;
-			}
-		}
+	@media screen and (max-width: $break-mobile-s) {
+		width: 4 * $col-mobile-s + 3 * $margin-mobile-s;
 	}
-
 }
 
 .col_8 {
 
-	width: 620px;
+	width: 8 * $col-desktop-l + 7 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 460px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 8 * $col-desktop-s + 7 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 240px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 8 * $col-tablet-l + 7 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 180px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 4 * $col-tablet-s + 3 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 168px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 4 * $col-mobile-l + 3 * $margin-desktop-s;
 	}
 
+	@media screen and (max-width: $break-mobile-s) {
+		width: 4 * $col-mobile-s + 3 * $margin-mobile-s;
+	}
 }
 
 .col_9 {
 
-	width: 700px;
+	width: 9 * $col-desktop-l + 8 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 520px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 9 * $col-desktop-s + 8 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 305px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 9 * $col-tablet-l + 8 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 230px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 5 * $col-tablet-s + 4 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 214px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 5 * $col-mobile-l + 4 * $margin-desktop-s;
 	}
 
+	@media screen and (max-width: $break-mobile-s) {
+		width: 5 * $col-mobile-s + 4 * $margin-mobile-s;
+	}
 }
 
 .col_10 {
 
-	width: 780px;
+	width: 10 * $col-desktop-l + 9 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 580px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 10 * $col-desktop-s + 9 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 370px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 10 * $col-tablet-l + 9 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 280px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 5 * $col-tablet-s + 4 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 260px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 5 * $col-mobile-l + 4 * $margin-desktop-s;
 	}
 
-	@include m('fullBleed') {
-
-		@media screen and (max-width: $break-tablet) {
-			width: 100vw;
-			margin: {
-				left: calc(-1 * (100vw - 390px)/2);
-				right: 0;
-			}
-		}
-
-		@media screen and (max-width: $break-mobileL) {
-			width: 100vw;
-			margin: {
-				left: calc(-1 * (100vw - 300px)/2);
-				right: 0;
-			}
-		}
-
-		@media screen and (max-width: $break-mobileS) {
-			width: 100vw;
-			margin: {
-				left: calc(-1 * (100vw - 280px)/2);
-				right: 0;
-			}
-		}
+	@media screen and (max-width: $break-mobile-s) {
+		width: 5 * $col-mobile-s + 4 * $margin-mobile-s;
 	}
-
 }
 
 .col_11 {
 
-	width: 860px;
+	width: 11 * $col-desktop-l + 10 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 640px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 11 * $col-desktop-s + 10 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 370px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 11 * $col-tablet-l + 10 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 280px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 6 * $col-tablet-s + 5 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 260px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 6 * $col-mobile-l + 5 * $margin-desktop-s;
 	}
 
+	@media screen and (max-width: $break-mobile-s) {
+		width: 6 * $col-mobile-s + 5 * $margin-mobile-s;
+	}
 }
 
 .col_12 {
 
-	width: 940px;
+	width: 12 * $col-desktop-l + 11 * $margin-desktop-l;
 
-	@media screen and (max-width: $break-desktop) {
-		width: 700px;
+	@media screen and (max-width: $break-desktop-s) {
+		width: 12 * $col-desktop-s + 11 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-tablet) {
-		width: 370px;
+	@media screen and (max-width: $break-tablet-l) {
+		width: 12 * $col-tablet-l + 11 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileL) {
-		width: 280px;
+  @media screen and (max-width: $break-tablet-s) {
+		width: 6 * $col-tablet-s + 5 * $margin-desktop-s;
 	}
 
-	@media screen and (max-width: $break-mobileS) {
-		width: 260px;
+	@media screen and (max-width: $break-mobile-l) {
+		width: 6 * $col-mobile-l + 5 * $margin-desktop-s;
 	}
 
-	@include m('fullBleed') {
-
-		@media screen and (max-width: $break-tablet) {
-			width: 100vw;
-			margin-left: calc(-1 * (100vw - 390px)/2);
-		}
-
-		@media screen and (max-width: $break-mobileL) {
-			width: 100vw;
-			margin-left: calc(-1 * (100vw - 300px)/2);
-		}
-
-		@media screen and (max-width: $break-mobileS) {
-			width: 100vw;
-			margin-left: calc(-1 * (100vw - 280px)/2);
-		}
+	@media screen and (max-width: $break-mobile-s) {
+		width: 6 * $col-mobile-s + 5 * $margin-mobile-s;
 	}
-
 }
+
+
+
+// 	@include m('fullBleed') {
+//
+// 		@media screen and (max-width: $break-tablet) {
+// 			width: 100vw;
+// 			margin-left: calc(-1 * (100vw - 390px)/2);
+// 		}
+//
+// 		@media screen and (max-width: $break-mobile-l) {
+// 			width: 100vw;
+// 			margin-left: calc(-1 * (100vw - 300px)/2);
+// 		}
+//
+// 		@media screen and (max-width: $break-mobile-s) {
+// 			width: 100vw;
+// 			margin-left: calc(-1 * (100vw - 280px)/2);
+// 		}
+// 	}
+//
+// }

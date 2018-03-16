@@ -1,6 +1,12 @@
 .nav {
 	@include e('logo') {
+		display: inline-block;
+	}
 
+	@include e('logoImg') {
+		@include bg-solo;
+		background-image: url('../assets/img/logo.svg');
+		padding-top: 37.5%;
 	}
 
 	@include e('menu') {
@@ -8,12 +14,22 @@
 	}
 
 	@include e('menuOption') {
+		color: $gunmetal;
 		display: inline-block;
 		text-decoration: none;
-
+		font: {
+			family: $p-font;
+			weight: 700;
+		}
+		letter-spacing: 1.9px;
 		// &>li {
 		// 	text-decoration: none;
 		// }
+
+		&:hover {
+			color: $sienna;
+		}
+
 		&.active {
 
 		}

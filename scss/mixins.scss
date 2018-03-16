@@ -1,12 +1,14 @@
-$break-desktop: 1024px;
-$break-tablet: 720px;
-$break-mobileL: 420px;
-$break-mobileS: 320px;
+$break-desktop-l: 1320px;
+$break-desktop-s: 1120px;
+$break-tablet-l: 720px;
+$break-tablet-s: 720px;
+$break-mobile-l: 420px;
+$break-mobile-s: 320px;
 
 // $pFont: "Libre Baskerville", "Times New Roman", Serif;
 // $sFont: Roboto, Helvetica, Sans-serif;
-$pFont: "PT Sans", Helvetica, Sans-Serif;
-$sFont: Lato, Helvetica, Sans-serif;
+$p-font: "PT Sans", Helvetica, Sans-Serif;
+$s-font: Lato, Helvetica, Sans-serif;
 
 $dtd: .3s;
 
@@ -30,6 +32,14 @@ $duration: .4s;
     &--#{$modifier} {
         @content;
     }
+}
+
+@mixin bg-solo {
+  background: {
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
 }
 
 .container {
