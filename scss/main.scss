@@ -42,7 +42,7 @@
     color: $gunmetal;
     font: {
       family: $s-font;
-      weight: 300;
+      weight: 400;
     }
 
     @include m('white') {
@@ -76,7 +76,7 @@
     color: $white;
     font: {
       family: $s-font;
-      weight: 300;
+      weight: 400;
     }
     margin-bottom: 45px;
   }
@@ -91,4 +91,71 @@
     position: relative;
     display: inline-block;
   }
+}
+
+.products {
+  position: relative;
+  padding: {
+    top: 135px;
+    bottom: 135px;
+  }
+  text-align: center;
+
+  @include e('content') {
+    position: relative;
+    display: inline-block;
+  }
+
+  @include e('bg') {
+    background-color: $offWhite;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+  }
+
+  @include e('cardContainer') {
+
+  }
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  background-color: $white;
+  border-radius: 7px;
+  box-shadow: 0 5px 11px $shadow;
+  padding: 60px 30px 60px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    padding: 50px 25px 50px;
+  }
+
+  @media screen and (max-width: $break-tablet-xs) {
+    padding: 20px 20px 20px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include e('icon') {
+    @include f-size-xxl;
+    color: $gunmetal;
+    margin-bottom: 15px;
+  }
+
+  @include e('title') {
+    @include f-size-l;
+    font: {
+      family: $p-font;
+      weight: 700;
+    }
+    color: $gunmetal;
+    margin-bottom: 15px;
+  }
+
 }

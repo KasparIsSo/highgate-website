@@ -180,36 +180,36 @@
 
 @mixin f-size-xs {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 34px;
   letter-spacing: 0px;
 
   @media screen and (max-width: $break-desktop-l) {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 34px;
     letter-spacing: 0px;
   }
 
   @media screen and (max-width: $break-desktop-s) {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 34px;
     letter-spacing: 0px;
   }
 
   @media screen and (max-width: $break-tablet-l) {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 30px;
     letter-spacing: 0px;
   }
 
   @media screen and (max-width: $break-mobile-l) {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 30px;
     letter-spacing: 0px;
   }
 
   @media screen and (max-width: $break-mobile-s) {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 30px;
     letter-spacing: 0px;
   }
 }
