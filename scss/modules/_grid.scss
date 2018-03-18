@@ -1,12 +1,15 @@
 $col-desktop-l: 70px;
 $col-desktop-s: 60px;
 $col-tablet-l: 45px;
-$col-tablet-s: 50px;
+$col-tablet-s: 40px;
+$col-tablet-xs: 50px;
 $col-mobile-l: 34px;
 $col-mobile-s: 30px;
 
 $margin-desktop-l: 12px;
 $margin-desktop-s: 10px;
+$margin-tablet-s: 8px;
+$margin-tablet-xs: 10px;
 $margin-mobile-s: 8px;
 
 .col_1,
@@ -70,6 +73,10 @@ $margin-mobile-s: 8px;
 		width: $col-tablet-s;
 	}
 
+  @media screen and (max-width: $break-tablet-xs) {
+		width: $col-tablet-xs;
+	}
+
 	@media screen and (max-width: $break-mobile-l) {
 		width: $col-mobile-l;
 	}
@@ -92,7 +99,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: $col-tablet-s;
+		width: 2 * $col-tablet-s + 1 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: $col-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -117,7 +128,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 2 * $col-tablet-s + 1 * $margin-desktop-s;
+		width: 3 * $col-tablet-s + 2 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 2 * $col-tablet-xs + 1 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -142,7 +157,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 2 * $col-tablet-s + 1 * $margin-desktop-s;
+		width: 4 * $col-tablet-s + 3 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 2 * $col-tablet-xs + 1 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -167,7 +186,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 3 * $col-tablet-s + 2 * $margin-desktop-s;
+		width: 5 * $col-tablet-s + 4 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 3 * $col-tablet-xs + 2 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -192,7 +215,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 3 * $col-tablet-s + 2 * $margin-desktop-s;
+		width: 6 * $col-tablet-s + 5 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 3 * $col-tablet-xs + 2 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -217,7 +244,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 4 * $col-tablet-s + 3 * $margin-desktop-s;
+		width: 7 * $col-tablet-s + 6 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 4 * $col-tablet-xs + 3 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -242,7 +273,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 4 * $col-tablet-s + 3 * $margin-desktop-s;
+		width: 8 * $col-tablet-s + 7 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 4 * $col-tablet-xs + 3 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -267,7 +302,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 5 * $col-tablet-s + 4 * $margin-desktop-s;
+		width: 9 * $col-tablet-s + 8 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 5 * $col-tablet-xs + 4 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -292,7 +331,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 5 * $col-tablet-s + 4 * $margin-desktop-s;
+		width: 10 * $col-tablet-s + 9 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 5 * $col-tablet-xs + 4 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -317,7 +360,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 6 * $col-tablet-s + 5 * $margin-desktop-s;
+		width: 11 * $col-tablet-s + 10 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 6 * $col-tablet-xs + 5 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -342,7 +389,11 @@ $margin-mobile-s: 8px;
 	}
 
   @media screen and (max-width: $break-tablet-s) {
-		width: 6 * $col-tablet-s + 5 * $margin-desktop-s;
+		width: 12 * $col-tablet-s + 11 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 6 * $col-tablet-xs + 5 * $margin-tablet-xs;
 	}
 
 	@media screen and (max-width: $break-mobile-l) {
@@ -352,26 +403,34 @@ $margin-mobile-s: 8px;
 	@media screen and (max-width: $break-mobile-s) {
 		width: 6 * $col-mobile-s + 5 * $margin-mobile-s;
 	}
+
+  @include m('fullbleed') {
+    position: relative;
+    width: 100vw;
+    left: calc(-.5 * (100vw - #{12 * $col-desktop-l + 11 * $margin-desktop-l}));
+
+    @media screen and (max-width: $break-desktop-s) {
+  		left: calc(-.5 * (100vw - #{12 * $col-desktop-s + 11 * $margin-desktop-s}));
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		left: calc(-.5 * (100vw - #{12 * $col-tablet-l + 11 * $margin-desktop-s}));
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		left: calc(-.5 * (100vw - #{12 * $col-tablet-s + 11 * $margin-tablet-s}));
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		left: calc(-.5 * (100vw - #{6 * $col-tablet-xs + 5 * $margin-tablet-xs}));
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		left: calc(-.5 * (100vw - #{6 * $col-mobile-l + 5 * $margin-desktop-s}));
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+  		left: calc(-.5 * (100vw - #{6 * $col-mobile-s + 5 * $margin-mobile-s}));
+  	}
+  }
 }
-
-
-
-// 	@include m('fullBleed') {
-//
-// 		@media screen and (max-width: $break-tablet) {
-// 			width: 100vw;
-// 			margin-left: calc(-1 * (100vw - 390px)/2);
-// 		}
-//
-// 		@media screen and (max-width: $break-mobile-l) {
-// 			width: 100vw;
-// 			margin-left: calc(-1 * (100vw - 300px)/2);
-// 		}
-//
-// 		@media screen and (max-width: $break-mobile-s) {
-// 			width: 100vw;
-// 			margin-left: calc(-1 * (100vw - 280px)/2);
-// 		}
-// 	}
-//
-// }

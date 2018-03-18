@@ -1,0 +1,19 @@
+.button {
+  @include f-size-s;
+  display: inline-block;
+  padding: 10px 20px;
+  font: {
+    family: $p-font;
+    weight: 700;
+  }
+  text-transform: uppercase;
+
+  @include m('wb') {
+    color: $white;
+    border: {
+      style: solid;
+      width: 2px;
+      color: $white;
+    }
+  }
+}

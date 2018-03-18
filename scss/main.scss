@@ -3,3 +3,37 @@
 @import 'modules/grid.scss';
 @import 'modules/font.scss';
 @import 'modules/nav.scss';
+@import 'modules/inputs.scss';
+
+@import 'img/img_main.scss';
+
+.splash {
+  position: relative;
+  
+  @include e('content') {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include e('heading') {
+    @include f-size-xxl;
+    color: $white;
+    font: {
+      family: $p-font;
+      weight: 700;
+    }
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  @include e('text') {
+    @include f-size-m;
+    color: $white;
+    font: {
+      family: $s-font;
+      weight: 300;
+    }
+    margin-bottom: 45px;
+  }
+}

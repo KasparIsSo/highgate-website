@@ -1,7 +1,8 @@
 $break-desktop-l: 1320px;
-$break-desktop-s: 1120px;
-$break-tablet-l: 720px;
-$break-tablet-s: 720px;
+$break-desktop-s: 1180px;
+$break-tablet-l: 980px;
+$break-tablet-s: 800px;
+$break-tablet-xs: 600px;
 $break-mobile-l: 420px;
 $break-mobile-s: 320px;
 
@@ -12,7 +13,7 @@ $s-font: Lato, Helvetica, Sans-serif;
 
 $dtd: .3s;
 
-$white: #f5f5f5;
+$white: #ffffff;
 $gunmetal: #454545;
 $greyBlue: #687f8f;
 $sienna: #a74f25;
@@ -21,6 +22,10 @@ $darkGrey: #384045;
 $black: #000000;
 
 $duration: .4s;
+
+* {
+  box-sizing: border-box;
+}
 
 @mixin e($element) {
     &__#{$element} {

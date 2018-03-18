@@ -1,4 +1,4 @@
-@mixin f-size-l {
+@mixin f-size-xxl {
   font-size: 64px;
   line-height: 74px;
   letter-spacing: 1.5px;
@@ -15,7 +15,7 @@
     letter-spacing: 1.5px;
   }
 
-  @media screen and (max-width: $break-tablet) {
+  @media screen and (max-width: $break-tablet-l) {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 1.2px;
@@ -32,4 +32,190 @@
     line-height: 46px;
     letter-spacing: .8px;
   }
+}
+
+@mixin f-size-xl {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: .8px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: .8px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: .8px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: .75px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: .7px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: .7px;
+  }
+}
+
+@mixin f-size-l {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: .7px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: .7px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: .7px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: .65px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .6px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .6px;
+  }
+}
+
+@mixin f-size-m {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0px;
+  }
+}
+
+@mixin f-size-s {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.35px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+  }
+}
+
+@mixin f-size-xs {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+}
+
+@mixin f-size-subhead24 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: .6px;
 }

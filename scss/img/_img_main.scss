@@ -1,0 +1,31 @@
+.bgImg {
+  @include bg-solo;
+
+  @include e('mainSplash') {
+    background-image: url('../assets/img/header-landing.png');
+    padding-top: 52%;
+    @media screen and (max-width: $break-desktop-s) {
+  		padding-top: 52%;
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		padding-top: 68%;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		padding-top: 90%;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		padding-top: 120%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		padding-top: 160%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+      padding-top: 160%;
+  	}
+  }
+}
