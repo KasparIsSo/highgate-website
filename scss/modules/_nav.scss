@@ -28,6 +28,7 @@
 
 	@include e('menuOption') {
 		@include f-size-xs;
+		@include transition($dtd);
 		color: $gunmetal;
 		display: inline-block;
 		text-decoration: none;

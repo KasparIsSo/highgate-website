@@ -47,6 +47,10 @@ $duration: .4s;
   }
 }
 
+@mixin transition($duration) {
+  transition-duration: $duration;
+}
+
 .container {
 	display: block;
 	margin: 0 auto;

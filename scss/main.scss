@@ -7,9 +7,53 @@
 
 @import 'img/img_main.scss';
 
+.section {
+  @include e('heading') {
+    @include f-size-xl;
+    color: $gunmetal;
+    font: {
+      family: $p-font;
+      weight: 400;
+    }
+    margin-bottom: 30px;
+
+    @include m('white') {
+      color: $white;
+    }
+  }
+
+  @include e('subheading') {
+    @include f-size-subhead24;
+    color: $gunmetal;
+    font: {
+      family: $p-font;
+      weight: 700;
+    }
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @include m('white') {
+      color: $white;
+    }
+  }
+
+  @include e('content') {
+    @include f-size-xs;
+    color: $gunmetal;
+    font: {
+      family: $s-font;
+      weight: 300;
+    }
+
+    @include m('white') {
+      color: $white;
+    }
+  }
+}
+
 .splash {
   position: relative;
-  
+
   @include e('content') {
     position: absolute;
     top: 50%;
@@ -35,5 +79,16 @@
       weight: 300;
     }
     margin-bottom: 45px;
+  }
+}
+
+.about {
+  padding: {
+    top: 135px;
+    bottom: 135px;
+  }
+  @include e('content') {
+    position: relative;
+    display: inline-block;
   }
 }

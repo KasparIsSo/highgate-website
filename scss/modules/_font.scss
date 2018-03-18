@@ -10,8 +10,8 @@
   }
 
   @media screen and (max-width: $break-desktop-s) {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: 56px;
+    line-height: 68px;
     letter-spacing: 1.5px;
   }
 
@@ -118,8 +118,8 @@
   }
 
   @media screen and (max-width: $break-desktop-s) {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 36px;
     letter-spacing: 0px;
   }
 
@@ -130,13 +130,13 @@
   }
 
   @media screen and (max-width: $break-mobile-l) {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 34px;
     letter-spacing: 0px;
   }
 
   @media screen and (max-width: $break-mobile-s) {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 34px;
     letter-spacing: 0px;
   }
@@ -218,4 +218,5 @@
   font-size: 24px;
   line-height: 32px;
   letter-spacing: .6px;
+
 }

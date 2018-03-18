@@ -28,4 +28,71 @@
       padding-top: 160%;
   	}
   }
+
+  @include e('aboutContainer') {
+    // vertical-align: top;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(-.5 * (100vw - #{12 * $col-desktop-l + 11 * $margin-desktop-l}));
+    width: calc(#{4 * $col-desktop-l + 3 * $margin-desktop-l} + .5 * (100vw - #{12 * $col-desktop-l + 11 * $margin-desktop-l}));
+
+  	@media screen and (max-width: $break-desktop-s) {
+  		width: calc(#{4 * $col-desktop-s + 3 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-desktop-s + 11 * $margin-desktop-s}));
+      right: calc(-.5 * (100vw - #{12 * $col-desktop-s + 11 * $margin-desktop-s}));
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		width: calc(#{4 * $col-tablet-l + 3 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-tablet-l + 11 * $margin-desktop-s}));
+      right: calc(-.5 * (100vw - #{12 * $col-tablet-l + 11 * $margin-desktop-s}));
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		width: calc(#{4 * $col-tablet-s + 3 * $margin-tablet-s} + .5 * (100vw - #{12 * $col-tablet-s + 11 * $margin-tablet-s}));
+      right: calc(-.5 * (100vw - #{12 * $col-tablet-s + 11 * $margin-tablet-s}));
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		width: calc(#{2 * $col-tablet-xs + 1 * $margin-tablet-xs} + .5 * (100vw - #{6 * $col-tablet-xs + 5 * $margin-tablet-xs}));
+      right: calc(-.5 * (100vw - #{6 * $col-tablet-xs + 5 * $margin-tablet-xs}));
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		width: calc(#{2 * $col-mobile-l + 1 * $margin-desktop-s} + .5 * (100vw - #{6 * $col-mobile-l + 5 * $margin-desktop-s}));
+      right: calc(-.5 * (100vw - #{6 * $col-mobile-l + 5 * $margin-desktop-s}));
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+  		width: calc(#{2 * $col-mobile-s + 1 * $margin-mobile-s} + .5 * (100vw - #{6 * $col-mobile-s + 5 * $margin-mobile-s}));
+      right: calc(-.5 * (100vw - #{6 * $col-mobile-s + 5 * $margin-mobile-s}));
+  	}
+  }
+
+  @include e('about') {
+    background-image: url('../assets/img/about-pic.png');
+    padding-top: 56%;
+    @media screen and (max-width: $break-desktop-s) {
+  		padding-top: 80%;
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		padding-top: 90%;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		padding-top: 100%;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		padding-top: 150%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		padding-top: 160%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+      padding-top: 160%;
+  	}
+  }
 }
