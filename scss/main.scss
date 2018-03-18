@@ -112,10 +112,6 @@
     top: 0px;
     height: 100%;
   }
-
-  @include e('cardContainer') {
-
-  }
 }
 
 .card {
@@ -156,6 +152,39 @@
     }
     color: $gunmetal;
     margin-bottom: 15px;
+  }
+}
+
+.about {
+  padding: {
+    top: 135px;
+    bottom: 135px;
+  }
+  @include e('content') {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.news {
+  position: relative;
+  text-align: center;
+
+  @include e('content') {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include e('bg') {
+    background-color: $offWhite;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+  }
+
+  @include e('text') {
+    margin-bottom: 45px;
   }
 
 }

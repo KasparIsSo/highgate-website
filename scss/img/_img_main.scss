@@ -68,6 +68,7 @@
   	}
   }
 
+
   @include e('about') {
     background-image: url('../assets/img/about-pic.png');
     padding-top: 56%;
@@ -93,6 +94,34 @@
 
   	@media screen and (max-width: $break-mobile-s) {
       padding-top: 160%;
+  	}
+  }
+
+  @include e('newsSplash') {
+    background-image: url('../assets/img/news-landing.png');
+    padding-top: 40%;
+    @media screen and (max-width: $break-desktop-s) {
+  		padding-top: 50%;
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		padding-top: 60%;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		padding-top: 60%;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		padding-top: 70%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		padding-top: 40%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+      padding-top: 40%;
   	}
   }
 }
