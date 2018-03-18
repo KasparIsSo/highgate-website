@@ -112,6 +112,10 @@
     top: 0px;
     height: 100%;
   }
+
+  @include e('heading') {
+    margin-bottom: 60px;
+  }
 }
 
 .card {
@@ -121,6 +125,12 @@
   border-radius: 7px;
   box-shadow: 0 5px 11px $shadow;
   padding: 60px 30px 60px;
+
+  width: 30%;
+  margin: {
+    right: 2.5%;
+    left: 2.5%;
+  }
 
   @media screen and (max-width: $break-desktop-l) {
     padding: 50px 25px 50px;

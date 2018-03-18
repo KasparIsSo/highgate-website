@@ -33,7 +33,7 @@
     // vertical-align: top;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     right: calc(-.5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
     width: calc(#{5 * $col-desktop-l + 8 * $margin-desktop-l} + .5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
 
@@ -71,7 +71,7 @@
 
   @include e('about') {
     background-image: url('../assets/img/about-pic.png');
-    padding-top: 56%;
+    padding-top: 70%;
     @media screen and (max-width: $break-desktop-s) {
   		padding-top: 80%;
   	}

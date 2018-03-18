@@ -500,7 +500,7 @@
   .bgImg__aboutContainer {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     right: calc(-.5 * (100vw - 1104px));
     width: calc(446px + .5 * (100vw - 1104px)); }
     @media screen and (max-width: 1180px) {
@@ -529,7 +529,7 @@
         right: calc(-.5 * (100vw - 260px)); } }
   .bgImg__about {
     background-image: url("../assets/img/about-pic.png");
-    padding-top: 56%; }
+    padding-top: 70%; }
     @media screen and (max-width: 1180px) {
       .bgImg__about {
         padding-top: 80%; } }
@@ -745,6 +745,8 @@
     position: absolute;
     top: 0px;
     height: 100%; }
+  .products__heading {
+    margin-bottom: 60px; }
 
 .card {
   display: inline-block;
@@ -752,7 +754,10 @@
   background-color: #ffffff;
   border-radius: 7px;
   box-shadow: 0 5px 11px rgba(196, 196, 196, 0.5);
-  padding: 60px 30px 60px; }
+  padding: 60px 30px 60px;
+  width: 30%;
+  margin-right: 2.5%;
+  margin-left: 2.5%; }
   @media screen and (max-width: 1320px) {
     .card {
       padding: 50px 25px 50px; } }
