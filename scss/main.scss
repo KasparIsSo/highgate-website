@@ -45,6 +45,10 @@
       weight: 400;
     }
 
+    @include m('italic') {
+      font-style: italic;
+    }
+
     @include m('white') {
       color: $white;
     }
@@ -178,9 +182,9 @@
 
 .news {
   position: relative;
-  text-align: center;
 
   @include e('content') {
+    text-align: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -197,4 +201,110 @@
     margin-bottom: 45px;
   }
 
+}
+
+.testimonials {
+  position: relative;
+  padding: {
+    top: 135px;
+    bottom: 135px;
+  }
+
+  @include e('content') {
+    text-align: center;
+  }
+}
+
+.brands {
+  position: relative;
+  padding: {
+    top: 135px;
+    bottom: 135px;
+  }
+  @include e('bg') {
+    background-color: $sienna;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+  }
+}
+
+.gallery {
+  position: relative;
+  height: 300px;
+
+  @include e('ui') {
+    // z-index: 50;
+  }
+
+  @include e('button') {
+    z-index: 50;
+    appearance: none;
+    -webkit-appearance: none;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border: {
+      radius: 50%;
+      style: solid;
+      width: 2px;
+      color: $gunmetal;
+    }
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include m('left') {
+      left: 0;
+    }
+
+    @include m ('right') {
+      right: 0;
+    }
+
+    &>i {
+      @include f-size-xl;
+      position: relative;
+      display: block;
+      width: 100%;
+      line-height: 44px !important;
+    }
+  }
+
+  @include e('cardContainer') {
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @include e('card') {
+    @include transition($dtd);
+    padding: {
+      top: 40px;
+      bottom: 40px;
+    }
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    left: -100%;
+    white-space: normal;
+
+    // @include m('prev') {
+    //   left: -100%;
+    // }
+    //
+    // @include m('active') {
+    //   left: 0;
+    //   top: -100%;
+    // }
+    //
+    // @include m('next') {
+    //   left: 100%;
+    //   top: -200%;
+    // }
+  }
 }

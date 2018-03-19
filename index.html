@@ -6,7 +6,7 @@
   <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
   <link rel = "shortcut icon" href = "/images/favicon.ico" />
   <title>Highgate Systems</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|PT+Sans:400,700" rel="stylesheet">
   <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
   <link rel = "stylesheet" href = "css/clear.css" type = "text/css">
   <link rel = "stylesheet" href = "css/main.css" type = "text/css">
@@ -96,11 +96,55 @@
         <a class = "button button--wb">Learn More</a>
       </div>
     </div>
+
+    <div class = "testimonials col_12 center">
+      <div class = "testimonials__content col_12 col_12--c">
+        <h4 class = "section__subheading">Testimonials</h4>
+        <div class = "gallery col_12 col_12--c">
+          <div class = "gallery__ui">
+            <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this)">
+              <i class = "material-icons card__icon">keyboard_arrow_left</i>
+            </button>
+            <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this)">
+              <i class = "material-icons card__icon">keyboard_arrow_right</i>
+            </button>
+          </div>
+          <div class = "gallery__cardContainer">
+            <div class = "gallery__card">
+              <h4 class = "section__heading">Ref 1</h4>
+              <p class = "section__content section__content--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div><div class = "gallery__card">
+              <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
+              <p class = "section__content section__content--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div><div class = "gallery__card">
+              <h4 class = "section__heading">Ref 2</h4>
+              <p class = "section__content section__content--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "brands col_12 center">
+      <div class = "brands__bg col_12--fullbleed"></div>
+    </div>
   </div>
 </body>
 
 <script type = "text/javascript">
-</script>
+  function galleryShift(direction, elem) {
+    var gallery = elem.parentNode.parentNode;
+    console.log(gallery);
+
+    if (direction == "left") {
+      var cards = gallery.querySelectorAll('.gallery__card');
+      cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
+    } else {
+      var cards = gallery.querySelectorAll('.gallery__card');
+      cards[0].parentNode.insertBefore(cards[cards.length-1], cards[0]);
+
+    }
+  }
 </script>
 
 </html>
