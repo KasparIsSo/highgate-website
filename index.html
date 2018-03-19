@@ -134,15 +134,33 @@
 <script type = "text/javascript">
   function galleryShift(direction, elem) {
     var gallery = elem.parentNode.parentNode;
-    console.log(gallery);
+    var galButtons = gallery.querySelectorAll(".gallery__button");
+    for(var e of galButtons) {
+      e.disabled = true;
+    }
+
+    setTimeout(function(){
+      for(var e of galButtons) {
+        e.disabled = false;
+      }
+    }, 300);
+
+    var cards = gallery.querySelectorAll('.gallery__card');
 
     if (direction == "left") {
-      var cards = gallery.querySelectorAll('.gallery__card');
-      cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
+      cards[0].style.width = 0;
+      setTimeout(function() {
+        cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
+        cards[0].style.width = '100%';
+      }, 300);
     } else {
-      var cards = gallery.querySelectorAll('.gallery__card');
+      cards[cards.length-1].style.width = 0;
       cards[0].parentNode.insertBefore(cards[cards.length-1], cards[0]);
-
+      window.requestAnimationFrame(function() {
+        window.requestAnimationFrame(function() {
+          cards[0].parentNode.querySelector('.gallery__card').style.width = '100%';
+        })
+      });
     }
   }
 </script>

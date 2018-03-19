@@ -933,7 +933,8 @@
   .gallery__cardContainer {
     white-space: nowrap;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    transition-duration: 0.3s; }
   .gallery__card {
     transition-duration: 0.3s;
     padding-top: 40px;
