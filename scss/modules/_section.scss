@@ -1,0 +1,48 @@
+.section {
+
+  @include e('heading') {
+    @include f-size-xl;
+    color: $gunmetal;
+    font: {
+      family: $p-font;
+      weight: 400;
+    }
+    margin-bottom: 30px;
+
+    @include m('white') {
+      color: $white;
+    }
+  }
+
+  @include e('subheading') {
+    @include f-size-subhead24;
+    color: $gunmetal;
+    font: {
+      family: $p-font;
+      weight: 700;
+    }
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @include m('white') {
+      color: $white;
+    }
+  }
+
+  @include e('content') {
+    @include f-size-xs;
+    color: $gunmetal;
+    font: {
+      family: $s-font;
+      weight: 400;
+    }
+
+    @include m('italic') {
+      font-style: italic;
+    }
+
+    @include m('white') {
+      color: $white;
+    }
+  }
+}

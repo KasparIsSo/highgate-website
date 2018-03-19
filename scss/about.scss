@@ -6,55 +6,7 @@
 @import 'modules/section.scss';
 @import 'modules/inputs.scss';
 
-@import 'img/img_main.scss';
-
-.section {
-  @include e('heading') {
-    @include f-size-xl;
-    color: $gunmetal;
-    font: {
-      family: $p-font;
-      weight: 400;
-    }
-    margin-bottom: 30px;
-
-    @include m('white') {
-      color: $white;
-    }
-  }
-
-  @include e('subheading') {
-    @include f-size-subhead24;
-    color: $gunmetal;
-    font: {
-      family: $p-font;
-      weight: 700;
-    }
-    text-transform: uppercase;
-    margin-bottom: 15px;
-
-    @include m('white') {
-      color: $white;
-    }
-  }
-
-  @include e('content') {
-    @include f-size-xs;
-    color: $gunmetal;
-    font: {
-      family: $s-font;
-      weight: 400;
-    }
-
-    @include m('italic') {
-      font-style: italic;
-    }
-
-    @include m('white') {
-      color: $white;
-    }
-  }
-}
+@import 'img/img_about.scss';
 
 .splash {
   position: relative;
@@ -63,6 +15,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
+    @include m('textCenter') {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   @include e('heading') {
@@ -74,6 +32,10 @@
     }
     text-transform: uppercase;
     margin-bottom: 25px;
+
+    @include m('solo') {
+      margin-bottom: 0;
+    }
   }
 
   @include e('text') {
@@ -95,6 +57,118 @@
   @include e('content') {
     position: relative;
     display: inline-block;
+  }
+}
+
+.advantage {
+  position: relative;
+  padding-top: 250px;
+  margin-bottom: 250px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    margin-bottom: 310px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    padding-top: 180px;
+    margin-bottom: 380px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    padding-top: 120px;
+    margin-bottom: 420px;
+  }
+
+  @media screen and (max-width: $break-tablet-s) {
+    padding-top: 80px;
+    margin-bottom: 760px;
+  }
+
+  @media screen and (max-width: $break-tablet-xs) {
+    margin-bottom: 200px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    margin-bottom: 200px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    margin-bottom: 200px;
+  }
+
+  @include e('bg') {
+    margin-top: -250px;
+    z-index: -10;
+
+    @media screen and (max-width: $break-desktop-l) {
+    }
+
+    @media screen and (max-width: $break-desktop-s) {
+      margin-top: -180px;
+    }
+
+    @media screen and (max-width: $break-tablet-l) {
+      margin-top: -120px;
+    }
+
+    @media screen and (max-width: $break-tablet-s) {
+      margin-top: -80px;
+    }
+
+    @media screen and (max-width: $break-tablet-xs) {
+    }
+
+    @media screen and (max-width: $break-mobile-l) {
+    }
+
+    @media screen and (max-width: $break-mobile-s) {
+    }
+  }
+
+  @include e('content') {
+    background-color: $offWhite;
+    padding: 60px 70px;
+    // vertical-align: top;
+    position: absolute;
+    right: calc(-.5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
+    width: calc(#{10 * $col-desktop-l + 18 * $margin-desktop-l} + .5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
+
+  	@media screen and (max-width: $break-desktop-s) {
+  		width: calc(#{10 * $col-desktop-s + 18 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-desktop-s + 22 * $margin-desktop-s}));
+      right: calc(-.5 * (100vw - #{12 * $col-desktop-s + 22 * $margin-desktop-s}));
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		width: calc(#{10 * $col-tablet-l + 18 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-tablet-l + 22 * $margin-desktop-s}));
+      right: calc(-.5 * (100vw - #{12 * $col-tablet-l + 22 * $margin-desktop-s}));
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		width: calc(#{10 * $col-tablet-s + 18 * $margin-tablet-s} + .5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
+      right: calc(-.5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		width: calc(#{2 * $col-tablet-xs + 2 * $margin-tablet-xs} + .5 * (100vw - #{6 * $col-tablet-xs + 10 * $margin-tablet-xs}));
+      right: calc(-.5 * (100vw - #{6 * $col-tablet-xs + 10 * $margin-tablet-xs}));
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		width: calc(#{2 * $col-mobile-l + 2 * $margin-desktop-s} + .5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-desktop-s}));
+      right: calc(-.5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-desktop-s}));
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+  		width: calc(#{2 * $col-mobile-s + 2 * $margin-mobile-s} + .5 * (100vw - #{6 * $col-mobile-s + 10 * $margin-mobile-s}));
+      right: calc(-.5 * (100vw - #{6 * $col-mobile-s + 10 * $margin-mobile-s}));
+  	}
+
+    &>p {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

@@ -1,0 +1,59 @@
+.bgImg {
+  @include bg-solo;
+
+  @include e('mainSplash') {
+    background-image: url('../assets/img/aboutpage-header.png');
+    padding-top: 25.6%;
+    @media screen and (max-width: $break-desktop-s) {
+  		padding-top: 25.6%;
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		padding-top: 25.6%;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		padding-top: 90%;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		padding-top: 120%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		padding-top: 160%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+      padding-top: 160%;
+  	}
+  }
+
+  @include e('advantage') {
+    background-image: url('../assets/img/aboutpage-pic.png');
+    padding-top: 45.6%;
+    @media screen and (max-width: $break-desktop-s) {
+  		padding-top: 45.6%;
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		padding-top: 45.6%;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		padding-top: 45.6%;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		padding-top: 120%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		padding-top: 160%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+      padding-top: 160%;
+  	}
+  }
+}
