@@ -107,7 +107,6 @@
 
   @include e('content') {
     position: relative;
-    display: inline-block;
   }
 
   @include e('bg') {
@@ -115,6 +114,7 @@
     position: absolute;
     top: 0px;
     height: 100%;
+    z-index: -10;
   }
 
   @include e('heading') {
@@ -195,6 +195,7 @@
     position: absolute;
     top: 0px;
     height: 100%;
+    z-index: -10;
   }
 
   @include e('text') {
@@ -221,11 +222,64 @@
     top: 135px;
     bottom: 135px;
   }
+  text-align: center;
+
   @include e('bg') {
     background-color: $sienna;
     position: absolute;
     top: 0px;
     height: 100%;
+    z-index: -10;
+  }
+
+  @include e('content') {
+    position: relative;
+  }
+
+  @include e('logoContainer') {
+    margin-top: 30px;
+  }
+
+  @include e('logo') {
+    vertical-align: middle;
+    display: inline-block;
+
+    @include m('cinfo') {
+      // width: 300px;
+      width: 30%;
+    }
+
+    @include m('ncds') {
+      // width: 200px;
+      width: 20%;
+    }
+
+    @include m('bevertec') {
+      margin-left: 20px;
+      // width: 300px;
+      width: 30%;
+    }
+  }
+
+  @include e('logoImg') {
+    @include bg-solo;
+    display: inline-block;
+    width: 100%;
+
+    @include m('cinfo') {
+      padding-top: 28.5%;
+      background-image: url('../assets/img/cinfo_white.png');
+    }
+
+    @include m('ncds') {
+      padding-top: 60%;
+      background-image: url('../assets/img/ncds_white.png');
+    }
+
+    @include m('bevertec') {
+      padding-top: 25.2%;
+      background-image: url('../assets/img/bevertec_white.png');
+    }
   }
 }
 
@@ -293,19 +347,5 @@
     vertical-align: top;
     left: -100%;
     white-space: normal;
-
-    // @include m('prev') {
-    //   left: -100%;
-    // }
-    //
-    // @include m('active') {
-    //   left: 0;
-    //   top: -100%;
-    // }
-    //
-    // @include m('next') {
-    //   left: 100%;
-    //   top: -200%;
-    // }
   }
 }

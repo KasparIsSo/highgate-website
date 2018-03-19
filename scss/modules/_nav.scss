@@ -2,12 +2,14 @@
 	position: relative;
 	display: block;
 	padding: {
-		top: 20px;
-		bottom: 20px;
+		top: 25px;
+		bottom: 10px;
 	}
 
 	@include e('logo') {
 		display: inline-block;
+		vertical-align: middle;
+		margin-left: 0;
 	}
 
 	@include e('logoImg') {
@@ -17,13 +19,15 @@
 		padding-top: 37.5%;
 	}
 
-	@include e('menu') {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
+	@include e('links') {
 		display: inline-block;
-		list-style: none;
+		text-align: right;
+		margin-right: 0;
+	}
+
+	@include e('menu') {
+		text-align: right;
+		display: inline-block;
 	}
 
 	@include e('menuOption') {
@@ -44,11 +48,75 @@
 		}
 
 		&.active {
-
+			color: $sienna;
 		}
 	}
 }
 
 .footer {
-	
+	position: relative;
+	display: block;
+	padding: {
+		top: 40px;
+		bottom: 100px;
+	}
+
+	@include e('bg') {
+		background-color: $darkGrey;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+		z-index: -10;
+	}
+
+	@include e('logo') {
+		display: inline-block;
+	}
+
+	@include e('logoImg') {
+		@include bg-solo;
+		background-size: contain;
+		background-image: url('../assets/img/footerlogo.png');
+		padding-top: 37.5%;
+	}
+
+	@include e('logo') {
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	@include e('links') {
+		display: inline-block;
+		margin-right: 0;
+		vertical-align: top;
+	}
+
+	@include e('menu') {
+		float: right;
+		margin-left: 56px;
+	}
+
+	@include e('menuCategory') {
+		@include f-size-footerLinks;
+		color: $white;
+		display: block;
+		font: {
+			family: $p-font;
+			weight: 700;
+		}
+		line-height: 34px;
+	}
+
+	@include e('menuOption') {
+		@include f-size-footerLinks;
+		@include transition($dtd);
+		color: $white;
+		display: block;
+		text-decoration: none;
+		font: {
+			family: $p-font;
+			weight: 400;
+		}
+		letter-spacing: 1.9px;
+	}
 }
