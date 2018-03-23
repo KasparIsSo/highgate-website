@@ -1,5 +1,19 @@
 .section {
 
+  padding: {
+    top: 135px;
+    bottom: 135px;
+  }
+
+  @include m('textCenter') {
+    text-align: center;
+  }
+
+  @include e('content') {
+    position: relative;
+    display: inline-block;
+  }
+
   @include e('heading') {
     @include f-size-xl;
     color: $gunmetal;
@@ -29,12 +43,16 @@
     }
   }
 
-  @include e('content') {
+  @include e('body') {
     @include f-size-xs;
     color: $gunmetal;
     font: {
       family: $s-font;
       weight: 400;
+    }
+
+    @include m('splash') {
+      letter-spacing: 1.7px;
     }
 
     @include m('italic') {
@@ -44,5 +62,13 @@
     @include m('white') {
       color: $white;
     }
+
+    @include m('splash') {
+      margin-bottom: 45px;
+    }
+  }
+
+  @include e('cardContainer') {
+    margin-bottom: 40px;
   }
 }

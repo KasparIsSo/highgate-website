@@ -124,4 +124,45 @@
       padding-top: 40%;
   	}
   }
+
+  @include e('gallery') {
+    padding-top: 60%;
+
+    @include m('1') {
+      background-image: url('../assets/img/index/screen-shot-2018-03-19-at-2-58-46-pm@3x.jpg');
+
+      @media screen and (max-width: $break-tablet-s) {
+        background-image: url('../assets/img/index/screen-shot-2018-03-19-at-2-58-46-pm@2x.jpg');
+      }
+
+      @media screen and (max-width: $break-mobile-l) {
+        background-image: url('../assets/img/index/screen-shot-2018-03-19-at-2-58-46-pm.jpg');
+      }
+    }
+
+    @include m('2') {
+      background-image: url('../assets/img/index/screen-shot-2018-03-19-at-2-58-29-pm@3x.jpg');
+
+      @media screen and (max-width: $break-tablet-s) {
+        background-image: url('../assets/img/index/screen-shot-2018-03-19-at-2-58-29-pm@2x.jpg');
+      }
+
+      @media screen and (max-width: $break-mobile-l) {
+        background-image: url('../assets/img/index/screen-shot-2018-03-19-at-2-58-29-pm.jpg');
+      }
+    }
+
+    @include m('3') {
+      background-image: url('../assets/img/index/screen-shot-2018-03-19-at-3-00-57-pm@3x.jpg');
+
+      @media screen and (max-width: $break-tablet-s) {
+        background-image: url('../assets/img/index/screen-shot-2018-03-19-at-3-00-57-pm@2x.jpg');
+      }
+
+      @media screen and (max-width: $break-mobile-l) {
+        background-image: url('../assets/img/index/screen-shot-2018-03-19-at-3-00-57-pm.jpg');
+      }
+    }
+  }
+
 }

@@ -1,12 +1,14 @@
 .button {
-  @include f-size-s;
+  @include f-size-xs;
   display: inline-block;
-  padding: 12px 20px 10px;
+  padding: 12px 33px 10px;
   font: {
     family: $p-font;
-    weight: 700;
+    weight: 400;
   }
   text-transform: uppercase;
+  letter-spacing: 2px;
+
   @include m('wb') {
     color: $white;
     border: {

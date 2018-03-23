@@ -15,27 +15,29 @@
 <body>
 
   <div class = "container">
-    <div class = "nav col_12 center">
-      <div class = "nav__logo col_3">
-        <div class = "nav__logoImg"></div>
-      </div><div class = "nav__links col_9">
-        <ul class = "nav__menu">
-          <a class = "nav__menuOption active" href = "#">
-            <li>Home</li>
-          </a>
-          <a class = "nav__menuOption" href = "about.html">
-            <li>About</li>
-          </a>
-          <a class = "nav__menuOption" href = "#">
-            <li>Partners</li>
-          </a>
-          <a class = "nav__menuOption" href = "#">
-            <li>News</li>
-          </a>
-          <a class = "nav__menuOption" href = "#">
-            <li>Contact Us</li>
-          </a>
-        </ul>
+    <div class = "nav">
+      <div class = "nav__wrapper col_12 center">
+        <div class = "nav__logo col_3">
+          <div class = "nav__logoImg"></div>
+        </div><div class = "nav__links col_9">
+          <ul class = "nav__menu">
+            <a class = "nav__menuOption active" href = "#">
+              <li>Home</li>
+            </a>
+            <a class = "nav__menuOption" href = "about.html">
+              <li>About</li>
+            </a>
+            <a class = "nav__menuOption" href = "#">
+              <li>Products</li>
+            </a>
+            <a class = "nav__menuOption" href = "#">
+              <li>News</li>
+            </a>
+            <a class = "nav__menuOption" href = "#">
+              <li>Contact Us</li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -44,17 +46,17 @@
         <div class="bgImg bgImg__mainSplash"></div>
       </div>
       <div class = "splash__content">
-        <h2 class = "splash__heading col_11 col_11--c">Real Time Banking Software &amp; Solutions</h2>
-        <p class = "splash__text col_6 col_6--c">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives</p>
+        <h2 class = "splash__heading col_11 col_11--c">Real Time Banking <br> Software &amp; Solutions</h2>
+        <p class = "section__body section__body--splash section__body--white section__body--splash col_7 col_7--c">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives</p>
         <a class = "button button--wb">Call to Action</a>
       </div>
     </div>
 
-    <div class = "about col_12 center">
-      <div class = "about__content col_12 col_12--c">
+    <div class = "section col_12 center">
+      <div class = "section__content col_12 col_12--c">
         <h4 class = "section__subheading">About Us</h4>
         <h6 class = "section__heading col_6 col_6--c">Building Your Business with Highgate Systems</h6>
-        <p class = "section__content col_6 col_6--c">Highgate Systems is a trusted provider of Banking and Lending solutions to international banking and financial institution clients. Founded in 1986, it has grown over the years and has clients in many countries. We have an experienced team of technology and banking professionals that work with our clients to provide innovative solutions to help clients grow their businesses. Commercial Banks, Credit Unions.</p>
+        <p class = "section__body col_6 col_6--c">Highgate Systems is a trusted provider of Banking and Lending solutions to international banking and financial institution clients. Founded in 1986, it has grown over the years and has clients in many countries. We have an experienced team of technology and banking professionals that work with our clients to provide innovative solutions to help clients grow their businesses. Commercial Banks, Credit Unions.</p>
 
         <div class = "bgImg__aboutContainer">
           <div class = "bgImg bgImg__about"></div>
@@ -68,20 +70,66 @@
         <h4 class = "section__subheading">Products</h4>
         <h6 class = "section__heading products__heading">Explore Our Products &amp; Services</h6>
 
-        <div class = "col_12 col_12--c">
+        <div class = "section__cardContainer col_12 col_12--c">
           <div class = "card">
             <i class = "material-icons card__icon">account_balance</i>
             <h4 class = "card__title">Digital Banking</h4>
-            <p class = "section__content">Complete online digital banking services and software solutions. Complete online digital banking services and software.</p>
+            <p class = "section__body">Complete online digital banking services and software solutions.</p>
           </div><div class = "card">
             <i class = "material-icons card__icon">group</i>
             <h4 class = "card__title">Digital Banking</h4>
-            <p class = "section__content">Complete online digital banking services and software solutions. Complete online digital banking services and software.</p>
+            <p class = "section__body">Complete online digital banking services and software solutions.</p>
           </div><div class = "card">
             <i class = "material-icons card__icon">tv</i>
             <h4 class = "card__title">Digital Banking</h4>
-            <p class = "section__content">Complete online digital banking services and software solutions. Complete online digital banking services and software.</p>
+            <p class = "section__body">Complete online digital banking services and software solutions.</p>
           </div>
+        </div>
+
+        <div class = "section__cardContainer col_12 col_12--c">
+          <div class = "card">
+            <i class = "material-icons card__icon">account_balance</i>
+            <h4 class = "card__title">Digital Banking</h4>
+            <p class = "section__body">Complete online digital banking services and software solutions.</p>
+          </div><div class = "card">
+            <i class = "material-icons card__icon">group</i>
+            <h4 class = "card__title">Digital Banking</h4>
+            <p class = "section__body">Complete online digital banking services and software solutions.</p>
+          </div><div class = "card">
+            <i class = "material-icons card__icon">tv</i>
+            <h4 class = "card__title">Digital Banking</h4>
+            <p class = "section__body">Complete online digital banking services and software solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "col_12 center">
+      <div class = "gallery col_12 col_12--c">
+        <div class = "gallery__ui">
+          <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this)">
+            <i class = "material-icons card__icon">keyboard_arrow_left</i>
+          </button>
+          <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this)">
+            <i class = "material-icons card__icon">keyboard_arrow_right</i>
+          </button>
+        </div>
+        <div class = "gallery__cardContainer gallery__cardContainer--show col_10 col_10--c center">
+          <div class = "gallery__card">
+            <div class = "bgImg bgImg__gallery bgImg__gallery--1"></div>
+          </div><div class = "gallery__card">
+            <div class = "bgImg bgImg__gallery bgImg__gallery--2"></div>
+          </div><div class = "gallery__card">
+            <div class = "bgImg bgImg__gallery bgImg__gallery--3"></div>
+          </div><div class = "gallery__card">
+            <div class = "bgImg bgImg__gallery bgImg__gallery--1"></div>
+          </div><div class = "gallery__card">
+            <div class = "bgImg bgImg__gallery bgImg__gallery--2"></div>
+          </div><div class = "gallery__card">
+            <div class = "bgImg bgImg__gallery bgImg__gallery--3"></div>
+          </div>
+        </div>
+        <div class = "gallery__">
         </div>
       </div>
     </div>
@@ -93,34 +141,41 @@
       <div class = "news__content col_12 col_12--c">
         <h4 class = "section__subheading section__subheading--white">News</h4>
         <h6 class = "section__heading section__heading--white">Discover our Latest News and Updates</h6>
-        <p class = "section__content section__content--white news__text col_8 col_8--c center">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives. integrated financial solutions that empower our clients to meet their business objectives. </p>
+        <p class = "section__body section__body--white news__text col_8 col_8--c center">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives. integrated financial solutions that empower our clients to meet their business objectives. </p>
         <a class = "button button--wb">Learn More</a>
       </div>
     </div>
 
-    <div class = "testimonials col_12 center">
-      <div class = "testimonials__content col_12 col_12--c">
-        <h4 class = "section__subheading">Testimonials</h4>
-        <div class = "gallery col_12 col_12--c">
-          <div class = "gallery__ui">
-            <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this)">
-              <i class = "material-icons card__icon">keyboard_arrow_left</i>
-            </button>
-            <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this)">
-              <i class = "material-icons card__icon">keyboard_arrow_right</i>
-            </button>
-          </div>
-          <div class = "gallery__cardContainer">
-            <div class = "gallery__card">
-              <h4 class = "section__heading">Ref 1</h4>
-              <p class = "section__content section__content--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
-            </div><div class = "gallery__card">
-              <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
-              <p class = "section__content section__content--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
-            </div><div class = "gallery__card">
-              <h4 class = "section__heading">Ref 2</h4>
-              <p class = "section__content section__content--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
-            </div>
+    <div class = "section section--textCenter col_12 center">
+      <div class = "gallery gallery__testimonials col_12 col_12--c">
+        <div class = "gallery__ui">
+          <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this)">
+            <i class = "material-icons card__icon">keyboard_arrow_left</i>
+          </button>
+          <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this)">
+            <i class = "material-icons card__icon">keyboard_arrow_right</i>
+          </button>
+        </div>
+        <div class = "gallery__cardContainer">
+          <h4 class = "section__subheading">Testimonials</h4>
+          <div class = "gallery__card gallery__card--text">
+            <h4 class = "section__heading">Ref 1</h4>
+            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+          </div><div class = "gallery__card gallery__card--text">
+            <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
+            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+          </div><div class = "gallery__card gallery__card--text">
+            <h4 class = "section__heading">Ref 2</h4>
+            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+          </div><div class = "gallery__card gallery__card--text">
+            <h4 class = "section__heading">Ref 1</h4>
+            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+          </div><div class = "gallery__card gallery__card--text">
+            <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
+            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+          </div><div class = "gallery__card gallery__card--text">
+            <h4 class = "section__heading">Ref 2</h4>
+            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
           </div>
         </div>
       </div>
@@ -145,9 +200,16 @@
 
     <div class = "footer col_12 center">
       <div class = "footer__bg col_12--fullbleed"></div>
-      <div class = "footer__logo col_3">
-        <div class = "footer__logoImg"></div>
-      </div><div class = "footer__links col_9">
+      <div class = "footer__info col_4">
+        <div class = "footer__logo col_3 col_3--c">
+          <div class = "footer__logoImg"></div>
+        </div>
+        <p class = "footer__desc">
+          <a class = "footer__descLink">Site Map</a> | <a class = "footer__descLink">Terms of Service</a>
+        </p>
+        <p class = "footer__desc">Copyright 2018. All Rights Reserved<p>
+        <p class = "footer__desc">Proudly Canadian<p>
+      </div><div class = "footer__links col_8">
         <ul class = "footer__menu">
           <h6 class = "footer__menuCategory">Contact</h6>
           <a href = "mailto:contact@highgatesystems.com" class = "footer__menuOption" href = "#">
@@ -202,7 +264,7 @@
 
     var cards = gallery.querySelectorAll('.gallery__card');
 
-    if (direction == "left") {
+    if (direction == "right") {
       cards[0].style.width = 0;
       setTimeout(function() {
         cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);

@@ -1,9 +1,16 @@
 .nav {
-	position: relative;
+	position: fixed;
+	top: 0;
 	display: block;
 	padding: {
 		top: 25px;
 		bottom: 10px;
+	}
+	z-index: 9999;
+	width: 100vw;
+	background-color: $white;
+
+	@include e('wrapper') {
 	}
 
 	@include e('logo') {
@@ -38,7 +45,7 @@
 		text-decoration: none;
 		font: {
 			family: $p-font;
-			weight: 700;
+			weight: 400;
 		}
 		letter-spacing: 1.9px;
 		margin-left: 46px;
@@ -80,9 +87,33 @@
 		padding-top: 37.5%;
 	}
 
-	@include e('logo') {
+	@include e('info') {
 		display: inline-block;
 		margin-left: 0;
+	}
+
+	@include e('logo') {
+		display: block;
+	}
+
+	@include e('desc') {
+		margin-left: 58px;
+		@include f-size-footerLinks;
+		color: $greyBlue;
+		display: block;
+		text-decoration: none;
+		font: {
+			family: $p-font;
+			weight: 400;
+		}
+		letter-spacing: 1px;
+	}
+
+	@include e('descLink') {
+		@include transition($dtd);
+		&:hover {
+			color: $white;
+		}
 	}
 
 	@include e('links') {
@@ -117,6 +148,6 @@
 			family: $p-font;
 			weight: 400;
 		}
-		letter-spacing: 1.9px;
+		letter-spacing: 1px;
 	}
 }

@@ -8,56 +8,13 @@
 
 @import 'img/img_main.scss';
 
-.section {
-  @include e('heading') {
-    @include f-size-xl;
-    color: $gunmetal;
-    font: {
-      family: $p-font;
-      weight: 400;
-    }
-    margin-bottom: 30px;
-
-    @include m('white') {
-      color: $white;
-    }
-  }
-
-  @include e('subheading') {
-    @include f-size-subhead24;
-    color: $gunmetal;
-    font: {
-      family: $p-font;
-      weight: 700;
-    }
-    text-transform: uppercase;
-    margin-bottom: 15px;
-
-    @include m('white') {
-      color: $white;
-    }
-  }
-
-  @include e('content') {
-    @include f-size-xs;
-    color: $gunmetal;
-    font: {
-      family: $s-font;
-      weight: 400;
-    }
-
-    @include m('italic') {
-      font-style: italic;
-    }
-
-    @include m('white') {
-      color: $white;
-    }
-  }
+* {
+  outline: 1px solid red;
 }
 
 .splash {
   position: relative;
+  margin-top: 100px;
 
   @include e('content') {
     position: absolute;
@@ -70,20 +27,10 @@
     color: $white;
     font: {
       family: $p-font;
-      weight: 700;
+      weight: 400;
     }
     text-transform: uppercase;
     margin-bottom: 25px;
-  }
-
-  @include e('text') {
-    @include f-size-m;
-    color: $white;
-    font: {
-      family: $s-font;
-      weight: 400;
-    }
-    margin-bottom: 45px;
   }
 }
 
@@ -129,13 +76,15 @@
   background-color: $white;
   border-radius: 7px;
   box-shadow: 0 5px 11px $shadow;
-  padding: 60px 30px 60px;
+  padding: 25px 30px;
 
   width: 30%;
   margin: {
     right: 2.5%;
     left: 2.5%;
   }
+
+  overflow: hidden;
 
   @media screen and (max-width: $break-desktop-l) {
     padding: 50px 25px 50px;
@@ -170,17 +119,6 @@
   }
 }
 
-.about {
-  padding: {
-    top: 135px;
-    bottom: 135px;
-  }
-  @include e('content') {
-    position: relative;
-    display: inline-block;
-  }
-}
-
 .news {
   position: relative;
 
@@ -203,18 +141,6 @@
     margin-bottom: 45px;
   }
 
-}
-
-.testimonials {
-  position: relative;
-  padding: {
-    top: 135px;
-    bottom: 135px;
-  }
-
-  @include e('content') {
-    text-align: center;
-  }
 }
 
 .brands {
@@ -286,7 +212,10 @@
 
 .gallery {
   position: relative;
-  height: 300px;
+
+  @include e('testimonials') {
+    height: 300px;
+  }
 
   @include e('ui') {
     // z-index: 50;
@@ -294,6 +223,7 @@
 
   @include e('button') {
     z-index: 50;
+    background-color: $white;
     appearance: none;
     -webkit-appearance: none;
     text-align: center;
@@ -333,20 +263,32 @@
     position: relative;
     overflow: hidden;
     @include transition($dtd);
+
+    @include m('show') {
+      overflow: visible;
+    }
   }
 
   @include e('card') {
     @include transition($dtd);
-    padding: {
-      top: 40px;
-      bottom: 40px;
-    }
+    overflow: hidden;
     position: relative;
     display: inline-block;
     width: 100%;
     text-align: center;
     vertical-align: top;
-    left: -100%;
+    left: -200%;
     white-space: normal;
+
+    @include m('text') {
+      padding: {
+        top: 40px;
+        bottom: 40px;
+      }
+    }
+
+    &>img {
+      width: 100%;
+    }
   }
 }

@@ -1,36 +1,36 @@
 @mixin f-size-xxl {
   font-size: 64px;
   line-height: 74px;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
 
   @media screen and (max-width: $break-desktop-l) {
     font-size: 64px;
     line-height: 74px;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
   }
 
   @media screen and (max-width: $break-desktop-s) {
     font-size: 56px;
     line-height: 68px;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
   }
 
   @media screen and (max-width: $break-tablet-l) {
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.8px;
   }
 
   @media screen and (max-width: $break-mobile-l) {
     font-size: 32px;
     line-height: 46px;
-    letter-spacing: .8px;
+    letter-spacing: 1.4px;
   }
 
   @media screen and (max-width: $break-mobile-s) {
     font-size: 32px;
     line-height: 46px;
-    letter-spacing: .8px;
+    letter-spacing: 1.4px;
   }
 }
 
@@ -179,38 +179,32 @@
 }
 
 @mixin f-size-xs {
-  font-size: 18px;
-  line-height: 34px;
-  letter-spacing: 0px;
+  font-size: 16px;
+  line-height: 30px;
 
   @media screen and (max-width: $break-desktop-l) {
-    font-size: 18px;
-    line-height: 34px;
-    letter-spacing: 0px;
+    font-size: 16px;
+    line-height: 30px;
   }
 
   @media screen and (max-width: $break-desktop-s) {
-    font-size: 18px;
-    line-height: 34px;
-    letter-spacing: 0px;
+    font-size: 16px;
+    line-height: 30px;
   }
 
   @media screen and (max-width: $break-tablet-l) {
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 28px;
   }
 
   @media screen and (max-width: $break-mobile-l) {
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 28px;
   }
 
   @media screen and (max-width: $break-mobile-s) {
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 28px;
   }
 }
 
