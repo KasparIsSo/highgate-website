@@ -871,7 +871,23 @@ body {
         padding-top: 160%; } }
 
 .splash {
-  position: relative; }
+  position: relative;
+  margin-top: 100px; }
+  @media screen and (max-width: 980px) {
+    .splash {
+      margin-top: 100px; } }
+  @media screen and (max-width: 800px) {
+    .splash {
+      margin-top: 100px; } }
+  @media screen and (max-width: 600px) {
+    .splash {
+      margin-top: 105px; } }
+  @media screen and (max-width: 420px) {
+    .splash {
+      margin-top: 85px; } }
+  @media screen and (max-width: 320px) {
+    .splash {
+      margin-top: 80px; } }
   .splash__content {
     position: absolute;
     top: 50%;
