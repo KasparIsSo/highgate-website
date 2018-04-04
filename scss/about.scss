@@ -143,8 +143,8 @@
   	}
 
   	@media screen and (max-width: $break-mobile-l) {
-  		width: calc(#{5 * $col-mobile-l + 8 * $margin-desktop-s} + .5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-desktop-s}));
-      right: calc(-.5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-desktop-s}));
+  		width: calc(#{5 * $col-mobile-l + 8 * $margin-tablet-xs} + .5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-tablet-xs}));
+      right: calc(-.5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-tablet-xs}));
   	}
 
   	@media screen and (max-width: $break-mobile-s) {

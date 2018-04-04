@@ -18,6 +18,22 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin-left: 0;
+
+		@media screen and (max-width: $break-tablet-s) {
+			width: 4 * $col-tablet-s + 6 * $margin-tablet-s;
+		}
+
+		@media screen and (max-width: $break-tablet-xs) {
+			width: 3 * $col-tablet-xs + 4 * $margin-tablet-xs;
+		}
+
+		@media screen and (max-width: $break-mobile-l) {
+			width: 3 * $col-mobile-l + 4 * $margin-desktop-s;
+		}
+
+		@media screen and (max-width: $break-mobile-s) {
+			width: 3 * $col-mobile-s + 4 * $margin-mobile-s;
+		}
 	}
 
 	@include e('logoImg') {
@@ -27,15 +43,113 @@
 		padding-top: 37.5%;
 	}
 
+	@include e('mobileMenuWrapper') {
+		float: right;
+		display: none;
+		@media screen and (max-width: $break-tablet-s) {
+			display: inline-block;
+		}
+
+		@media screen and (max-width: $break-tablet-s) {
+			width: 4 * $col-tablet-s + 6 * $margin-tablet-s;
+			margin: 0;
+		}
+
+		@media screen and (max-width: $break-tablet-xs) {
+			width: 3 * $col-tablet-xs + 4 * $margin-tablet-xs;
+		}
+
+		@media screen and (max-width: $break-mobile-l) {
+			width: 3 * $col-mobile-l + 4 * $margin-desktop-s;
+		}
+
+		@media screen and (max-width: $break-mobile-s) {
+			width: 3 * $col-mobile-s + 4 * $margin-mobile-s;
+		}
+	}
+
+	@include e('mobileMenu') {
+		padding-top: 37.5%;
+		width: 37.5%;
+		// height: 37.5%;
+		// background: black;
+		float: right;
+		position: relative;
+	}
+
+	@include e('mobileMenuBar') {
+		width: 60%;
+		height: 2px;
+		background-color: $gunmetal;
+		position: absolute;
+		left: 20%;
+		@include transition($dtd);
+		transform-origin: 50% 50%;
+
+		@include m('1'){
+      top: 30%;
+      &.center {
+				top: 50%;
+				transform: translateY(-50%);
+      }
+      &.rotate {
+        transform: rotate(-45deg);
+      }
+    }
+    @include m('2'){
+      top: 50%;
+      transform: translateY(-50%);
+      &.center {
+      }
+      &.rotate {
+        transform: rotate(45deg);
+      }
+    }
+    @include m('3'){
+      top: calc(70% - 2px);
+      &.center{
+        top: 50%;
+				transform: translateY(-50%);
+      }
+      &.rotate {
+        transform: rotate(45deg);
+      }
+    }
+	}
+
 	@include e('links') {
 		display: inline-block;
 		text-align: right;
 		margin-right: 0;
+
+  	@media screen and (max-width: $break-tablet-s) {
+			display: block;
+			position: absolute;
+			left: 0;
+			margin-left: 0;
+			height: 0;
+			width: 100vw;
+			top: 100%;
+			background-color: $dropdownBG;
+			@include transition(2 * $dtd);
+			z-index: 0;
+			overflow: hidden;
+			padding: 0;
+			&.active {
+				height: calc(100vh - 100%);
+			}
+		}
 	}
 
 	@include e('menu') {
-		text-align: right;
 		display: inline-block;
+		text-align: left;
+
+		@media screen and (max-width: $break-tablet-s) {
+			display: block;
+			width: 80%;
+			margin: 40px auto;
+		}
 	}
 
 	@include e('menuOption') {
@@ -57,6 +171,50 @@
 
 		&.active {
 			color: $sienna;
+			@media screen and (max-width: $break-tablet-s) {
+				color: $white;
+			}
+		}
+
+		@media screen and (max-width: $break-tablet-s) {
+			display: block;
+			@include f-size-l;
+			color: $white;
+			border-bottom: $white 1px solid;
+			padding-bottom: 10px;
+			margin: 40px auto 0;
+			width: 100%;
+		}
+
+		// @media screen and (max-width: $break-tablet-s) {
+		// 	width: 12 * $col-tablet-s + 22 * $margin-tablet-s;
+		// 	margin: 40px auto 0;
+		// }
+		//
+	  // @media screen and (max-width: $break-tablet-xs) {
+		// 	width: 6 * $col-tablet-xs + 10 * $margin-tablet-xs;
+		// }
+		//
+		// @media screen and (max-width: $break-mobile-l) {
+		// 	width: 6 * $col-mobile-l + 10 * $margin-tablet-xs;
+		// }
+		//
+		// @media screen and (max-width: $break-mobile-s) {
+		// 	width: 6 * $col-mobile-s + 10 * $margin-mobile-s;
+		// }
+
+
+		&>li {
+			width: 100%;
+		}
+	}
+
+	@include e('menuOptionIcon') {
+		display: none;
+		@media screen and (max-width: $break-tablet-s) {
+			display: inline-block;
+			float: right;
+			@include f-size-xl;
 		}
 	}
 }
@@ -87,6 +245,11 @@
 	@include e('info') {
 		display: inline-block;
 		margin-left: 0;
+
+		@media screen and (max-width: $break-tablet-s) {
+			display: block;
+			width: 100%;
+		}
 	}
 
 	@include e('logo') {
@@ -94,7 +257,7 @@
 	}
 
 	@include e('desc') {
-		margin-left: 58px;
+		margin-left: 15%;
 		@include f-size-footerLinks;
 		color: $white;
 		display: block;
@@ -104,6 +267,10 @@
 			weight: 400;
 		}
 		letter-spacing: 1px;
+
+		@media screen and (max-width: $break-tablet-s) {
+			margin-left: 0;
+		}
 
 		@include m('canada') {
 			margin-bottom: 20px;
@@ -128,11 +295,29 @@
 		display: inline-block;
 		margin-right: 0;
 		vertical-align: top;
+		@media screen and (max-width: $break-tablet-s) {
+			display: block;
+			width: 100%;
+			margin: {
+				top: 20px;
+				left: 0;
+			}
+		}
 	}
 
 	@include e('menu') {
 		float: right;
 		margin-left: 56px;
+		@media screen and (max-width: $break-tablet-s) {
+			float: none;
+			margin-left: 0;
+		}
+
+		@include m('mHide') {
+			@media screen and (max-width: $break-tablet-s) {
+				display: none;
+			}
+		}
 	}
 
 	@include e('menuCategory') {

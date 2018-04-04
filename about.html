@@ -19,22 +19,28 @@
       <div class = "nav__wrapper col_12 center">
         <div class = "nav__logo col_3">
           <div class = "nav__logoImg"></div>
+        </div><div class = "nav__mobileMenuWrapper col_3">
+          <div class = "nav__mobileMenu">
+            <span class = "nav__mobileMenuBar nav__mobileMenuBar--1"></span>
+            <span class = "nav__mobileMenuBar nav__mobileMenuBar--2"></span>
+            <span class = "nav__mobileMenuBar nav__mobileMenuBar--3"></span>
+          </div>
         </div><div class = "nav__links col_9">
           <ul class = "nav__menu">
             <a class = "nav__menuOption" href = "#">
-              <li>Home</li>
+              <li>Home <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
             <a class = "nav__menuOption active" href = "about.html">
-              <li>About</li>
+              <li>About <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
             <a class = "nav__menuOption" href = "#">
-              <li>Products</li>
+              <li>Products <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
             <a class = "nav__menuOption" href = "#">
-              <li>News</li>
+              <li>News <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
             <a class = "nav__menuOption" href = "#">
-              <li>Contact Us</li>
+              <li>Contact Us <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
           </ul>
         </div>
@@ -50,13 +56,25 @@
       </div>
     </div>
 
-    <div class = "about col_12 center">
+    <div class = "section col_12 center">
+      <div class = "section__content col_12 col_12--c">
+        <h4 class = "section__subheading">About Us</h4>
+        <h6 class = "section__heading col_6 col_6--c">Building Your Business with Highgate Systems</h6>
+        <p class = "section__body col_6 col_6--c">Highgate Systems is a trusted provider of Banking and Lending solutions to international banking and financial institution clients. Founded in 1986, it has grown over the years and has clients in many countries. We have an experienced team of technology and banking professionals that work with our clients to provide innovative solutions to help clients grow their businesses. Commercial Banks, Credit Unions.</p>
+
+        <div class = "bgImg__aboutContainer">
+          <div class = "bgImg bgImg__about"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class = "about col_12 center">
       <div class = "about__content col_12 col_12--c">
         <h4 class = "section__subheading">About Us</h4>
         <h6 class = "section__heading col_12 col_12--c">Building Your Business with Highgate Systems</h6>
         <p class = "section__body col_12 col_12--c">Highgate Systems is a trusted provider of Banking and Lending solutions to international banking and financial institution clients. Founded in 1986, it has grown over the years and has clients in many countries. We have an experienced team of technology and banking professionals that work with our clients to provide innovative solutions to help clients grow their businesses. Commercial Banks, Credit Unions.</p>
       </div>
-    </div>
+    </div> -->
 
     <div class = "advantage col_12 center">
       <div class = "advantage__content col_8 col_8--c">
@@ -74,9 +92,16 @@
 
     <div class = "footer col_12 center">
       <div class = "footer__bg col_12--fullbleed"></div>
-      <div class = "footer__logo col_3">
-        <div class = "footer__logoImg"></div>
-      </div><div class = "footer__links col_9">
+      <div class = "footer__info col_4">
+        <div class = "footer__logo col_3 col_3--c footer__menu--mHide">
+          <div class = "footer__logoImg"></div>
+        </div>
+        <p class = "footer__desc footer__desc--canada"><img src = "../assets/img/canada_icon.jpg" class = "footer__canada">Proud to be Canadian<p>
+        <p class = "footer__desc">
+          <a class = "footer__descLink">Site Map</a> | <a class = "footer__descLink">Terms of Service</a>
+        </p>
+        <p class = "footer__desc">Copyright 2018. All Rights Reserved<p>
+      </div><div class = "footer__links col_8">
         <ul class = "footer__menu">
           <h6 class = "footer__menuCategory">Contact</h6>
           <a href = "mailto:contact@highgatesystems.com" class = "footer__menuOption" href = "#">
@@ -92,7 +117,7 @@
             <li>Canada, L4W 4Y5</li>
           </a>
         </ul>
-        <ul class = "footer__menu">
+        <ul class = "footer__menu footer__menu--mHide">
           <h6 class = "footer__menuCategory">Menu</h6>
           <a class = "footer__menuOption" href = "#">
             <li>Home</li>
@@ -116,6 +141,30 @@
 </body>
 
 <script type = "text/javascript">
+  document.querySelector('.nav__mobileMenuWrapper').addEventListener('click', function(){
+  // document.querySelector('."nav__mobileMenu').classList.toggle('active');
+  this.parentNode.querySelector('.nav__links').classList.toggle('active');
+  var bars = this.querySelectorAll('.nav__mobileMenuBar');
+  if (!bars[0].classList.contains('rotate')){
+    for (var i = 0; i < bars.length; i++) {
+      bars[i].classList.toggle('center');
+    }
+    setTimeout(function(){
+      for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.toggle('rotate');
+      }
+    }, 300);
+  } else {
+    for (var i = 0; i < bars.length; i++) {
+      bars[i].classList.toggle('rotate');
+    }
+    setTimeout(function(){
+      for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.toggle('center');
+      }
+    }, 300);
+  }
+  })
 </script>
 
 </html>
