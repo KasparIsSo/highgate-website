@@ -548,9 +548,9 @@ body {
       letter-spacing: .7px; } }
   @media screen and (max-width: 800px) and (max-width: 980px) {
     .nav__menuOption {
-      font-size: 26px;
-      line-height: 38px;
-      letter-spacing: .65px; } }
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: .6px; } }
   @media screen and (max-width: 800px) and (max-width: 420px) {
     .nav__menuOption {
       font-size: 24px;
@@ -782,6 +782,9 @@ body {
       margin-bottom: 45px; }
   .section__cardContainer {
     margin-bottom: 40px; }
+    @media screen and (max-width: 800px) {
+      .section__cardContainer {
+        margin-bottom: 0; } }
 
 .button {
   font-size: 16px;
@@ -1014,7 +1017,7 @@ body {
 .products {
   position: relative;
   padding-top: 135px;
-  padding-bottom: 135px;
+  padding-bottom: 60px;
   text-align: center; }
   .products__content {
     position: relative;
@@ -1041,12 +1044,19 @@ body {
   @media screen and (max-width: 1320px) {
     .card {
       padding: 50px 25px 50px; } }
+  @media screen and (max-width: 800px) {
+    .card {
+      width: 100%;
+      margin: 0 0 25px; } }
   @media screen and (max-width: 600px) {
     .card {
       padding: 20px 20px 20px; } }
   .card--roadmap {
     border-top: #455560 10px solid;
     padding: 25px 30px 35px; }
+    @media screen and (max-width: 980px) {
+      .card--roadmap {
+        padding: 25px 20px 35px; } }
   .card:first-child {
     margin-left: 0; }
   .card:last-child {
@@ -1102,9 +1112,9 @@ body {
         letter-spacing: .7px; } }
     @media screen and (max-width: 980px) {
       .card__title {
-        font-size: 26px;
-        line-height: 38px;
-        letter-spacing: .65px; } }
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: .6px; } }
     @media screen and (max-width: 420px) {
       .card__title {
         font-size: 24px;
@@ -1137,9 +1147,9 @@ body {
         letter-spacing: .7px; } }
     @media screen and (max-width: 980px) {
       .card__subtitle {
-        font-size: 26px;
-        line-height: 38px;
-        letter-spacing: .65px; } }
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: .6px; } }
     @media screen and (max-width: 420px) {
       .card__subtitle {
         font-size: 24px;

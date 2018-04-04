@@ -548,9 +548,9 @@ body {
       letter-spacing: .7px; } }
   @media screen and (max-width: 800px) and (max-width: 980px) {
     .nav__menuOption {
-      font-size: 26px;
-      line-height: 38px;
-      letter-spacing: .65px; } }
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: .6px; } }
   @media screen and (max-width: 800px) and (max-width: 420px) {
     .nav__menuOption {
       font-size: 24px;
@@ -782,6 +782,9 @@ body {
       margin-bottom: 45px; }
   .section__cardContainer {
     margin-bottom: 40px; }
+    @media screen and (max-width: 800px) {
+      .section__cardContainer {
+        margin-bottom: 0; } }
 
 .button {
   font-size: 16px;
@@ -1128,9 +1131,9 @@ body {
         letter-spacing: .7px; } }
     @media screen and (max-width: 980px) {
       .card__title {
-        font-size: 26px;
-        line-height: 38px;
-        letter-spacing: .65px; } }
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: .6px; } }
     @media screen and (max-width: 420px) {
       .card__title {
         font-size: 24px;
