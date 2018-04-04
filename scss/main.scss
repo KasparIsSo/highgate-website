@@ -8,9 +8,9 @@
 
 @import 'img/img_main.scss';
 
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 
 .splash {
   position: relative;
@@ -55,6 +55,7 @@
 
   @include e('content') {
     position: relative;
+    margin-bottom: 100px;
   }
 
   @include e('bg') {
@@ -74,7 +75,7 @@
   display: inline-block;
   text-align: center;
   background-color: $white;
-  border-radius: 7px;
+  // border-radius: 7px;
   box-shadow: 0 5px 11px $shadow;
   padding: 25px 30px;
 
@@ -92,6 +93,11 @@
 
   @media screen and (max-width: $break-tablet-xs) {
     padding: 20px 20px 20px;
+  }
+
+  @include m('roadmap') {
+    border-top: $gunmetal 10px solid;
+    padding: 25px 30px 35px;
   }
 
   &:first-child {
@@ -116,6 +122,30 @@
     }
     color: $gunmetal;
     margin-bottom: 15px;
+
+    @include m('roadmap') {
+      margin-bottom: 0;
+    }
+  }
+
+  @include e('subtitle') {
+    @include f-size-l;
+    font: {
+      family: $p-font;
+      weight: 400;
+    }
+    color: $gunmetal;
+    margin-bottom: 15px;
+  }
+
+  @include e('list') {
+    &>li {
+      @include f-size-xs;
+      font: {
+        family: $p-font;
+      }
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -165,11 +195,15 @@
 
   @include e('logoContainer') {
     margin-top: 30px;
+    height: 150px;
   }
 
   @include e('logo') {
     vertical-align: middle;
     display: inline-block;
+    padding: 30px;
+
+    @include transition($dtd);
 
     @include m('cinfo') {
       // width: 300px;
@@ -179,12 +213,17 @@
     @include m('ncds') {
       // width: 200px;
       width: 20%;
+      height: 150px;
     }
 
     @include m('bevertec') {
       margin-left: 20px;
       // width: 300px;
       width: 30%;
+    }
+
+    &:hover {
+      padding: 20px;
     }
   }
 
@@ -212,6 +251,7 @@
 
 .gallery {
   position: relative;
+  // margin-top: 120px;
 
   @include e('testimonials') {
     height: 300px;
@@ -221,9 +261,40 @@
     // z-index: 50;
   }
 
+  @include e('indicator') {
+    padding: {
+      top: 30px;
+      bottom: 30px;
+    }
+    margin-bottom: 100px;
+  }
+
+  @include e('indicatorNode') {
+    width: 10px;
+    padding-top: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    border: {
+      radius: 50%;
+      color: $gunmetal;
+      width: 1px;
+      style: solid;
+    }
+    background-color: $white;
+    @include transition($dtd);
+
+    &.active {
+      background-color: $gunmetal;
+    }
+  }
+
   @include e('button') {
     z-index: 50;
-    background-color: $white;
+    background-color: $offWhite;
     appearance: none;
     -webkit-appearance: none;
     text-align: center;
@@ -241,15 +312,34 @@
     top: 50%;
     transform: translateY(-50%);
 
+    @include transition($dtd);
+
     @include m('left') {
       left: 0;
+      &:hover {
+        width: 50px;
+        height: 50px;
+        transform: translate(-2px, calc(-50%));
+        &>i {
+          transform: translateY(2px);
+        }
+      }
     }
 
     @include m ('right') {
       right: 0;
+      &:hover {
+        width: 50px;
+        height: 50px;
+        transform: translate(2px, calc(-50%));
+        &>i {
+          transform: translateY(2px);
+        }
+      }
     }
 
     &>i {
+      @include transition($dtd);
       @include f-size-xl;
       position: relative;
       display: block;

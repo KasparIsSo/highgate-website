@@ -9,6 +9,7 @@
 	z-index: 9999;
 	width: 100vw;
 	background-color: $white;
+	// background-color: $offWhite;
 
 	@include e('wrapper') {
 	}
@@ -76,10 +77,6 @@
 		z-index: -10;
 	}
 
-	@include e('logo') {
-		display: inline-block;
-	}
-
 	@include e('logoImg') {
 		@include bg-solo;
 		background-size: contain;
@@ -99,7 +96,7 @@
 	@include e('desc') {
 		margin-left: 58px;
 		@include f-size-footerLinks;
-		color: $greyBlue;
+		color: $white;
 		display: block;
 		text-decoration: none;
 		font: {
@@ -107,6 +104,17 @@
 			weight: 400;
 		}
 		letter-spacing: 1px;
+
+		@include m('canada') {
+			margin-bottom: 20px;
+		}
+	}
+
+	@include e('canada') {
+		height: 15px;
+		margin-right: 10px;
+		vertical-align: middle;
+		transform: translateY(-2px);
 	}
 
 	@include e('descLink') {

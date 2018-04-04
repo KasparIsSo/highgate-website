@@ -1,5 +1,6 @@
 .button {
   @include f-size-xs;
+  @include transition($dtd);
   display: inline-block;
   padding: 12px 33px 10px;
   font: {
@@ -8,6 +9,14 @@
   }
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    border: {
+      color: $sienna;
+    }
+    background-color: $sienna;
+  }
 
   @include m('wb') {
     color: $white;
