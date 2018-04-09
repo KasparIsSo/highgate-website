@@ -71,39 +71,43 @@
 }
 
 .advantage {
+  @include bg-solo;
   position: relative;
-  padding-top: 250px;
-  margin-bottom: 250px;
+  padding: {
+    top: 400px;
+    bottom: 500px;
+  }
+  margin: {
+    top: 50px;
+    bottom: 200px;
+  }
+  background-image: url('../assets/img/aboutpage-pic.png');
 
   @media screen and (max-width: $break-desktop-l) {
-    margin-bottom: 310px;
+    padding: {
+      top: 400px;
+    }
+    margin-bottom: 200px;
   }
 
   @media screen and (max-width: $break-desktop-s) {
-    padding-top: 180px;
-    margin-bottom: 380px;
+    padding-top: 300px;
+    margin-bottom: 160px;
   }
 
   @media screen and (max-width: $break-tablet-l) {
-    padding-top: 120px;
-    margin-bottom: 420px;
+    margin: {
+      top: 0px;
+      bottom: 160px;
+    }
   }
 
   @media screen and (max-width: $break-tablet-s) {
-    padding-top: 80px;
-    margin-bottom: 600px;
-  }
-
-  @media screen and (max-width: $break-tablet-xs) {
-    margin-bottom: 680px;
-  }
-
-  @media screen and (max-width: $break-mobile-l) {
-    margin-bottom: 400px;
-  }
-
-  @media screen and (max-width: $break-mobile-s) {
-    margin-bottom: 200px;
+    padding: {
+      top: 0;
+      bottom: 0;
+    }
+    margin-bottom: 0;
   }
 
   @include e('bg') {
@@ -122,55 +126,44 @@
     }
 
     @media screen and (max-width: $break-tablet-s) {
-      margin-top: -80px;
-    }
-
-    @media screen and (max-width: $break-tablet-xs) {
-    }
-
-    @media screen and (max-width: $break-mobile-l) {
-    }
-
-    @media screen and (max-width: $break-mobile-s) {
+      display: none;
     }
   }
 
   @include e('content') {
-    background-color: $offWhite;
-    padding: 60px 70px;
+    background-color: $featureWhite;
+    padding: 100px 70px;
     // vertical-align: top;
     position: absolute;
     right: calc(-.5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
-    width: calc(#{10 * $col-desktop-l + 18 * $margin-desktop-l} + .5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
+    width: calc(#{12 * $col-desktop-l + 22 * $margin-desktop-l} + .5 * (100vw - #{12 * $col-desktop-l + 22 * $margin-desktop-l}));
 
   	@media screen and (max-width: $break-desktop-s) {
-  		width: calc(#{10 * $col-desktop-s + 18 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-desktop-s + 22 * $margin-desktop-s}));
+  		width: calc(#{12 * $col-desktop-s + 22 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-desktop-s + 22 * $margin-desktop-s}));
       right: calc(-.5 * (100vw - #{12 * $col-desktop-s + 22 * $margin-desktop-s}));
   	}
 
   	@media screen and (max-width: $break-tablet-l) {
-  		width: calc(#{10 * $col-tablet-l + 18 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-tablet-l + 22 * $margin-desktop-s}));
+  		width: calc(#{12 * $col-tablet-l + 22 * $margin-desktop-s} + .5 * (100vw - #{12 * $col-tablet-l + 22 * $margin-desktop-s}));
       right: calc(-.5 * (100vw - #{12 * $col-tablet-l + 22 * $margin-desktop-s}));
   	}
 
     @media screen and (max-width: $break-tablet-s) {
-  		width: calc(#{10 * $col-tablet-s + 18 * $margin-tablet-s} + .5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
-      right: calc(-.5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
+  		width: 100vw;
+      position: relative;
+      left: calc(-.5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
   	}
 
     @media screen and (max-width: $break-tablet-xs) {
-  		width: calc(#{5 * $col-tablet-xs + 8 * $margin-tablet-xs} + .5 * (100vw - #{6 * $col-tablet-xs + 10 * $margin-tablet-xs}));
-      right: calc(-.5 * (100vw - #{6 * $col-tablet-xs + 10 * $margin-tablet-xs}));
+      left: calc(-.5 * (100vw - #{6 * $col-tablet-xs + 10 * $margin-tablet-xs}));
   	}
 
   	@media screen and (max-width: $break-mobile-l) {
-  		width: calc(#{5 * $col-mobile-l + 8 * $margin-tablet-xs} + .5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-tablet-xs}));
-      right: calc(-.5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-tablet-xs}));
+      left: calc(-.5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-tablet-xs}));
   	}
 
   	@media screen and (max-width: $break-mobile-s) {
-  		width: calc(#{5 * $col-mobile-s + 8 * $margin-mobile-s} + .5 * (100vw - #{6 * $col-mobile-s + 10 * $margin-mobile-s}));
-      right: calc(-.5 * (100vw - #{6 * $col-mobile-s + 10 * $margin-mobile-s}));
+      left: calc(-.5 * (100vw - #{6 * $col-mobile-s + 10 * $margin-mobile-s}));
   	}
 
     &>p {

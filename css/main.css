@@ -718,6 +718,11 @@ body {
   .section__content {
     position: relative;
     display: inline-block; }
+  .section__about {
+    padding-bottom: 135px; }
+    @media screen and (max-width: 800px) {
+      .section__about {
+        padding-bottom: 0; } }
   .section__heading {
     font-size: 36px;
     line-height: 48px;

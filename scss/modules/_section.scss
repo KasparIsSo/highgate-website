@@ -21,6 +21,13 @@
     display: inline-block;
   }
 
+  @include e('about') {
+    padding-bottom: 135px;
+    @media screen and (max-width: $break-tablet-s) {
+      padding-bottom: 0;
+    }
+  }
+
   @include e('heading') {
     @include f-size-xl;
     color: $gunmetal;

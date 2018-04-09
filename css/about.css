@@ -718,6 +718,11 @@ body {
   .section__content {
     position: relative;
     display: inline-block; }
+  .section__about {
+    padding-bottom: 135px; }
+    @media screen and (max-width: 800px) {
+      .section__about {
+        padding-bottom: 0; } }
   .section__heading {
     font-size: 36px;
     line-height: 48px;
@@ -1050,33 +1055,32 @@ body {
         letter-spacing: 0px; } }
 
 .advantage {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  padding-top: 250px;
-  margin-bottom: 250px; }
+  padding-top: 400px;
+  padding-bottom: 500px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  background-image: url("../assets/img/aboutpage-pic.png"); }
   @media screen and (max-width: 1320px) {
     .advantage {
-      margin-bottom: 310px; } }
+      padding-top: 400px;
+      margin-bottom: 200px; } }
   @media screen and (max-width: 1180px) {
     .advantage {
-      padding-top: 180px;
-      margin-bottom: 380px; } }
+      padding-top: 300px;
+      margin-bottom: 160px; } }
   @media screen and (max-width: 980px) {
     .advantage {
-      padding-top: 120px;
-      margin-bottom: 420px; } }
+      margin-top: 0px;
+      margin-bottom: 160px; } }
   @media screen and (max-width: 800px) {
     .advantage {
-      padding-top: 80px;
-      margin-bottom: 600px; } }
-  @media screen and (max-width: 600px) {
-    .advantage {
-      margin-bottom: 680px; } }
-  @media screen and (max-width: 420px) {
-    .advantage {
-      margin-bottom: 400px; } }
-  @media screen and (max-width: 320px) {
-    .advantage {
-      margin-bottom: 200px; } }
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0; } }
   .advantage__bg {
     margin-top: -250px;
     z-index: -10; }
@@ -1088,37 +1092,35 @@ body {
         margin-top: -120px; } }
     @media screen and (max-width: 800px) {
       .advantage__bg {
-        margin-top: -80px; } }
+        display: none; } }
   .advantage__content {
-    background-color: #f5f5f5;
-    padding: 60px 70px;
+    background-color: #f9f9f9;
+    padding: 100px 70px;
     position: absolute;
     right: calc(-.5 * (100vw - 1104px));
-    width: calc(916px + .5 * (100vw - 1104px)); }
+    width: calc(1104px + .5 * (100vw - 1104px)); }
     @media screen and (max-width: 1180px) {
       .advantage__content {
-        width: calc(780px + .5 * (100vw - 940px));
+        width: calc(940px + .5 * (100vw - 940px));
         right: calc(-.5 * (100vw - 940px)); } }
     @media screen and (max-width: 980px) {
       .advantage__content {
-        width: calc(630px + .5 * (100vw - 760px));
+        width: calc(760px + .5 * (100vw - 760px));
         right: calc(-.5 * (100vw - 760px)); } }
     @media screen and (max-width: 800px) {
       .advantage__content {
-        width: calc(464px + .5 * (100vw - 560px));
-        right: calc(-.5 * (100vw - 560px)); } }
+        width: 100vw;
+        position: relative;
+        left: calc(-.5 * (100vw - 560px)); } }
     @media screen and (max-width: 600px) {
       .advantage__content {
-        width: calc(330px + .5 * (100vw - 400px));
-        right: calc(-.5 * (100vw - 400px)); } }
+        left: calc(-.5 * (100vw - 400px)); } }
     @media screen and (max-width: 420px) {
       .advantage__content {
-        width: calc(250px + .5 * (100vw - 304px));
-        right: calc(-.5 * (100vw - 304px)); } }
+        left: calc(-.5 * (100vw - 304px)); } }
     @media screen and (max-width: 320px) {
       .advantage__content {
-        width: calc(214px + .5 * (100vw - 260px));
-        right: calc(-.5 * (100vw - 260px)); } }
+        left: calc(-.5 * (100vw - 260px)); } }
     .advantage__content > p {
       margin-bottom: 30px; }
       .advantage__content > p:last-child {
