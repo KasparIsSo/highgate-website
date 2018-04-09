@@ -1,0 +1,99 @@
+@import 'mixins.scss';
+
+@import 'modules/grid.scss';
+@import 'modules/font.scss';
+@import 'modules/nav.scss';
+@import 'modules/section.scss';
+@import 'modules/inputs.scss';
+
+@import 'img/img_about.scss';
+
+.productNav {
+  position: relative;
+  margin-top: 120px;
+
+  @media screen and (max-width: $break-tablet-l) {
+    margin-top: 120px;
+  }
+
+  @media screen and (max-width: $break-tablet-s) {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: $break-tablet-xs) {
+    margin-top: 105px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    margin-top: 85px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    margin-top: 80px;
+  }
+
+  padding: {
+    top: 50px;
+    bottom: 135px;
+  }
+
+  @include e('content') {
+    font: {
+      family: $p-font;
+      weight: 400;
+    }
+  }
+
+  @include e('heading') {
+    @include f-size-xxl;
+    color: $gunmetal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  @include e('filters') {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  @include e('filtersOptions') {
+    @include transition($dtd);
+    display: inline-block;
+    color: $gunmetal;
+    @include f-size-m;
+    cursor: pointer;
+    font: {
+      family: $p-font;
+    }
+
+    &.active {
+      color: $sienna;
+    }
+
+    &:hover {
+      color: $sienna;
+    }
+
+    &:after {
+      color: $gunmetal;
+      content: " /";
+    }
+
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
+  }
+
+  @include e('submessage') {
+    &>a {
+      text-decoration: none;
+      color: $sienna;
+    }
+  }
+}
+
+.product {
+  
+}

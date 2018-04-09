@@ -1,3 +1,55 @@
+.splash {
+  position: relative;
+  margin-top: 100px;
+
+  @media screen and (max-width: $break-tablet-l) {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: $break-tablet-s) {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: $break-tablet-xs) {
+    margin-top: 105px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    margin-top: 85px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    margin-top: 80px;
+  }
+
+  @include e('content') {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include m('textCenter') {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @include e('heading') {
+    @include f-size-xxl;
+    color: $white;
+    font: {
+      family: $p-font;
+      weight: 400;
+    }
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  @include m('solo') {
+    margin-bottom: 0;
+  }
+}
+
 .section {
 
   padding: {
