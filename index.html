@@ -112,26 +112,26 @@
 
     <div class = "col_12 center"> -->
       <div class = "gallery col_12 col_12--c">
-        <div class = "gallery__ui">
-          <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this, true)">
-            <i class = "material-icons card__icon">keyboard_arrow_left</i>
-          </button>
-          <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this, true)">
-            <i class = "material-icons card__icon">keyboard_arrow_right</i>
-          </button>
-        </div>
         <div class = "gallery__cardContainer gallery__cardContainer--show col_10 col_10--c center">
-          <div class = "gallery__card">
+          <div class = "gallery__ui">
+            <button type = "button" class = "gallery__button gallery__button--img gallery__button--left" onclick = "galleryShift('left', this, true)">
+              <i class = "material-icons card__icon gallery__arrow">keyboard_arrow_left</i>
+            </button>
+            <button type = "button" class = "gallery__button gallery__button--img gallery__button--right" onclick = "galleryShift('right', this, true)">
+              <i class = "material-icons card__icon gallery__arrow">keyboard_arrow_right</i>
+            </button>
+          </div>
+          <div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--1"></div>
-          </div><div class = "gallery__card">
+          </div><div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--2"></div>
-          </div><div class = "gallery__card">
+          </div><div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--3"></div>
-          </div><div class = "gallery__card">
+          </div><div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--1"></div>
-          </div><div class = "gallery__card">
+          </div><div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--2"></div>
-          </div><div class = "gallery__card">
+          </div><div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--3"></div>
           </div>
         </div>
@@ -187,11 +187,8 @@
       </div>
     </div>
 
-    <div class = "news col_12 center">
-      <div class = "col_12--fullbleed">
-        <div class="bgImg bgImg__newsSplash"></div>
-      </div>
-      <div class = "news__content col_12 col_12--c">
+    <div class = "news">
+      <div class = "news__content col_12 center">
         <h4 class = "section__subheading section__subheading--white">News</h4>
         <h6 class = "section__heading section__heading--white">Discover our Latest News and Updates</h6>
         <p class = "section__body section__body--white news__text col_8 col_8--c center">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives. integrated financial solutions that empower our clients to meet their business objectives. </p>
@@ -199,7 +196,7 @@
       </div>
     </div>
 
-    <div class = "section section--textCenter col_12 center">
+    <div class = "section section--textCenter section--testimonials col_12 center">
       <div class = "gallery gallery__testimonials col_12 col_12--c">
         <div class = "gallery__ui">
           <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this, false)">
@@ -212,31 +209,43 @@
         <div class = "gallery__cardContainer">
           <h4 class = "section__subheading">Testimonials</h4>
           <div class = "gallery__card gallery__card--text">
-            <h4 class = "section__heading">Ref 1</h4>
-            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            <div class = "gallery__cardText col_8 col_8--c center">
+              <h4 class = "section__heading">Ref 1</h4>
+              <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
           </div><div class = "gallery__card gallery__card--text">
-            <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
-            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            <div class = "gallery__cardText col_8 col_8--c center">
+              <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
+              <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
           </div><div class = "gallery__card gallery__card--text">
-            <h4 class = "section__heading">Ref 2</h4>
-            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            <div class = "gallery__cardText col_8 col_8--c center">
+              <h4 class = "section__heading">Ref 2</h4>
+              <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
           </div><div class = "gallery__card gallery__card--text">
-            <h4 class = "section__heading">Ref 1</h4>
-            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            <div class = "gallery__cardText col_8 col_8--c center">
+              <h4 class = "section__heading">Ref 1</h4>
+              <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
           </div><div class = "gallery__card gallery__card--text">
-            <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
-            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            <div class = "gallery__cardText col_8 col_8--c center">
+              <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
+              <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
           </div><div class = "gallery__card gallery__card--text">
-            <h4 class = "section__heading">Ref 2</h4>
-            <p class = "section__body section__body--italic col_8 col_8--c center">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            <div class = "gallery__cardText col_8 col_8--c center">
+              <h4 class = "section__heading">Ref 2</h4>
+              <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class = "brands col_12 center">
-      <div class = "brands__bg col_12--fullbleed"></div>
-      <div class = "brands__content col_12 col_12--c">
+    <div class = "brands">
+      <!-- <div class = "brands__bg col_12--fullbleed"></div> -->
+      <div class = "brands__content col_12 center">
         <h4 class = "section__subheading section__subheading--white">Brands We Partner With</h4>
 
         <div class = "brands__logoContainer col_12 col_12--c">
@@ -348,20 +357,20 @@
       cards[0].style.width = 0;
       setTimeout(function() {
         cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
-        cards[0].style.width = '100%';
+        cards[0].style.removeProperty('width');
       }, 300);
     } else {
       cards[cards.length-1].style.width = 0;
       cards[0].parentNode.insertBefore(cards[cards.length-1], cards[0]);
       window.requestAnimationFrame(function() {
         window.requestAnimationFrame(function() {
-          cards[0].parentNode.querySelector('.gallery__card').style.width = '100%';
+          cards[0].parentNode.querySelector('.gallery__card').style.removeProperty('width');
         })
       });
     }
 
     if (indicator) {
-      var galNodes = gallery.getElementsByClassName("gallery__indicatorNode");
+      var galNodes = gallery.parentNode.getElementsByClassName("gallery__indicatorNode");
       if (direction == "right") {
         for (var i = 0; i < galNodes.length; i++) {
           if (galNodes[i].classList.contains("active")) {

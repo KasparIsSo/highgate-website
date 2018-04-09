@@ -2,7 +2,14 @@
 
   padding: {
     top: 135px;
-    bottom: 135px;
+    bottom: 90px;
+  }
+
+  @media screen and (max-width: $break-tablet-s) {
+    padding: {
+      top: 80px;
+      bottom: 80px;
+    }
   }
 
   @include m('textCenter') {
@@ -25,6 +32,10 @@
 
     @include m('white') {
       color: $white;
+    }
+
+    @media screen and (max-width: $break-tablet-s) {
+      width: 100%;
     }
   }
 
@@ -66,6 +77,10 @@
     @include m('splash') {
       margin-bottom: 45px;
     }
+
+    @media screen and (max-width: $break-tablet-s) {
+      width: 100%;
+    }
   }
 
   @include e('cardContainer') {
@@ -73,6 +88,12 @@
 
     @media screen and (max-width: $break-tablet-s) {
       margin-bottom: 0;
+    }
+  }
+
+  @include m('testimonials') {
+    @media screen and (max-width: $break-tablet-s) {
+      display: none;
     }
   }
 }

@@ -24,6 +24,9 @@ $lightGrey: #5d5d5d;
 $darkGrey: #384045;
 $black: #000000;
 
+$lBlack30op: hsla(0, 0, 0, .3);
+$lBlack0op: hsla(0, 0, 0, 0);
+
 $duration: .4s;
 
 * {
@@ -31,8 +34,8 @@ $duration: .4s;
 }
 
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  // max-width: 100vw;
+  // overflow-x: hidden;
   background-color: $offWhite;
 }
 
@@ -63,5 +66,6 @@ body {
 .container {
 	display: block;
 	margin: 0 auto;
+  overflow-x: hidden;
   // background-color: $offWhite;
 }

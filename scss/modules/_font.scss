@@ -198,12 +198,12 @@
   }
 
   @media screen and (max-width: $break-mobile-l) {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 28px;
   }
 
   @media screen and (max-width: $break-mobile-s) {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 28px;
   }
 }
@@ -218,4 +218,10 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 1.1px;
+
+  @media screen and (max-width: $break-tablet-s) {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
 }
