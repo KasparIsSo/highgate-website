@@ -34,7 +34,7 @@
 
   padding: {
     top: 50px;
-    bottom: 135px;
+    bottom: 65px;
   }
 
   @include e('content') {
@@ -53,7 +53,7 @@
 
   @include e('filters') {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom:15px;
   }
 
   @include e('filtersOptions') {
@@ -95,5 +95,64 @@
 }
 
 .product {
-  
+  background-color: $featureWhite;
+  padding: 65px 25px 65px 35px;
+  color: $gunmetal;
+  font: {
+    family: $p-font;
+  }
+  margin-bottom: 45px;
+  position: relative;
+  @include transition($dtd);
+
+  &:hover {
+    &>i {
+      color: $sienna;
+    }
+  }
+
+  &>h4 {
+    transform: translateY(5px);
+  }
+
+  @include e('wrapper') {
+    margin-bottom: 120px;
+  }
+
+  @include e('heading') {
+    @include f-size-m;
+    font: {
+      weight: 700;
+    }
+    margin-bottom: 10px;
+  }
+
+  @include e('body') {
+    @include f-size-xs;
+    font: {
+      weight: 400;
+    }
+  }
+
+  @include e('arrow') {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include f-size-xxl;
+
+    @include m('dropdown') {
+      // transform: rotate(90deg);
+      @include transition($dtd);
+      transform-origin: center;
+
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @include m('dropdown') {
+
+  }
 }

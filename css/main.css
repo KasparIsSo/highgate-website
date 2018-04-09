@@ -1374,12 +1374,14 @@ body {
           left: calc(-.5 * (100vw - 214px)); } }
     .gallery__button--right {
       right: 0; }
+      .gallery__button--right > i {
+        transform: translateX(1px); }
       .gallery__button--right:hover {
         width: 50px;
         height: 50px;
         transform: translate(2px, calc(-50%)); }
         .gallery__button--right:hover > i {
-          transform: translateY(2px); }
+          transform: translate(1px, 2px); }
       @media screen and (max-width: 800px) {
         .gallery__button--right.gallery__button--img {
           background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 20%);
