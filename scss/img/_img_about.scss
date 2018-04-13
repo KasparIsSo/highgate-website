@@ -2,7 +2,7 @@
   @include bg-solo;
 
   @include e('mainSplash') {
-    background-image: url('../assets/img/aboutpage-header.png');
+    background-image: url('../assets/img/about-header.png');
     padding-top: 25.6%;
     @media screen and (max-width: $break-desktop-s) {
   		padding-top: 25.6%;
@@ -13,19 +13,20 @@
   	}
 
     @media screen and (max-width: $break-tablet-s) {
-  		padding-top: 30%;
+  		padding-top: 37%;
   	}
 
     @media screen and (max-width: $break-tablet-xs) {
-  		padding-top: 35%;
+  		padding-top: 43%;
   	}
 
   	@media screen and (max-width: $break-mobile-l) {
-  		padding-top: 38%;
+      background-image: url('../assets/img/about-header-mobile.png');
+  		padding-top: 50%;
   	}
 
   	@media screen and (max-width: $break-mobile-s) {
-      padding-top: 38%;
+      padding-top: 50%;
   	}
   }
 
@@ -100,13 +101,14 @@
 
 
   @include e('about') {
-    background-image: url('../assets/img/about-pic.png');
+    background-image: url('../assets/img/about-man.png');
     padding-top: 70%;
     @media screen and (max-width: $break-desktop-s) {
   		padding-top: 80%;
   	}
 
   	@media screen and (max-width: $break-tablet-l) {
+      background-image: url('../assets/img/about-man-tablet.png');
   		padding-top: 90%;
   	}
 
@@ -119,6 +121,7 @@
   	}
 
   	@media screen and (max-width: $break-mobile-l) {
+      background-image: url('../assets/img/about-man-mobile.png');
   		padding-top: 50%;
   	}
 

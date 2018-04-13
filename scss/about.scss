@@ -41,6 +41,8 @@
   }
 
   @media screen and (max-width: $break-tablet-s) {
+    background-color: $featureWhite;
+    background-image: none;
     padding: {
       top: 0;
       bottom: 0;
@@ -68,6 +70,11 @@
     }
   }
 
+  @include e('contentContainer') {
+    background-color: $featureWhite;
+
+  }
+
   @include e('content') {
     background-color: $featureWhite;
     padding: 100px 70px;
@@ -87,21 +94,25 @@
   	}
 
     @media screen and (max-width: $break-tablet-s) {
-  		width: 100vw;
+  		width: 100%;
+      // width: 12 * $col-tablet-s + 22 * $margin-tablet-s;
       position: relative;
-      left: calc(-.5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
-  	}
+      // left: calc(-.5 * (100vw - #{12 * $col-tablet-s + 22 * $margin-tablet-s}));
+      right: auto;
+      // left: auto;
+      padding: {
+        top: 135px;
+        bottom: 90px;
+        left: 0;
+        right: 0;
+      }
 
-    @media screen and (max-width: $break-tablet-xs) {
-      left: calc(-.5 * (100vw - #{6 * $col-tablet-xs + 10 * $margin-tablet-xs}));
-  	}
-
-  	@media screen and (max-width: $break-mobile-l) {
-      left: calc(-.5 * (100vw - #{6 * $col-mobile-l + 10 * $margin-tablet-xs}));
-  	}
-
-  	@media screen and (max-width: $break-mobile-s) {
-      left: calc(-.5 * (100vw - #{6 * $col-mobile-s + 10 * $margin-mobile-s}));
+      @media screen and (max-width: $break-tablet-s) {
+        padding: {
+          top: 80px;
+          bottom: 80px;
+        }
+      }
   	}
 
     &>p {

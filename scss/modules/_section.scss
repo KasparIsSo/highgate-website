@@ -1,26 +1,5 @@
 .splash {
   position: relative;
-  margin-top: 100px;
-
-  @media screen and (max-width: $break-tablet-l) {
-    margin-top: 100px;
-  }
-
-  @media screen and (max-width: $break-tablet-s) {
-    margin-top: 100px;
-  }
-
-  @media screen and (max-width: $break-tablet-xs) {
-    margin-top: 105px;
-  }
-
-  @media screen and (max-width: $break-mobile-l) {
-    margin-top: 85px;
-  }
-
-  @media screen and (max-width: $break-mobile-s) {
-    margin-top: 80px;
-  }
 
   @include e('content') {
     position: absolute;
@@ -43,10 +22,10 @@
     }
     text-transform: uppercase;
     margin-bottom: 25px;
-  }
 
-  @include m('solo') {
-    margin-bottom: 0;
+    @include m('solo') {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -72,13 +72,14 @@
 
 
   @include e('about') {
-    background-image: url('../assets/img/about-pic.png');
+    background-image: url('../assets/img/about-man.png');
     padding-top: 70%;
     @media screen and (max-width: $break-desktop-s) {
   		padding-top: 80%;
   	}
 
   	@media screen and (max-width: $break-tablet-l) {
+      background-image: url('../assets/img/about-man-tablet.png');
   		padding-top: 90%;
   	}
 
@@ -91,6 +92,7 @@
   	}
 
   	@media screen and (max-width: $break-mobile-l) {
+      background-image: url('../assets/img/about-man-mobile.png');
   		padding-top: 50%;
   	}
 

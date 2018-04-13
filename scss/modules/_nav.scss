@@ -11,6 +11,18 @@
 	// background-color: $white;
 	background-color: $offWhite;
 
+	@include m('buffer') {
+		display: block;
+		padding: {
+			top: 25px;
+			bottom: 10px;
+		}
+		z-index: -9999;
+		width: 100vw;
+		// background-color: $white;
+		background-color: $offWhite;
+	}
+
 	@include e('wrapper') {
 	}
 
