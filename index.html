@@ -118,15 +118,7 @@
 
     <div class = "col_12 center"> -->
       <div class = "gallery col_12 col_12--c">
-        <div class = "gallery__cardContainer gallery__cardContainer--show col_10 col_10--c center">
-          <div class = "gallery__ui">
-            <button type = "button" class = "gallery__button gallery__button--img gallery__button--left" onclick = "galleryShift('left', this, true)">
-              <i class = "material-icons card__icon gallery__arrow">keyboard_arrow_left</i>
-            </button>
-            <button type = "button" class = "gallery__button gallery__button--img gallery__button--right" onclick = "galleryShift('right', this, true)">
-              <i class = "material-icons card__icon gallery__arrow">keyboard_arrow_right</i>
-            </button>
-          </div>
+        <div class = "gallery__cardContainer col_10 col_10--c center">
           <div class = "gallery__card gallery__card--img">
             <div class = "bgImg bgImg__gallery bgImg__gallery--1"></div>
           </div><div class = "gallery__card gallery__card--img">
@@ -141,7 +133,18 @@
             <div class = "bgImg bgImg__gallery bgImg__gallery--3"></div>
           </div>
         </div>
-        <div class = "gallery__indicator col_6 center">
+        <div class = "gallery__ui">
+          <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this, true)">
+            <span>&larr;</span>
+          </button>
+          <div class = "gallery__indicator">
+            <span class = "gallery__indicator--active">1</span>/<span class = "gallery__indicator--max">6</span>
+          </div>
+          <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this, true)">
+            <span>&rarr;</span>
+          </button>
+        </div>
+        <!-- <div class = "gallery__indicator col_6 center">
           <div class = "gallery__indicatorNode active">
           </div><div class = "gallery__indicatorNode">
           </div><div class = "gallery__indicatorNode">
@@ -149,7 +152,7 @@
           </div><div class = "gallery__indicatorNode">
           </div><div class = "gallery__indicatorNode">
           </div>
-        </div>
+        </div> -->
       </div>
 
       <h4 class = "section__subheading">Our Roadmap</h4>
@@ -204,47 +207,50 @@
 
     <div class = "section section--textCenter section--testimonials col_12 center">
       <div class = "gallery gallery__testimonials col_12 col_12--c">
-        <div class = "gallery__ui">
-          <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this, false)">
-            <i class = "material-icons card__icon">keyboard_arrow_left</i>
-          </button>
-          <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this, false)">
-            <i class = "material-icons card__icon">keyboard_arrow_right</i>
-          </button>
-        </div>
         <div class = "gallery__cardContainer">
           <h4 class = "section__subheading">Testimonials</h4>
           <div class = "gallery__card gallery__card--text">
-            <div class = "gallery__cardText col_8 col_8--c center">
+            <div class = "gallery__cardText">
               <h4 class = "section__heading">Ref 1</h4>
               <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
             </div>
           </div><div class = "gallery__card gallery__card--text">
-            <div class = "gallery__cardText col_8 col_8--c center">
+            <div class = "gallery__cardText">
               <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
               <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
             </div>
           </div><div class = "gallery__card gallery__card--text">
-            <div class = "gallery__cardText col_8 col_8--c center">
+            <div class = "gallery__cardText">
               <h4 class = "section__heading">Ref 2</h4>
               <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
             </div>
           </div><div class = "gallery__card gallery__card--text">
-            <div class = "gallery__cardText col_8 col_8--c center">
+            <div class = "gallery__cardText">
               <h4 class = "section__heading">Ref 1</h4>
               <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
             </div>
           </div><div class = "gallery__card gallery__card--text">
-            <div class = "gallery__cardText col_8 col_8--c center">
+            <div class = "gallery__cardText">
               <h4 class = "section__heading">Jamaica Police Co-operative Credit Union</h4>
               <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
             </div>
           </div><div class = "gallery__card gallery__card--text">
-            <div class = "gallery__cardText col_8 col_8--c center">
+            <div class = "gallery__cardText">
               <h4 class = "section__heading">Ref 2</h4>
               <p class = "section__body section__body--italic">"In today’s fast paced society, time is short and time spent waiting is unacceptable. The modern financial institution should make its services available to its customers regardless of the time or location. Financial transactions must occur in real-time (same-time) and not the next day. This institution should continuously find innovative ways to serve you better."</p>
             </div>
           </div>
+        </div>
+        <div class = "gallery__ui gallery__ui--left">
+          <button type = "button" class = "gallery__button gallery__button--left" onclick = "galleryShift('left', this, true)">
+            <span>&larr;</span>
+          </button>
+          <div class = "gallery__indicator">
+            <span class = "gallery__indicator--active">1</span>/<span class = "gallery__indicator--max">6</span>
+          </div>
+          <button type = "button" class = "gallery__button gallery__button--right" onclick = "galleryShift('right', this, true)">
+            <span>&rarr;</span>
+          </button>
         </div>
       </div>
     </div>
@@ -361,9 +367,16 @@
 
     if (direction == "right") {
       cards[0].style.width = 0;
+      cards[0].style.margin = 0;
+      cards[0].style.padding = 0;
       setTimeout(function() {
         cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
         cards[0].style.removeProperty('width');
+        cards[0].style.removeProperty('margin');
+        cards[0].style.removeProperty('padding');
+        // if(cards[0].classList.contains('gallery__card--text')) {
+        //
+        // }
       }, 300);
     } else {
       cards[cards.length-1].style.width = 0;
@@ -376,22 +389,22 @@
     }
 
     if (indicator) {
-      var galNodes = gallery.parentNode.getElementsByClassName("gallery__indicatorNode");
+      var galNodes = elem.parentNode.querySelector('.gallery__indicator');
+      var galCur = galNodes.querySelector('.gallery__indicator--active');
+      var galMax = parseFloat(galNodes.querySelector('.gallery__indicator--max').innerHTML);
       if (direction == "right") {
-        for (var i = 0; i < galNodes.length; i++) {
-          if (galNodes[i].classList.contains("active")) {
-            galNodes[i].classList.remove("active");
-            galNodes[(i+1)%galNodes.length].classList.add("active");
-            break;
-          }
+        var galCurTemp = (parseFloat(galCur.innerHTML) + 1)%galMax;
+        if(galCurTemp == 0) {
+          galCur.innerHTML = galMax;
+        } else {
+          galCur.innerHTML = galCurTemp;
         }
       } else {
-        for (var i = 0; i < galNodes.length; i++) {
-          if (galNodes[i].classList.contains("active")) {
-            galNodes[i].classList.remove("active");
-            galNodes[(i+galNodes.length-1)%galNodes.length].classList.add("active");
-            break;
-          }
+        var galCurTemp = (parseFloat(galCur.innerHTML) - 1 + galMax)%galMax;
+        if(galCurTemp == 0) {
+          galCur.innerHTML = galMax;
+        } else {
+          galCur.innerHTML = galCurTemp;
         }
       }
     }
