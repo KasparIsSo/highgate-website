@@ -146,6 +146,7 @@
     @media screen and (max-width: $break-tablet-s) {
       margin-bottom: 0;
     }
+    
   }
 
   @include m('testimonials') {

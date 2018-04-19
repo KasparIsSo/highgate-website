@@ -135,6 +135,10 @@
     }
     margin-bottom: 10px;
     letter-spacing: 1px !important;
+
+    @include m('dropdown') {
+      display: inline-block;
+    }
   }
 
   @include e('body') {
@@ -148,15 +152,21 @@
   @include e('arrow') {
     @include transition($dtd);
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     @include f-size-xl;
+    cursor: pointer;
 
     @include m('dropdown') {
       // transform: rotate(90deg);
       @include transition($dtd);
+      right: auto;
+      transform: none;
+      top: auto;
       transform-origin: center;
+      position: relative;
+      float: right;
 
       &.active {
         transform: rotate(180deg);
@@ -164,7 +174,33 @@
     }
   }
 
-  @include m('dropdown') {
+  @include e('dropdown') {
 
+  }
+
+  @include e('dropdownShow') {
+    // display: none;
+    max-height: 0;
+    overflow: hidden;
+    @include f-size-xs;
+    transition: max-height $dtd;
+
+    &>p {
+      margin-top: 30px;
+    }
+
+    &>ul {
+      margin-top: 30px;
+      &>li {
+        &:before {
+          content: "\2022";
+          margin: {
+            right: 10px;
+          }
+        }
+        padding-left: 10px;
+        width: calc(100% - 30px);
+      }
+    }
   }
 }

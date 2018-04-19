@@ -72,20 +72,54 @@
   margin: {
     right: 2.5%;
     left: 2.5%;
+    bottom: 35px;
   }
 
   overflow: hidden;
 
-  @media screen and (max-width: $break-desktop-l) {
-    padding: 50px 25px 50px;
+  &:first-child {
+    margin-left: 0;
   }
 
-  @media screen and (max-width: $break-tablet-s) {
-    width: 100%;
-    margin: 0 0 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include m('pd') {
+    @media screen and (min-width: $break-tablet-l) {
+      &:nth-child(3n+1) {
+        margin-left: 0;
+      }
+
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: $break-desktop-l) {
+      padding: 50px 25px 50px;
+    }
+
+    @media screen and (max-width: $break-tablet-l) and (min-width: $break-tablet-xs) {
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+
+      width: 47.5%;
+      // margin: 0 0 25px;
+    }
   }
 
   @media screen and (max-width: $break-tablet-xs) {
+    margin: {
+      right: 0;
+      left: 0;
+    }
+    width: 100%;
     padding: 20px 20px 20px;
   }
 
@@ -106,9 +140,13 @@
     padding: 0;
     vertical-align: top;
 
+    // @media screen and (max-width: $break-desktop-l) {
+    //   padding: 50px 25px 50px;
+    // }
+
     &.news--main {
       margin-left: 0;
-      @media screen and (max-width: $break-tablet-xs) {
+      @media screen and (max-width: $break-tablet-l) {
         width: 100%;
       }
     }
@@ -117,7 +155,7 @@
       &:last-child {
         margin-right: 0;
       }
-      @media screen and (max-width: $break-tablet-s) {
+      @media screen and (max-width: $break-tablet-l) {
         display: none;
       }
 
@@ -128,14 +166,6 @@
         }
       }
     }
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
   }
 
   @include e('icon') {
@@ -202,7 +232,7 @@
 
   @include e('text') {
     display: none;
-    @media screen and (max-width: $break-tablet-s) {
+    @media screen and (max-width: $break-tablet-l) {
       display: block;
       margin-bottom: 45px;
     }
