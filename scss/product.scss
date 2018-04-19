@@ -10,26 +10,26 @@
 
 .productNav {
   position: relative;
-  margin-top: 120px;
+  margin-top: 65px;
 
   @media screen and (max-width: $break-tablet-l) {
-    margin-top: 120px;
+    margin-top: 65px;
   }
 
   @media screen and (max-width: $break-tablet-s) {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   @media screen and (max-width: $break-tablet-xs) {
-    margin-top: 105px;
+    margin-top: 50px;
   }
 
   @media screen and (max-width: $break-mobile-l) {
-    margin-top: 85px;
+    margin-top: 50px;
   }
 
   @media screen and (max-width: $break-mobile-s) {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   padding: {
@@ -87,9 +87,10 @@
   }
 
   @include e('submessage') {
+    @include f-size-xs;
     &>a {
-      text-decoration: none;
       color: $sienna;
+      text-decoration: underline;
     }
   }
 }
@@ -115,6 +116,14 @@
     transform: translateY(5px);
   }
 
+  &.fade {
+    opacity: 0;
+  }
+
+  &.hide {
+    display: none;
+  }
+
   @include e('wrapper') {
     margin-bottom: 120px;
   }
@@ -125,6 +134,7 @@
       weight: 700;
     }
     margin-bottom: 10px;
+    letter-spacing: 1px !important;
   }
 
   @include e('body') {
@@ -132,14 +142,16 @@
     font: {
       weight: 400;
     }
+    letter-spacing: .5px;
   }
 
   @include e('arrow') {
+    @include transition($dtd);
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    @include f-size-xxl;
+    @include f-size-xl;
 
     @include m('dropdown') {
       // transform: rotate(90deg);

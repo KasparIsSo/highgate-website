@@ -377,31 +377,37 @@
     var cards = gallery.querySelectorAll('.gallery__card');
 
     if (direction == "right") {
-      cards[0].style.width = 0;
-      cards[0].style.margin = 0;
-      cards[0].style.padding = 0;
-      cards[0].querySelector('.gallery__cardText').style.width = 0;
-      cards[0].querySelector('.gallery__cardText').style.height = 0;
+      var targetCard = cards[0];
+      targetCard.style.width = 0;
+      targetCard.style.margin = 0;
+      targetCard.style.padding = 0;
+      targetCard.querySelector('.gallery__cardText').style.width = 0;
+      targetCard.querySelector('.gallery__cardText').style.height = 0;
       setTimeout(function() {
-        cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
-        cards[0].style.removeProperty('width');
-        cards[0].style.removeProperty('margin');
-        cards[0].style.removeProperty('padding');
-        cards[0].querySelector('.gallery__cardText').style.removeProperty('width');
-        cards[0].querySelector('.gallery__cardText').style.removeProperty('height');
+        targetCard.parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
+        targetCard.style.removeProperty('width');
+        targetCard.style.removeProperty('margin');
+        targetCard.style.removeProperty('padding');
+        targetCard.querySelector('.gallery__cardText').style.removeProperty('width');
+        targetCard.querySelector('.gallery__cardText').style.removeProperty('height');
         // if(cards[0].classList.contains('gallery__card--text')) {
         //
         // }
       }, 300);
     } else {
-      cards[cards.length-1].style.width = 0;
-      cards[cards.length-1].querySelector('.gallery__cardText').style.width = 0;
-      cards[cards.length-1].querySelector('.gallery__cardText').style.height = 0;
+      var targetCard = cards[cards.length-1];
+      targetCard.querySelector('.gallery__cardText').style.width = 0;
+      targetCard.querySelector('.gallery__cardText').style.height = 0;
+      targetCard.style.width = 0;
+      targetCard.style.padding = 0;
+      targetCard.style.margin = 0;
       cards[0].parentNode.insertBefore(cards[cards.length-1], cards[0]);
       window.requestAnimationFrame(function() {
         window.requestAnimationFrame(function() {
           var adjCard = cards[0].parentNode.querySelector('.gallery__card');
           adjCard.style.removeProperty('width');
+          adjCard.style.removeProperty('padding');
+          adjCard.style.removeProperty('margin');
           setTimeout(function() {
             adjCard.querySelector('.gallery__cardText').style.removeProperty('width');
             adjCard.querySelector('.gallery__cardText').style.removeProperty('height');

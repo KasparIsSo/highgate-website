@@ -10,6 +10,7 @@
 
 .advantage {
   @include bg-solo;
+  background-position: left center;
   position: relative;
   padding: {
     top: 400px;

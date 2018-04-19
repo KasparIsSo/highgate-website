@@ -1054,24 +1054,24 @@ body {
 
 .productNav {
   position: relative;
-  margin-top: 120px;
+  margin-top: 65px;
   padding-top: 50px;
   padding-bottom: 65px; }
   @media screen and (max-width: 980px) {
     .productNav {
-      margin-top: 120px; } }
+      margin-top: 65px; } }
   @media screen and (max-width: 800px) {
     .productNav {
-      margin-top: 100px; } }
+      margin-top: 60px; } }
   @media screen and (max-width: 600px) {
     .productNav {
-      margin-top: 105px; } }
+      margin-top: 50px; } }
   @media screen and (max-width: 420px) {
     .productNav {
-      margin-top: 85px; } }
+      margin-top: 50px; } }
   @media screen and (max-width: 320px) {
     .productNav {
-      margin-top: 80px; } }
+      margin-top: 50px; } }
   .productNav__content {
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 400; }
@@ -1153,9 +1153,32 @@ body {
       content: " /"; }
     .productNav__filtersOptions:last-child:after {
       content: ""; }
-  .productNav__submessage > a {
-    text-decoration: none;
-    color: #a74f25; }
+  .productNav__submessage {
+    font-size: 16px;
+    line-height: 30px; }
+    @media screen and (max-width: 1320px) {
+      .productNav__submessage {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 1180px) {
+      .productNav__submessage {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 980px) {
+      .productNav__submessage {
+        font-size: 14px;
+        line-height: 28px; } }
+    @media screen and (max-width: 420px) {
+      .productNav__submessage {
+        font-size: 12px;
+        line-height: 28px; } }
+    @media screen and (max-width: 320px) {
+      .productNav__submessage {
+        font-size: 12px;
+        line-height: 28px; } }
+    .productNav__submessage > a {
+      color: #a74f25;
+      text-decoration: underline; }
 
 .product {
   background-color: #f9f9f9;
@@ -1169,6 +1192,10 @@ body {
     color: #a74f25; }
   .product > h4 {
     transform: translateY(5px); }
+  .product.fade {
+    opacity: 0; }
+  .product.hide {
+    display: none; }
   .product__wrapper {
     margin-bottom: 120px; }
   .product__heading {
@@ -1176,7 +1203,8 @@ body {
     line-height: 38px;
     letter-spacing: 0px;
     font-weight: 700;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: 1px !important; }
     @media screen and (max-width: 1320px) {
       .product__heading {
         font-size: 24px;
@@ -1205,7 +1233,8 @@ body {
   .product__body {
     font-size: 16px;
     line-height: 30px;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: .5px; }
     @media screen and (max-width: 1320px) {
       .product__body {
         font-size: 16px;
@@ -1227,38 +1256,39 @@ body {
         font-size: 12px;
         line-height: 28px; } }
   .product__arrow {
+    transition-duration: 0.3s;
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 64px;
-    line-height: 74px;
-    letter-spacing: 3px; }
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: .8px; }
     @media screen and (max-width: 1320px) {
       .product__arrow {
-        font-size: 64px;
-        line-height: 74px;
-        letter-spacing: 3px; } }
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: .8px; } }
     @media screen and (max-width: 1180px) {
       .product__arrow {
-        font-size: 56px;
-        line-height: 68px;
-        letter-spacing: 3px; } }
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: .8px; } }
     @media screen and (max-width: 980px) {
       .product__arrow {
-        font-size: 48px;
-        line-height: 60px;
-        letter-spacing: 1.8px; } }
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: .75px; } }
     @media screen and (max-width: 420px) {
       .product__arrow {
-        font-size: 32px;
-        line-height: 46px;
-        letter-spacing: 1.4px; } }
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: .7px; } }
     @media screen and (max-width: 320px) {
       .product__arrow {
-        font-size: 32px;
-        line-height: 46px;
-        letter-spacing: 1.4px; } }
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: .7px; } }
     .product__arrow--dropdown {
       transition-duration: 0.3s;
       transform-origin: center; }

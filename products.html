@@ -57,12 +57,12 @@
       <div class = "productNav__content col_12 center">
         <h2 class = "productNav__heading">Products &amp; Services</h2>
         <ul class = "productNav__filters">
-          <li class = "productNav__filtersOptions active">All Products</li>
-          <li class = "productNav__filtersOptions">Lending</li>
-          <li class = "productNav__filtersOptions">Banking</li>
-          <li class = "productNav__filtersOptions">Channel Management</li>
-          <li class = "productNav__filtersOptions">Credit Solutions</li>
-          <li class = "productNav__filtersOptions">Services</li>
+          <li class = "productNav__filtersOptions active" data-category-name = "all">All Products</li>
+          <li class = "productNav__filtersOptions" data-category-name = "lending">Lending</li>
+          <li class = "productNav__filtersOptions" data-category-name = "banking">Banking</li>
+          <li class = "productNav__filtersOptions" data-category-name = "channel">Channel Management</li>
+          <li class = "productNav__filtersOptions" data-category-name = "credit">Credit Solutions</li>
+          <li class = "productNav__filtersOptions" data-category-name = "services">Services</li>
         </ul>
         <h6 class = "productNav__submessage">For more information on our products and services, Contact us at <a href = "mailto:contact@highgatesystems.com">contact@highgatesystems.com</a></h6>
       </div>
@@ -70,58 +70,57 @@
 
 
     <div class = "product__wrapper col_12 center">
-      <div class = "product col_12 col_12--c">
+      <div class = "product col_12 col_12--c" data-category = "lending">
         <h4 class = "product__heading">Highgate Lending</h4>
         <p class = "product__body col_10 col_10--c">A configurable, user-friendly Loan Origination System designed to speed up the processing of applications and improve the quality of credit decisions. It provides both customers and lenders with an easy to use application process and improves the quality of the lending portfolio.</p>
         <i class = "material-icons product__arrow">keyboard_arrow_right</i>
       </div>
 
-      <div class = "product col_12 col_12--c">
+      <div class = "product col_12 col_12--c" data-category = "lending">
         <h4 class = "product__heading">Micro-Credit Lending</h4>
         <p class = "product__body col_10 col_10--c">Micro-credit Lending is a configurable, user-friendly Loan Origination Solution designed to process small loans systematically, all while providing quality credit decisions. It provides both customers and lenders with an easy to use application process that supports superior service and improves the quality of the lending portfolio.</p>
         <i class = "material-icons product__arrow">keyboard_arrow_right</i>
       </div>
 
-      <div class = "product col_12 col_12--c">
+      <div class = "product col_12 col_12--c" data-category = "lending">
         <h4 class = "product__heading">Commercial Lending</h4>
         <p class = "product__body col_10 col_10--c">Lender productivity is important and Commercial Lending has been designed to deliver the most efficient application process one that permits lenders to spend their time on good applications.</p>
         <i class = "material-icons product__arrow">keyboard_arrow_right</i>
       </div>
 
-      <div class = "product col_12 col_12--c">
+      <div class = "product col_12 col_12--c" data-category = "banking">
         <h4 class = "product__heading">Highgate Lending</h4>
         <p class = "product__body col_10 col_10--c">A configurable, user-friendly Loan Origination System designed to speed up the processing of applications and improve the quality of credit decisions. It provides both customers and lenders with an easy to use application process and improves the quality of the lending portfolio.</p>
         <i class = "material-icons product__arrow">keyboard_arrow_right</i>
       </div>
 
-      <div class = "product col_12 col_12--c">
+      <div class = "product col_12 col_12--c" data-category = "banking">
         <h4 class = "product__heading">Micro-Credit Lending</h4>
         <p class = "product__body col_10 col_10--c">Micro-credit Lending is a configurable, user-friendly Loan Origination Solution designed to process small loans systematically, all while providing quality credit decisions. It provides both customers and lenders with an easy to use application process that supports superior service and improves the quality of the lending portfolio.</p>
         <i class = "material-icons product__arrow">keyboard_arrow_right</i>
       </div>
 
-      <div class = "product col_12 col_12--c">
+      <div class = "product col_12 col_12--c" data-category = "banking">
         <h4 class = "product__heading">Commercial Lending</h4>
         <p class = "product__body col_10 col_10--c">Lender productivity is important and Commercial Lending has been designed to deliver the most efficient application process one that permits lenders to spend their time on good applications.</p>
         <i class = "material-icons product__arrow">keyboard_arrow_right</i>
       </div>
 
-      <div class = "product product--dropdown col_12 col_12--c">
+      <div class = "product product--dropdown col_12 col_12--c" data-category = "channel">
         <h4 class = "product__heading">Disaster Recovery Raas</h4>
         <i class = "material-icons product__arrow product__arrow--dropdown">keyboard_arrow_down</i>
       </div>
 
-      <div class = "product product--dropdown col_12 col_12--c">
+      <div class = "product product--dropdown col_12 col_12--c" data-category = "credit">
         <h4 class = "product__heading">Risk Measure and Managment</h4>
         <i class = "material-icons product__arrow product__arrow--dropdown">keyboard_arrow_down</i>
       </div>
 
-      <div class = "product product--dropdown col_12 col_12--c">
+      <div class = "product product--dropdown col_12 col_12--c" data-category = "services">
         <h4 class = "product__heading">Consulting Services</h4>
         <i class = "material-icons product__arrow product__arrow--dropdown">keyboard_arrow_down</i>
       </div>
     </div>
-
 
     <div class = "footer col_12 center">
       <div class = "footer__bg col_12--fullbleed"></div>
@@ -145,9 +144,13 @@
           </a>
           <a class = "footer__menuOption" href = "#">
             <li>5025 Orbitor Drive, Mississauga, ON,</li>
-          </a>
-          <a class = "footer__menuOption" href = "#">
             <li>Canada, L4W 4Y5</li>
+          </a>
+          <a class = "footer__menuIcon">
+            <img href = "https://www.linkedin.com/company/highgate-systems-inc-/" src = "assets/img/icons/linkedin.svg">
+          </a>
+          <a class = "footer__menuIcon">
+            <img href = "https://twitter.com/highgate5025" src = "assets/img/icons/twitter.svg">
           </a>
         </ul>
         <ul class = "footer__menu footer__menu--mHide">
@@ -173,8 +176,8 @@
   </div>
 </body>
 
-<script type = "text/javascript">
-  document.querySelector('.nav__mobileMenuWrapper').addEventListener('click', function(){
+<script>
+  document.querySelector('.nav__mobileMenuWrapper').addEventListener('click', function() {
   // document.querySelector('."nav__mobileMenu').classList.toggle('active');
   this.parentNode.querySelector('.nav__links').classList.toggle('active');
   var bars = this.querySelectorAll('.nav__mobileMenuBar');
@@ -198,6 +201,61 @@
       }, 300);
     }
   })
+</script>
+
+<script>
+  var productFilters = document.getElementsByClassName('productNav__filtersOptions');
+
+  for(var f of productFilters) {
+    f.addEventListener('click', function() {
+      // console.log(this.dataset['categoryName']);
+      for(var f of productFilters) {
+        f.classList.remove('active');
+        if (f === this) {
+          f.classList.add('active');
+        }
+      }
+
+      var filterCategory = this.dataset['categoryName'];
+      var allProducts = document.getElementsByClassName('product');
+      for(var i = 0; i < allProducts.length; i++) {
+
+        if(filterCategory == "all") {
+          allProducts[i].classList.remove('hide');
+        } else {
+          if(allProducts[i].dataset['category'] == filterCategory) {
+            allProducts[i].classList.remove('hide');
+          } else {
+            allProducts[i].classList.add('fade');
+          }
+        }
+      }
+
+      if(filterCategory == "all") {
+        window.requestAnimationFrame(function(){
+          window.requestAnimationFrame(function(){
+            for(var i = 0; i < allProducts.length; i++) {
+              allProducts[i].classList.remove('fade');
+            }
+          })
+        });
+      }
+
+      setTimeout(function() {
+        for(var i = 0; i < allProducts.length; i++) {
+          if(filterCategory == "all") {
+          } else {
+            if(allProducts[i].dataset['category'] == filterCategory) {
+              allProducts[i].classList.remove('fade');
+            } else {
+              allProducts[i].classList.add('hide');
+            }
+          }
+        }
+      }, 300);
+      // var rel = document.querySelectorAll("[data-category-name=" + this.dataset['categoryName'] + "]");
+    })
+  }
 </script>
 
 </html>
