@@ -11,11 +11,18 @@
   letter-spacing: 2px;
   cursor: pointer;
 
+  border: {
+    style: solid;
+    width: 2px;
+    color: $gunmetal;
+  }
+
   &:hover {
     border: {
       color: $sienna;
     }
     background-color: $sienna;
+    color: $white;
   }
 
   @include m('wb') {
@@ -24,6 +31,12 @@
       style: solid;
       width: 2px;
       color: $white;
+    }
+    &:hover {
+      border: {
+        color: $sienna;
+      }
+      background-color: $sienna;
     }
   }
 }

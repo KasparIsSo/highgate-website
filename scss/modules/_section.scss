@@ -72,6 +72,12 @@
       color: $white;
     }
 
+    @include m('bold') {
+      font: {
+        weight: 700;
+      }
+    }
+
     @media screen and (max-width: $break-tablet-s) {
       width: 100%;
     }
@@ -146,12 +152,19 @@
     @media screen and (max-width: $break-tablet-s) {
       margin-bottom: 0;
     }
-    
+
   }
 
   @include m('testimonials') {
     @media screen and (max-width: $break-tablet-s) {
       display: none;
+    }
+  }
+
+  @include m('news') {
+    padding: {
+      top: 0;
+      bottom: 0;
     }
   }
 }

@@ -147,6 +147,10 @@
       weight: 400;
     }
     letter-spacing: .5px;
+
+    @media screen and (max-width: $break-tablet-xs) {
+      width: 80%;
+    }
   }
 
   @include e('arrow') {

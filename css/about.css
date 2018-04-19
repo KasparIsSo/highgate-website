@@ -819,6 +819,8 @@ body {
         letter-spacing: .7px; } }
     .section__heading--white {
       color: #ffffff; }
+    .section__heading--bold {
+      font-weight: 700; }
     @media screen and (max-width: 800px) {
       .section__heading {
         width: 100%; } }
@@ -908,6 +910,9 @@ body {
   @media screen and (max-width: 800px) {
     .section--testimonials {
       display: none; } }
+  .section--news {
+    padding-top: 0;
+    padding-bottom: 0; }
 
 .button {
   font-size: 16px;
@@ -919,7 +924,10 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
-  cursor: pointer; }
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #455560; }
   @media screen and (max-width: 1320px) {
     .button {
       font-size: 16px;
@@ -942,12 +950,16 @@ body {
       line-height: 28px; } }
   .button:hover {
     border-color: #a74f25;
-    background-color: #a74f25; }
+    background-color: #a74f25;
+    color: #ffffff; }
   .button--wb {
     color: #ffffff;
     border-style: solid;
     border-width: 2px;
     border-color: #ffffff; }
+    .button--wb:hover {
+      border-color: #a74f25;
+      background-color: #a74f25; }
 
 .bgImg {
   background-position: center;

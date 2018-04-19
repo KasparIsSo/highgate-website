@@ -1192,166 +1192,63 @@ body {
       color: #a74f25;
       text-decoration: underline; }
 
-.product {
-  background-color: #f9f9f9;
-  padding: 65px 25px 65px 35px;
-  color: #455560;
-  font-family: "PT Sans", Helvetica, Sans-Serif;
-  margin-bottom: 45px;
-  position: relative;
-  transition-duration: 0.3s; }
-  .product:hover > i {
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-bottom: 55px;
+  overflow: hidden; }
+  .card:first-child {
+    margin-left: 0; }
+  .card:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 980px) {
+    .card:nth-child(3n+1) {
+      margin-left: 0; }
+    .card:nth-child(3n+3) {
+      margin-right: 0; } }
+  @media screen and (max-width: 980px) and (min-width: 600px) {
+    .card {
+      width: 47.5%; }
+      .card:nth-child(odd) {
+        margin-left: 0; }
+      .card:nth-child(even) {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .card {
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%; } }
+  .card > a {
+    text-decoration: none;
+    color: #a74f25;
+    font-style: italic; }
+  .card__link {
+    text-decoration: underline;
     color: #a74f25; }
-  .product > h4 {
-    transform: translateY(5px); }
-  .product.fade {
-    opacity: 0; }
-  .product.hide {
-    display: none; }
-  .product__wrapper {
-    margin-bottom: 120px; }
-  .product__heading {
-    font-size: 24px;
-    line-height: 38px;
-    letter-spacing: 0px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: 1px !important; }
-    @media screen and (max-width: 1320px) {
-      .product__heading {
-        font-size: 24px;
-        line-height: 38px;
-        letter-spacing: 0px; } }
-    @media screen and (max-width: 1180px) {
-      .product__heading {
-        font-size: 20px;
-        line-height: 36px;
-        letter-spacing: 0px; } }
-    @media screen and (max-width: 980px) {
-      .product__heading {
-        font-size: 20px;
-        line-height: 36px;
-        letter-spacing: 0px; } }
-    @media screen and (max-width: 420px) {
-      .product__heading {
-        font-size: 16px;
-        line-height: 34px;
-        letter-spacing: 0px; } }
-    @media screen and (max-width: 320px) {
-      .product__heading {
-        font-size: 16px;
-        line-height: 34px;
-        letter-spacing: 0px; } }
-    .product__heading--dropdown {
-      display: inline-block; }
-  .product__body {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 400;
-    letter-spacing: .5px; }
-    @media screen and (max-width: 1320px) {
-      .product__body {
-        font-size: 16px;
-        line-height: 30px; } }
-    @media screen and (max-width: 1180px) {
-      .product__body {
-        font-size: 16px;
-        line-height: 30px; } }
-    @media screen and (max-width: 980px) {
-      .product__body {
-        font-size: 14px;
-        line-height: 28px; } }
-    @media screen and (max-width: 420px) {
-      .product__body {
-        font-size: 12px;
-        line-height: 28px; } }
-    @media screen and (max-width: 320px) {
-      .product__body {
-        font-size: 12px;
-        line-height: 28px; } }
-    @media screen and (max-width: 600px) {
-      .product__body {
-        width: 80%; } }
-  .product__arrow {
-    transition-duration: 0.3s;
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: .8px;
-    cursor: pointer; }
-    @media screen and (max-width: 1320px) {
-      .product__arrow {
-        font-size: 36px;
-        line-height: 48px;
-        letter-spacing: .8px; } }
-    @media screen and (max-width: 1180px) {
-      .product__arrow {
-        font-size: 36px;
-        line-height: 48px;
-        letter-spacing: .8px; } }
-    @media screen and (max-width: 980px) {
-      .product__arrow {
-        font-size: 32px;
-        line-height: 44px;
-        letter-spacing: .75px; } }
-    @media screen and (max-width: 420px) {
-      .product__arrow {
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: .7px; } }
-    @media screen and (max-width: 320px) {
-      .product__arrow {
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: .7px; } }
-    .product__arrow--dropdown {
-      transition-duration: 0.3s;
-      right: auto;
-      transform: none;
-      top: auto;
-      transform-origin: center;
-      position: relative;
-      float: right; }
-      .product__arrow--dropdown.active {
-        transform: rotate(180deg); }
-  .product__dropdownShow {
-    max-height: 0;
-    overflow: hidden;
-    font-size: 16px;
-    line-height: 30px;
-    transition: max-height 0.3s; }
-    @media screen and (max-width: 1320px) {
-      .product__dropdownShow {
-        font-size: 16px;
-        line-height: 30px; } }
-    @media screen and (max-width: 1180px) {
-      .product__dropdownShow {
-        font-size: 16px;
-        line-height: 30px; } }
-    @media screen and (max-width: 980px) {
-      .product__dropdownShow {
-        font-size: 14px;
-        line-height: 28px; } }
-    @media screen and (max-width: 420px) {
-      .product__dropdownShow {
-        font-size: 12px;
-        line-height: 28px; } }
-    @media screen and (max-width: 320px) {
-      .product__dropdownShow {
-        font-size: 12px;
-        line-height: 28px; } }
-    .product__dropdownShow > p {
-      margin-top: 30px; }
-    .product__dropdownShow > ul {
-      margin-top: 30px; }
-      .product__dropdownShow > ul > li {
-        padding-left: 10px;
-        width: calc(100% - 30px); }
-        .product__dropdownShow > ul > li:before {
-          content: "\2022";
-          margin-right: 10px; }
+  .card > hr {
+    stroke: #455560; }
+  .card > ul {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .card > ul > li {
+      padding-left: 10px;
+      width: calc(100% - 30px); }
+      .card > ul > li:before {
+        content: "\2022";
+        margin-right: 10px; }
 
-/*# sourceMappingURL=product.css.map */
+.news {
+  transition-duration: 0.3s; }
+  .news.fade {
+    opacity: 0; }
+  .news.hide {
+    display: none; }
+  .news__continue {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 150px; }
+
+/*# sourceMappingURL=news.css.map */
