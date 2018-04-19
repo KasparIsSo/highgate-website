@@ -712,6 +712,13 @@ body {
         font-size: 12px;
         line-height: 24px;
         letter-spacing: 1px; } }
+  .footer__menuIcon {
+    display: inline-block;
+    margin-top: 15px; }
+    .footer__menuIcon > img {
+      width: 32px;
+      height: 32px;
+      margin-right: 13px; }
 
 .splash {
   position: relative; }
@@ -825,6 +832,36 @@ body {
     text-transform: uppercase;
     margin-bottom: 15px; }
     .section__subheading--white {
+      color: #ffffff; }
+    .section__subheading--normal {
+      font-weight: 400; }
+  .section__caption {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "PT Sans", Helvetica, Sans-Serif;
+    font-weight: 300;
+    font-style: italic; }
+    @media screen and (max-width: 1320px) {
+      .section__caption {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 1180px) {
+      .section__caption {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 980px) {
+      .section__caption {
+        font-size: 14px;
+        line-height: 28px; } }
+    @media screen and (max-width: 420px) {
+      .section__caption {
+        font-size: 12px;
+        line-height: 28px; } }
+    @media screen and (max-width: 320px) {
+      .section__caption {
+        font-size: 12px;
+        line-height: 28px; } }
+    .section__caption--white {
       color: #ffffff; }
   .section__body {
     font-size: 16px;

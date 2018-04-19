@@ -114,9 +114,7 @@
           </div>
         </div>
       </div>
-    <!-- </div>
 
-    <div class = "col_12 center"> -->
       <div class = "gallery col_12 col_12--c">
         <div class = "gallery__cardContainer col_10 col_10--c center">
           <div class = "gallery__card gallery__card--img">
@@ -144,15 +142,6 @@
             <span>&rarr;</span>
           </button>
         </div>
-        <!-- <div class = "gallery__indicator col_6 center">
-          <div class = "gallery__indicatorNode active">
-          </div><div class = "gallery__indicatorNode">
-          </div><div class = "gallery__indicatorNode">
-          </div><div class = "gallery__indicatorNode">
-          </div><div class = "gallery__indicatorNode">
-          </div><div class = "gallery__indicatorNode">
-          </div>
-        </div> -->
       </div>
 
       <h4 class = "section__subheading">Our Roadmap</h4>
@@ -199,9 +188,27 @@
     <div class = "news">
       <div class = "news__content col_12 center">
         <h4 class = "section__subheading section__subheading--white">News</h4>
+        <div class = "card card--news news--main">
+          <h6 class = "section__heading section__heading--white">Discover our Latest News and Updates</h6>
+          <p class = "section__body section__body--white news__text">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives. integrated financial solutions that empower our clients to meet their business objectives. </p>
+          <a class = "button button--wb">View more</a>
+        </div><div class = "card card--news news--sub">
+          <h6 class = "section__caption section__caption--white">Sept. 20, 2017</h6>
+          <hr>
+          <h6 class = "section__subheading section__subheading--normal section__subheading--white">Highgate Newsletter Sept. 2017</h6>
+          <p class = "section__body section__body--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          <a class = "section__body section__body--white">Read More…</a>
+        </div><div class = "card card--news news--sub">
+          <h6 class = "section__caption section__caption--white">Sept. 20, 2017</h6>
+          <hr>
+          <h6 class = "section__subheading section__subheading--normal section__subheading--white">PETYA Ransomware</h6>
+          <p class = "section__body section__body--white">Many organizations throughout Europe and the US have been crippled by a ransomware attack known as “Petya”. The malicious software has spread through large firms including the advertiser WPP, food company Mondelez, French </p>
+          <a class = "section__body section__body--white">Read More…</a>
+        </div>
+        <!-- <h4 class = "section__subheading section__subheading--white">News</h4>
         <h6 class = "section__heading section__heading--white">Discover our Latest News and Updates</h6>
         <p class = "section__body section__body--white news__text col_8 col_8--c center">We deliver high quality integrated financial solutions that empower our clients to meet their business objectives. integrated financial solutions that empower our clients to meet their business objectives. </p>
-        <a class = "button button--wb">Learn More</a>
+        <a class = "button button--wb">Learn More</a> -->
       </div>
     </div>
 
@@ -294,9 +301,13 @@
           </a>
           <a class = "footer__menuOption" href = "#">
             <li>5025 Orbitor Drive, Mississauga, ON,</li>
-          </a>
-          <a class = "footer__menuOption" href = "#">
             <li>Canada, L4W 4Y5</li>
+          </a>
+          <a class = "footer__menuIcon">
+            <img href = "https://www.linkedin.com/company/highgate-systems-inc-/" src = "assets/img/icons/linkedin.svg">
+          </a>
+          <a class = "footer__menuIcon">
+            <img href = "https://twitter.com/highgate5025" src = "assets/img/icons/twitter.svg">
           </a>
         </ul>
         <ul class = "footer__menu footer__menu--mHide">
@@ -369,21 +380,32 @@
       cards[0].style.width = 0;
       cards[0].style.margin = 0;
       cards[0].style.padding = 0;
+      cards[0].querySelector('.gallery__cardText').style.width = 0;
+      cards[0].querySelector('.gallery__cardText').style.height = 0;
       setTimeout(function() {
         cards[0].parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
         cards[0].style.removeProperty('width');
         cards[0].style.removeProperty('margin');
         cards[0].style.removeProperty('padding');
+        cards[0].querySelector('.gallery__cardText').style.removeProperty('width');
+        cards[0].querySelector('.gallery__cardText').style.removeProperty('height');
         // if(cards[0].classList.contains('gallery__card--text')) {
         //
         // }
       }, 300);
     } else {
       cards[cards.length-1].style.width = 0;
+      cards[cards.length-1].querySelector('.gallery__cardText').style.width = 0;
+      cards[cards.length-1].querySelector('.gallery__cardText').style.height = 0;
       cards[0].parentNode.insertBefore(cards[cards.length-1], cards[0]);
       window.requestAnimationFrame(function() {
         window.requestAnimationFrame(function() {
-          cards[0].parentNode.querySelector('.gallery__card').style.removeProperty('width');
+          var adjCard = cards[0].parentNode.querySelector('.gallery__card');
+          adjCard.style.removeProperty('width');
+          setTimeout(function() {
+            adjCard.querySelector('.gallery__cardText').style.removeProperty('width');
+            adjCard.querySelector('.gallery__cardText').style.removeProperty('height');
+          }, 300);
         })
       });
     }

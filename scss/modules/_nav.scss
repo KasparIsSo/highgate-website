@@ -355,4 +355,15 @@
 		}
 		letter-spacing: 1px;
 	}
+
+	@include e('menuIcon') {
+		display: inline-block;
+		margin-top: 15px;
+
+		&>img {
+			width: 32px;
+			height: 32px;
+			margin-right: 13px;
+		}
+	}
 }

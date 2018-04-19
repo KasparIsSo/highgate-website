@@ -90,6 +90,25 @@
     @include m('white') {
       color: $white;
     }
+
+    @include m('normal') {
+      font: {
+        weight: 400;
+      }
+    }
+  }
+
+  @include e('caption') {
+    @include f-size-xs;
+    font: {
+      family: $p-font;
+      weight: 300;
+      style: italic;
+    }
+
+    @include m('white') {
+      color: $white;
+    }
   }
 
   @include e('body') {
