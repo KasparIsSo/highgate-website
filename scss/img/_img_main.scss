@@ -2,13 +2,14 @@
   @include bg-solo;
 
   @include e('mainSplash') {
-    background-image: url('../assets/img/header-landing.png');
+    background-image: url('../assets/img/header-landing.jpg');
     padding-top: 52%;
     @media screen and (max-width: $break-desktop-s) {
   		padding-top: 65%;
   	}
 
   	@media screen and (max-width: $break-tablet-l) {
+      background-image: url('../assets/img/header-landing-t.jpg');
   		padding-top: 68%;
   	}
 
@@ -21,6 +22,7 @@
   	}
 
   	@media screen and (max-width: $break-mobile-l) {
+      background-image: url('../assets/img/header-landing-m.jpg');
   		padding-top: 160%;
   	}
 
@@ -73,14 +75,14 @@
 
   @include e('about') {
     background-image: url('../assets/img/about-man.png');
-    padding-top: 70%;
+    padding-top: 60%;
     @media screen and (max-width: $break-desktop-s) {
-  		padding-top: 80%;
+  		padding-top: 60%;
   	}
 
   	@media screen and (max-width: $break-tablet-l) {
       background-image: url('../assets/img/about-man-tablet.png');
-  		padding-top: 90%;
+  		padding-top: 80%;
   	}
 
     @media screen and (max-width: $break-tablet-s) {
@@ -88,7 +90,7 @@
   	}
 
     @media screen and (max-width: $break-tablet-xs) {
-  		padding-top: 50%;
+  		padding-top: 40%;
   	}
 
   	@media screen and (max-width: $break-mobile-l) {

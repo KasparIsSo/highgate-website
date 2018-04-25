@@ -208,6 +208,36 @@
   }
 }
 
+@mixin f-size-xxs {
+  font-size: 12px;
+  line-height: 22px;
+
+  @media screen and (max-width: $break-desktop-l) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
 @mixin f-size-subhead24 {
   font-size: 24px;
   line-height: 32px;

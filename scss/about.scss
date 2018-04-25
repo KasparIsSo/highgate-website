@@ -13,25 +13,29 @@
   background-position: left center;
   position: relative;
   padding: {
-    top: 400px;
-    bottom: 500px;
+    top: 200px;
+    bottom: 400px;
   }
   margin: {
-    top: 50px;
-    bottom: 200px;
+    top: 150px;
+    bottom: 320px;
   }
-  background-image: url('../assets/img/aboutpage-pic.png');
+
+  background-image: url('../assets/img/aboutpage_pic.jpg');
 
   @media screen and (max-width: $break-desktop-l) {
     padding: {
       top: 400px;
     }
-    margin-bottom: 200px;
+    margin: {
+      top: 100px;
+      bottom: 320px;
+    }
   }
 
   @media screen and (max-width: $break-desktop-s) {
     padding-top: 300px;
-    margin-bottom: 160px;
+    margin-bottom: 320px;
   }
 
   @media screen and (max-width: $break-tablet-l) {
@@ -73,10 +77,11 @@
 
   @include e('contentContainer') {
     background-color: $featureWhite;
-
+    // @include defaultDropshadow;
   }
 
   @include e('content') {
+    @include defaultDropshadow;
     background-color: $featureWhite;
     padding: 100px 70px;
     // vertical-align: top;

@@ -8,8 +8,8 @@
 	}
 	z-index: 9999;
 	width: 100vw;
-	// background-color: $white;
-	background-color: $offWhite;
+	background-color: $white;
+	// background-color: $offWhite;
 
 	@include m('buffer') {
 		display: block;
@@ -235,12 +235,12 @@
 	position: relative;
 	display: block;
 	padding: {
-		top: 40px;
-		bottom: 80px;
+		top: 50px;
+		bottom: 50px;
 	}
 
 	@include e('bg') {
-		background-color: $darkGrey;
+		background-color: $darkestGrey;
     position: absolute;
     top: 0px;
     height: 100%;
@@ -266,6 +266,7 @@
 
 	@include e('logo') {
 		display: block;
+		margin-bottom: 20px;
 	}
 
 	@include e('desc') {
@@ -274,6 +275,7 @@
 		color: $white;
 		display: block;
 		text-decoration: none;
+		@include f-size-xxs;
 		font: {
 			family: $p-font;
 			weight: 400;
@@ -286,6 +288,7 @@
 
 		@include m('canada') {
 			margin-bottom: 20px;
+			@include f-size-xs;
 		}
 	}
 
@@ -315,6 +318,12 @@
 				left: 0;
 			}
 		}
+
+		&:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
 	}
 
 	@include e('menu') {
@@ -330,6 +339,11 @@
 				display: none;
 			}
 		}
+
+		&>a {
+			margin-bottom: 5px;
+		}
+
 	}
 
 	@include e('menuCategory') {
@@ -341,24 +355,44 @@
 			weight: 700;
 		}
 		line-height: 34px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
 	}
 
 	@include e('menuOption') {
 		@include f-size-footerLinks;
 		@include transition($dtd);
 		color: $white;
-		display: block;
+		clear: left;
+		float: left;
+		display: inline-block;
 		text-decoration: none;
 		font: {
 			family: $p-font;
 			weight: 400;
 		}
 		letter-spacing: 1px;
+		border-bottom: 1px solid $white0op;
+		@include transition($duration);
+
+		&:hover {
+			border-bottom: 1px solid $white;
+		}
+	}
+
+	@include e('social') {
+		clear: left;
+		float: left;
+		display: inline-block;
 	}
 
 	@include e('menuIcon') {
 		display: inline-block;
 		margin-top: 15px;
+		@include transition($duration);
+		&:hover {
+			transform: scale(1.1);
+		}
 
 		&>img {
 			width: 32px;

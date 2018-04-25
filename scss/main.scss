@@ -25,9 +25,17 @@
 
 .products {
   position: relative;
+
   padding: {
-    top: 135px;
+    top: 150px;
     bottom: 60px;
+  }
+
+  @media screen and (max-width: $break-tablet-s) {
+    padding: {
+      top: 100px;
+      bottom: 60px;
+    }
   }
   text-align: center;
 
@@ -36,6 +44,29 @@
     padding: {
       top: 0px;
     }
+  }
+
+  @include m('roadmap') {
+    padding: {
+      top: 40px;
+      bottom: 60px;
+    }
+
+    @media screen and (max-width: $break-tablet-s) {
+      padding: {
+        top: 40px;
+        bottom: 60px;
+      }
+    }
+    text-align: center;
+
+    @media screen and (max-width: $break-tablet-s) {
+      text-align: left;
+      padding: {
+        top: 0px;
+      }
+    }
+
   }
 
   @include e('content') {
@@ -61,11 +92,11 @@
 }
 
 .card {
+  @include defaultDropshadow;
   display: inline-block;
   text-align: center;
   background-color: $white;
   // border-radius: 7px;
-  box-shadow: 0 5px 11px $shadow;
   padding: 25px 30px;
 
   width: 30%;
@@ -269,7 +300,6 @@
 
   @include e('logoContainer') {
     margin-top: 30px;
-    height: 150px;
     @media screen and (max-width: $break-tablet-s) {
       height: auto;
     }
@@ -312,7 +342,7 @@
     }
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.14);
       @media screen and (max-width: $break-tablet-s) {
         transform: scale(1);
       }
@@ -353,7 +383,9 @@
   @include e('indicator') {
     // text-align: center;
     display: inline-block;
-
+    @include f-size-s;
+    color: $gunmetal;
+    transform: translateY(-1px);
   }
 
   @include e('ui') {
@@ -372,6 +404,7 @@
   }
 
   @include e('button') {
+    @include f-size-m;
     appearance: none;
     -webkit-appearance: none;
     display: inline-block;
@@ -379,6 +412,7 @@
     background-color: $lBlack0op;
 
     @include transition($dtd);
+    color: $gunmetal;
   }
 
   @include e('cardContainer') {

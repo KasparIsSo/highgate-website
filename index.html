@@ -139,7 +139,8 @@
           </button>
         </div>
       </div>
-
+    </div>
+    <div class = "products products--roadmap col_12 center">
       <h4 class = "section__subheading">Our Roadmap</h4>
       <h6 class = "section__heading products__heading">Lorem Ipsum Dolor sit Amet</h6>
 
@@ -274,10 +275,8 @@
     <div class = "footer col_12 center">
       <div class = "footer__bg col_12--fullbleed"></div>
       <div class = "footer__info col_4">
-        <div class = "footer__logo col_3 col_3--c footer__menu--mHide">
-          <div class = "footer__logoImg"></div>
-        </div>
-        <p class = "footer__desc footer__desc--canada"><img src = "../assets/img/canada.svg" class = "footer__canada">Proud to be Canadian<p>
+        <img class = "footer__logo col_3 col_3--c footer__menu--mHid" src = "../assets/img/footerlogo.png">
+        <p class = "footer__desc footer__desc--canada"><img src = "assets/img/canada.svg" class = "footer__canada">Proud to be Canadian<p>
         <p class = "footer__desc">
           <a class = "footer__descLink">Site Map</a> | <a class = "footer__descLink">Terms of Service</a>
         </p>
@@ -295,12 +294,14 @@
             <li>5025 Orbitor Drive, Mississauga, ON,</li>
             <li>Canada, L4W 4Y5</li>
           </a>
-          <a class = "footer__menuIcon">
-            <img href = "https://www.linkedin.com/company/highgate-systems-inc-/" src = "assets/img/icons/linkedin.svg">
-          </a>
-          <a class = "footer__menuIcon">
-            <img href = "https://twitter.com/highgate5025" src = "assets/img/icons/twitter.svg">
-          </a>
+          <div class = "footer__social">
+            <a class = "footer__menuIcon">
+              <img href = "https://www.linkedin.com/company/highgate-systems-inc-/" src = "assets/img/icons/linkedin.svg">
+            </a>
+            <a class = "footer__menuIcon">
+              <img href = "https://twitter.com/highgate5025" src = "assets/img/icons/twitter.svg">
+            </a>
+          </div>
         </ul>
         <ul class = "footer__menu footer__menu--mHide">
           <h6 class = "footer__menuCategory">Menu</h6>
@@ -373,23 +374,29 @@
       targetCard.style.width = 0;
       targetCard.style.margin = 0;
       targetCard.style.padding = 0;
-      targetCard.querySelector('.gallery__cardText').style.width = 0;
-      targetCard.querySelector('.gallery__cardText').style.height = 0;
+      if(targetCard.querySelector('.gallery__cardText')) {
+        targetCard.querySelector('.gallery__cardText').style.width = 0;
+        targetCard.querySelector('.gallery__cardText').style.height = 0;
+      }
       setTimeout(function() {
         targetCard.parentNode.insertBefore(cards[0], cards[cards.length-1].nextSibling);
         targetCard.style.removeProperty('width');
         targetCard.style.removeProperty('margin');
         targetCard.style.removeProperty('padding');
-        targetCard.querySelector('.gallery__cardText').style.removeProperty('width');
-        targetCard.querySelector('.gallery__cardText').style.removeProperty('height');
+        if(targetCard.querySelector('.gallery__cardText')) {
+          targetCard.querySelector('.gallery__cardText').style.removeProperty('width');
+          targetCard.querySelector('.gallery__cardText').style.removeProperty('height');
+        }
         // if(cards[0].classList.contains('gallery__card--text')) {
         //
         // }
       }, 300);
     } else {
       var targetCard = cards[cards.length-1];
-      targetCard.querySelector('.gallery__cardText').style.width = 0;
-      targetCard.querySelector('.gallery__cardText').style.height = 0;
+      if(targetCard.querySelector('.gallery__cardText')) {
+        targetCard.querySelector('.gallery__cardText').style.width = 0;
+        targetCard.querySelector('.gallery__cardText').style.height = 0;
+      }
       targetCard.style.width = 0;
       targetCard.style.padding = 0;
       targetCard.style.margin = 0;
@@ -401,8 +408,10 @@
           adjCard.style.removeProperty('padding');
           adjCard.style.removeProperty('margin');
           setTimeout(function() {
-            adjCard.querySelector('.gallery__cardText').style.removeProperty('width');
-            adjCard.querySelector('.gallery__cardText').style.removeProperty('height');
+            if(adjCard.querySelector('.gallery__cardText')) {
+              adjCard.querySelector('.gallery__cardText').style.removeProperty('width');
+              adjCard.querySelector('.gallery__cardText').style.removeProperty('height');
+            }
           }, 300);
         })
       });

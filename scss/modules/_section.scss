@@ -32,14 +32,21 @@
 .section {
 
   padding: {
-    top: 135px;
-    bottom: 90px;
+    top: 190px;
+    bottom: 110px;
+  }
+
+  @media screen and (max-width: $break-desktop-s) {
+    padding: {
+      top: 135px;
+      bottom: 110px;
+    }
   }
 
   @media screen and (max-width: $break-tablet-s) {
     padding: {
       top: 80px;
-      bottom: 80px;
+      bottom: 100px;
     }
   }
 
@@ -124,6 +131,7 @@
       family: $s-font;
       weight: 400;
     }
+    margin-bottom: 20px;
 
     @include m('splash') {
       letter-spacing: 1.7px;

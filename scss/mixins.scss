@@ -1,3 +1,4 @@
+$break-desktop-xl: 1680px;
 $break-desktop-l: 1320px;
 $break-desktop-s: 1180px;
 $break-tablet-l: 980px;
@@ -15,7 +16,7 @@ $dtd: .3s;
 
 $white: #ffffff;
 $featureWhite: #f9f9f9;
-$offWhite: #f5f5f5;
+$offWhite: #fafafa;
 $shadow: hsla(0, 0, 77, .5);
 $gunmetal: #455560;
 $dropdownBG: rgba(39, 49, 56, 0.99);
@@ -23,10 +24,12 @@ $greyBlue: #687f8f;
 $sienna: #a74f25;
 $lightGrey: #5d5d5d;
 $darkGrey: #384045;
+$darkestGrey: #273138;
 $black: #000000;
 
 $lBlack30op: hsla(0, 0, 0, .3);
 $lBlack0op: hsla(0, 0, 0, 0);
+$white0op: hsla(0, 0, 100, 0);
 
 $duration: .4s;
 
@@ -62,6 +65,10 @@ body {
 
 @mixin transition($duration) {
   transition-duration: $duration;
+}
+
+@mixin defaultDropshadow {
+  box-shadow: 0 4px 18px $shadow;
 }
 
 .container {

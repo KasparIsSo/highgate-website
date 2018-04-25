@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f5f5f5; }
+  background-color: #fafafa; }
 
 .container {
   display: block;
@@ -383,14 +383,14 @@ body {
   padding-bottom: 10px;
   z-index: 9999;
   width: 100vw;
-  background-color: #f5f5f5; }
+  background-color: #ffffff; }
   .nav--buffer {
     display: block;
     padding-top: 25px;
     padding-bottom: 10px;
     z-index: -9999;
     width: 100vw;
-    background-color: #f5f5f5; }
+    background-color: #fafafa; }
   .nav__logo {
     display: inline-block;
     vertical-align: middle;
@@ -608,10 +608,10 @@ body {
 .footer {
   position: relative;
   display: block;
-  padding-top: 40px;
-  padding-bottom: 80px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   .footer__bg {
-    background-color: #384045;
+    background-color: #273138;
     position: absolute;
     top: 0px;
     height: 100%;
@@ -631,7 +631,8 @@ body {
         display: block;
         width: 100%; } }
   .footer__logo {
-    display: block; }
+    display: block;
+    margin-bottom: 20px; }
   .footer__desc {
     margin-left: 15%;
     font-size: 14px;
@@ -640,6 +641,8 @@ body {
     color: #ffffff;
     display: block;
     text-decoration: none;
+    font-size: 12px;
+    line-height: 22px;
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 400;
     letter-spacing: 1px; }
@@ -648,11 +651,53 @@ body {
         font-size: 12px;
         line-height: 24px;
         letter-spacing: 1px; } }
+    @media screen and (max-width: 1320px) {
+      .footer__desc {
+        font-size: 12px;
+        line-height: 22px; } }
+    @media screen and (max-width: 1180px) {
+      .footer__desc {
+        font-size: 12px;
+        line-height: 22px; } }
+    @media screen and (max-width: 980px) {
+      .footer__desc {
+        font-size: 12px;
+        line-height: 22px; } }
+    @media screen and (max-width: 420px) {
+      .footer__desc {
+        font-size: 12px;
+        line-height: 22px; } }
+    @media screen and (max-width: 320px) {
+      .footer__desc {
+        font-size: 12px;
+        line-height: 22px; } }
     @media screen and (max-width: 800px) {
       .footer__desc {
         margin-left: 0; } }
     .footer__desc--canada {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 30px; }
+      @media screen and (max-width: 1320px) {
+        .footer__desc--canada {
+          font-size: 16px;
+          line-height: 30px; } }
+      @media screen and (max-width: 1180px) {
+        .footer__desc--canada {
+          font-size: 16px;
+          line-height: 30px; } }
+      @media screen and (max-width: 980px) {
+        .footer__desc--canada {
+          font-size: 14px;
+          line-height: 28px; } }
+      @media screen and (max-width: 420px) {
+        .footer__desc--canada {
+          font-size: 12px;
+          line-height: 28px; } }
+      @media screen and (max-width: 320px) {
+        .footer__desc--canada {
+          font-size: 12px;
+          line-height: 28px; } }
   .footer__canada {
     height: 15px;
     margin-right: 10px;
@@ -672,6 +717,10 @@ body {
         width: 100%;
         margin-top: 20px;
         margin-left: 0; } }
+    .footer__links:after {
+      content: "";
+      clear: both;
+      display: block; }
   .footer__menu {
     float: right;
     margin-left: 56px; }
@@ -682,6 +731,8 @@ body {
     @media screen and (max-width: 800px) {
       .footer__menu--mHide {
         display: none; } }
+    .footer__menu > a {
+      margin-bottom: 5px; }
   .footer__menuCategory {
     font-size: 14px;
     line-height: 24px;
@@ -690,7 +741,9 @@ body {
     display: block;
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 700;
-    line-height: 34px; }
+    line-height: 34px;
+    margin-bottom: 10px;
+    text-transform: uppercase; }
     @media screen and (max-width: 800px) {
       .footer__menuCategory {
         font-size: 12px;
@@ -702,19 +755,32 @@ body {
     letter-spacing: 1.1px;
     transition-duration: 0.3s;
     color: #ffffff;
-    display: block;
+    clear: left;
+    float: left;
+    display: inline-block;
     text-decoration: none;
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 400;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition-duration: 0.4s; }
     @media screen and (max-width: 800px) {
       .footer__menuOption {
         font-size: 12px;
         line-height: 24px;
         letter-spacing: 1px; } }
+    .footer__menuOption:hover {
+      border-bottom: 1px solid #ffffff; }
+  .footer__social {
+    clear: left;
+    float: left;
+    display: inline-block; }
   .footer__menuIcon {
     display: inline-block;
-    margin-top: 15px; }
+    margin-top: 15px;
+    transition-duration: 0.4s; }
+    .footer__menuIcon:hover {
+      transform: scale(1.1); }
     .footer__menuIcon > img {
       width: 32px;
       height: 32px;
@@ -768,12 +834,16 @@ body {
       margin-bottom: 0; }
 
 .section {
-  padding-top: 135px;
-  padding-bottom: 90px; }
+  padding-top: 190px;
+  padding-bottom: 110px; }
+  @media screen and (max-width: 1180px) {
+    .section {
+      padding-top: 135px;
+      padding-bottom: 110px; } }
   @media screen and (max-width: 800px) {
     .section {
       padding-top: 80px;
-      padding-bottom: 80px; } }
+      padding-bottom: 100px; } }
   .section--textCenter {
     text-align: center; }
   .section__content {
@@ -870,7 +940,8 @@ body {
     line-height: 30px;
     color: #455560;
     font-family: Lato, Helvetica, Sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 20px; }
     @media screen and (max-width: 1320px) {
       .section__body {
         font-size: 16px;
@@ -966,7 +1037,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .bgImg__mainSplash {
-    background-image: url("../assets/img/about-header.png");
+    background-image: url("../assets/img/about_header.jpg");
     padding-top: 25.6%; }
     @media screen and (max-width: 1180px) {
       .bgImg__mainSplash {
@@ -982,23 +1053,23 @@ body {
         padding-top: 43%; } }
     @media screen and (max-width: 420px) {
       .bgImg__mainSplash {
-        background-image: url("../assets/img/about-header-mobile.png");
+        background-image: url("../assets/img/about_header_mobile.jpg");
         padding-top: 50%; } }
     @media screen and (max-width: 320px) {
       .bgImg__mainSplash {
         padding-top: 50%; } }
   .bgImg__advantage {
     background-image: url("../assets/img/aboutpage-pic.png");
-    padding-top: 45.6%; }
+    padding-top: 35.6%; }
     @media screen and (max-width: 1180px) {
       .bgImg__advantage {
-        padding-top: 45.6%; } }
+        padding-top: 35.6%; } }
     @media screen and (max-width: 980px) {
       .bgImg__advantage {
-        padding-top: 45.6%; } }
+        padding-top: 35.6%; } }
     @media screen and (max-width: 800px) {
       .bgImg__advantage {
-        padding-top: 45.6%; } }
+        padding-top: 35.6%; } }
     @media screen and (max-width: 600px) {
       .bgImg__advantage {
         padding-top: 120%; } }
@@ -1070,19 +1141,20 @@ body {
   background-repeat: no-repeat;
   background-position: left center;
   position: relative;
-  padding-top: 400px;
-  padding-bottom: 500px;
-  margin-top: 50px;
-  margin-bottom: 200px;
-  background-image: url("../assets/img/aboutpage-pic.png"); }
+  padding-top: 200px;
+  padding-bottom: 400px;
+  margin-top: 150px;
+  margin-bottom: 320px;
+  background-image: url("../assets/img/aboutpage_pic.jpg"); }
   @media screen and (max-width: 1320px) {
     .advantage {
       padding-top: 400px;
-      margin-bottom: 200px; } }
+      margin-top: 100px;
+      margin-bottom: 320px; } }
   @media screen and (max-width: 1180px) {
     .advantage {
       padding-top: 300px;
-      margin-bottom: 160px; } }
+      margin-bottom: 320px; } }
   @media screen and (max-width: 980px) {
     .advantage {
       margin-top: 0px;
@@ -1109,6 +1181,7 @@ body {
   .advantage__contentContainer {
     background-color: #f9f9f9; }
   .advantage__content {
+    box-shadow: 0 4px 18px rgba(196, 196, 196, 0.5);
     background-color: #f9f9f9;
     padding: 100px 70px;
     position: absolute;
