@@ -621,7 +621,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../assets/img/footerlogo.png");
+    background-image: url("./assets/img/footerlogo.png");
     padding-top: 37.5%; }
   .footer__info {
     display: inline-block;

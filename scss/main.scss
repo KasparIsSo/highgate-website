@@ -128,7 +128,7 @@
     }
 
     @media screen and (max-width: $break-desktop-l) {
-      padding: 50px 25px 50px;
+      padding: 25px 30px;
     }
 
     @media screen and (max-width: $break-tablet-l) and (min-width: $break-tablet-xs) {
@@ -206,7 +206,7 @@
   }
 
   @include e('title') {
-    @include f-size-l;
+    @include f-size-m;
     font: {
       family: $p-font;
       weight: 700;

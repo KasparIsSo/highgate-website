@@ -621,7 +621,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../assets/img/footerlogo.png");
+    background-image: url("./assets/img/footerlogo.png");
     padding-top: 37.5%; }
   .footer__info {
     display: inline-block;
@@ -1210,7 +1210,7 @@ body {
       margin-right: 0; } }
   @media screen and (max-width: 1320px) {
     .card--pd {
-      padding: 50px 25px 50px; } }
+      padding: 25px 30px; } }
   @media screen and (max-width: 980px) and (min-width: 600px) {
     .card--pd {
       width: 47.5%; }
@@ -1282,38 +1282,38 @@ body {
         line-height: 46px;
         letter-spacing: 1.4px; } }
   .card__title {
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: .7px;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0px;
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 700;
     color: #455560;
     margin-bottom: 15px; }
     @media screen and (max-width: 1320px) {
       .card__title {
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: .7px; } }
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: 0px; } }
     @media screen and (max-width: 1180px) {
       .card__title {
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: .7px; } }
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 0px; } }
     @media screen and (max-width: 980px) {
       .card__title {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 36px;
-        letter-spacing: .6px; } }
+        letter-spacing: 0px; } }
     @media screen and (max-width: 420px) {
       .card__title {
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: .6px; } }
+        font-size: 16px;
+        line-height: 34px;
+        letter-spacing: 0px; } }
     @media screen and (max-width: 320px) {
       .card__title {
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: .6px; } }
+        font-size: 16px;
+        line-height: 34px;
+        letter-spacing: 0px; } }
     .card__title--roadmap {
       margin-bottom: 0; }
   .card__subtitle {
