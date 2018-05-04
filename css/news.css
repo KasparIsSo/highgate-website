@@ -849,6 +849,37 @@ body {
   .section__content {
     position: relative;
     display: inline-block; }
+  .section__aboutFeature {
+    position: relative;
+    width: calc(100vw - (100vw - 100%)/2); }
+  .section__aboutFeatureText {
+    display: inline-block;
+    vertical-align: top; }
+    @media screen and (max-width: 800px) {
+      .section__aboutFeatureText {
+        width: 560px; } }
+    @media screen and (max-width: 600px) {
+      .section__aboutFeatureText {
+        width: 400px; } }
+    @media screen and (max-width: 420px) {
+      .section__aboutFeatureText {
+        width: 304px; } }
+    @media screen and (max-width: 320px) {
+      .section__aboutFeatureText {
+        width: 260px; } }
+  .section__aboutFeatureImg {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/img/about-man.png");
+    width: 50%; }
+    @media screen and (max-width: 800px) {
+      .section__aboutFeatureImg {
+        display: none; } }
   .section__about {
     padding-bottom: 135px; }
     @media screen and (max-width: 800px) {

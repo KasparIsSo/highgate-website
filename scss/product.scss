@@ -96,8 +96,8 @@
 }
 
 .product {
-  @include defaultDropshadow;
-  background-color: $featureWhite;
+  // @include defaultDropshadow;
+  // background-color: $featureWhite;
   padding: 65px 25px 65px 35px;
   color: $gunmetal;
   font: {
@@ -134,6 +134,22 @@
 
   &.hide {
     display: none;
+  }
+
+  @include e('container') {
+    @include defaultDropshadow;
+    background-color: $featureWhite;
+    display: block;
+    @include transition($dtd);
+    text-decoration: none;
+    color: $gunmetal;
+    &.fade {
+      opacity: 0;
+    }
+
+    &.hide {
+      display: none;
+    }
   }
 
   @include e('wrapper') {
@@ -196,7 +212,7 @@
   }
 
   @include e('dropdown') {
-
+    @include defaultDropshadow;
   }
 
   @include e('dropdownShow') {
@@ -205,6 +221,7 @@
     overflow: hidden;
     @include f-size-xs;
     transition: max-height $dtd;
+
 
     &>p {
       margin-top: 30px;

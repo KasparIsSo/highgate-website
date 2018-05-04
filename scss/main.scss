@@ -97,7 +97,7 @@
   text-align: center;
   background-color: $white;
   // border-radius: 7px;
-  padding: 25px 30px;
+  padding: 25px 25px;
 
   width: 30%;
   margin: {
@@ -127,8 +127,10 @@
       }
     }
 
+    padding: 25px 15px;
+
     @media screen and (max-width: $break-desktop-l) {
-      padding: 25px 30px;
+      padding: 25px 15px;
     }
 
     @media screen and (max-width: $break-tablet-l) and (min-width: $break-tablet-xs) {
@@ -200,9 +202,17 @@
   }
 
   @include e('icon') {
-    @include f-size-xxl;
-    color: $gunmetal;
+    // @include f-size-xxl;
+    // color: $gunmetal;
     margin-bottom: 15px;
+
+    @media screen and (max-width: $break-tablet-l) {
+  		width: 2 * $col-tablet-l + 2 * $margin-desktop-s;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		width: 2 * $col-tablet-s + 2 * $margin-tablet-s;
+  	}
   }
 
   @include e('title') {
@@ -334,7 +344,27 @@
     @include m('bevertec') {
       margin-left: 20px;
       // width: 300px;
-      width: 30%;
+      width: 28%;
+
+      @media screen and (max-width: $break-tablet-s) {
+        width: 60%;
+      }
+    }
+
+    @include m('bizedocs') {
+      // margin-left: 20px;
+      // width: 300px;
+      width: 22%;
+
+      @media screen and (max-width: $break-tablet-s) {
+        width: 60%;
+      }
+    }
+
+    @include m('centrilogic') {
+      margin-left: 20px;
+      // width: 300px;
+      width: 28%;
 
       @media screen and (max-width: $break-tablet-s) {
         width: 60%;
@@ -356,17 +386,27 @@
 
     @include m('cinfo') {
       padding-top: 28.5%;
-      background-image: url('../assets/img/cinfo_white.png');
+      background-image: url('../assets/img/partnerLogos/cinfo_white.png');
     }
 
     @include m('ncds') {
       padding-top: 60%;
-      background-image: url('../assets/img/ncds_white.png');
+      background-image: url('../assets/img/partnerLogos/ncds_white.png');
     }
 
     @include m('bevertec') {
       padding-top: 25.2%;
-      background-image: url('../assets/img/bevertec_white.png');
+      background-image: url('../assets/img/partnerLogos/bevertec_white.png');
+    }
+
+    @include m('bizedocs') {
+      padding-top: 39%;
+      background-image: url('../assets/img/partnerLogos/bizedocs_white.png');
+    }
+
+    @include m('centrilogic') {
+      padding-top: 23.3%;
+      background-image: url('../assets/img/partnerLogos/centrilogic_white.png');
     }
   }
 }
@@ -430,7 +470,7 @@
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    left: -200%;
+    left: -100%;
     white-space: normal;
 
     @include m('text') {
@@ -442,7 +482,7 @@
       }
 
       width: 90%;
-      left: -300%;
+      left: -200%;
       margin-right: 10%;
       background-color: $white;
       box-shadow: 0 5px 11px $shadow;

@@ -59,6 +59,57 @@
     display: inline-block;
   }
 
+  @include e('aboutFeature') {
+    position: relative;
+    width: calc(100vw - (100vw - 100%)/2);
+
+    // @media screen and (max-width: $break-desktop-s) {
+    //   width: 120vw;
+    // }
+    //
+    // @media screen and (max-width: $break-tablet-l) {
+    //   width: 200vw;
+    // }
+  }
+
+  @include e('aboutFeatureText') {
+    display: inline-block;
+    vertical-align: top;
+
+    @media screen and (max-width: $break-tablet-s) {
+      width: 12 * $col-tablet-s + 22 * $margin-tablet-s;
+    }
+
+    @media screen and (max-width: $break-tablet-xs) {
+      width: 6 * $col-tablet-xs + 10 * $margin-tablet-xs;
+    }
+
+    @media screen and (max-width: $break-mobile-l) {
+      width: 6 * $col-mobile-l + 10 * $margin-desktop-s;
+    }
+
+    @media screen and (max-width: $break-mobile-s) {
+      width: 6 * $col-mobile-s + 10 * $margin-mobile-s;
+    }
+  }
+
+  @include e('aboutFeatureImg') {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include bg-solo;
+    // display: inline-block;
+    background-image: url('../assets/img/about-man.png');
+    width: 50%;
+    // float: right;
+    //
+    @media screen and (max-width: $break-tablet-s) {
+      display: none;
+    }
+    // right: -100px;
+  }
+
   @include e('about') {
     padding-bottom: 135px;
     @media screen and (max-width: $break-tablet-s) {

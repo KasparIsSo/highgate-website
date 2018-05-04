@@ -849,6 +849,37 @@ body {
   .section__content {
     position: relative;
     display: inline-block; }
+  .section__aboutFeature {
+    position: relative;
+    width: calc(100vw - (100vw - 100%)/2); }
+  .section__aboutFeatureText {
+    display: inline-block;
+    vertical-align: top; }
+    @media screen and (max-width: 800px) {
+      .section__aboutFeatureText {
+        width: 560px; } }
+    @media screen and (max-width: 600px) {
+      .section__aboutFeatureText {
+        width: 400px; } }
+    @media screen and (max-width: 420px) {
+      .section__aboutFeatureText {
+        width: 304px; } }
+    @media screen and (max-width: 320px) {
+      .section__aboutFeatureText {
+        width: 260px; } }
+  .section__aboutFeatureImg {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/img/about-man.png");
+    width: 50%; }
+    @media screen and (max-width: 800px) {
+      .section__aboutFeatureImg {
+        display: none; } }
   .section__about {
     padding-bottom: 135px; }
     @media screen and (max-width: 800px) {
@@ -1193,7 +1224,7 @@ body {
   display: inline-block;
   text-align: center;
   background-color: #ffffff;
-  padding: 25px 30px;
+  padding: 25px 25px;
   width: 30%;
   margin-right: 2.5%;
   margin-left: 2.5%;
@@ -1203,21 +1234,23 @@ body {
     margin-left: 0; }
   .card:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 980px) {
-    .card--pd:nth-child(3n+1) {
-      margin-left: 0; }
-    .card--pd:nth-child(3n+3) {
-      margin-right: 0; } }
-  @media screen and (max-width: 1320px) {
-    .card--pd {
-      padding: 25px 30px; } }
-  @media screen and (max-width: 980px) and (min-width: 600px) {
-    .card--pd {
-      width: 47.5%; }
-      .card--pd:nth-child(odd) {
+  .card--pd {
+    padding: 25px 15px; }
+    @media screen and (min-width: 980px) {
+      .card--pd:nth-child(3n+1) {
         margin-left: 0; }
-      .card--pd:nth-child(even) {
+      .card--pd:nth-child(3n+3) {
         margin-right: 0; } }
+    @media screen and (max-width: 1320px) {
+      .card--pd {
+        padding: 25px 15px; } }
+    @media screen and (max-width: 980px) and (min-width: 600px) {
+      .card--pd {
+        width: 47.5%; }
+        .card--pd:nth-child(odd) {
+          margin-left: 0; }
+        .card--pd:nth-child(even) {
+          margin-right: 0; } }
   @media screen and (max-width: 600px) {
     .card {
       margin-right: 0;
@@ -1251,36 +1284,13 @@ body {
       text-decoration: underline;
       font-style: italic; }
   .card__icon {
-    font-size: 64px;
-    line-height: 74px;
-    letter-spacing: 3px;
-    color: #455560;
     margin-bottom: 15px; }
-    @media screen and (max-width: 1320px) {
-      .card__icon {
-        font-size: 64px;
-        line-height: 74px;
-        letter-spacing: 3px; } }
-    @media screen and (max-width: 1180px) {
-      .card__icon {
-        font-size: 56px;
-        line-height: 68px;
-        letter-spacing: 3px; } }
     @media screen and (max-width: 980px) {
       .card__icon {
-        font-size: 48px;
-        line-height: 60px;
-        letter-spacing: 1.8px; } }
-    @media screen and (max-width: 420px) {
+        width: 110px; } }
+    @media screen and (max-width: 800px) {
       .card__icon {
-        font-size: 32px;
-        line-height: 46px;
-        letter-spacing: 1.4px; } }
-    @media screen and (max-width: 320px) {
-      .card__icon {
-        font-size: 32px;
-        line-height: 46px;
-        letter-spacing: 1.4px; } }
+        width: 80px; } }
   .card__title {
     font-size: 24px;
     line-height: 38px;
@@ -1433,9 +1443,20 @@ body {
           height: auto; } }
     .brands__logo--bevertec {
       margin-left: 20px;
-      width: 30%; }
+      width: 28%; }
       @media screen and (max-width: 800px) {
         .brands__logo--bevertec {
+          width: 60%; } }
+    .brands__logo--bizedocs {
+      width: 22%; }
+      @media screen and (max-width: 800px) {
+        .brands__logo--bizedocs {
+          width: 60%; } }
+    .brands__logo--centrilogic {
+      margin-left: 20px;
+      width: 28%; }
+      @media screen and (max-width: 800px) {
+        .brands__logo--centrilogic {
           width: 60%; } }
     .brands__logo:hover {
       transform: scale(1.14); }
@@ -1450,13 +1471,19 @@ body {
     width: 100%; }
     .brands__logoImg--cinfo {
       padding-top: 28.5%;
-      background-image: url("../assets/img/cinfo_white.png"); }
+      background-image: url("../assets/img/partnerLogos/cinfo_white.png"); }
     .brands__logoImg--ncds {
       padding-top: 60%;
-      background-image: url("../assets/img/ncds_white.png"); }
+      background-image: url("../assets/img/partnerLogos/ncds_white.png"); }
     .brands__logoImg--bevertec {
       padding-top: 25.2%;
-      background-image: url("../assets/img/bevertec_white.png"); }
+      background-image: url("../assets/img/partnerLogos/bevertec_white.png"); }
+    .brands__logoImg--bizedocs {
+      padding-top: 39%;
+      background-image: url("../assets/img/partnerLogos/bizedocs_white.png"); }
+    .brands__logoImg--centrilogic {
+      padding-top: 23.3%;
+      background-image: url("../assets/img/partnerLogos/centrilogic_white.png"); }
 
 .gallery {
   position: relative; }
@@ -1548,7 +1575,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    left: -200%;
+    left: -100%;
     white-space: normal; }
     .gallery__card--text {
       padding-top: 40px;
@@ -1556,7 +1583,7 @@ body {
       padding-left: 60px;
       padding-right: 60px;
       width: 90%;
-      left: -300%;
+      left: -200%;
       margin-right: 10%;
       background-color: #ffffff;
       box-shadow: 0 5px 11px rgba(196, 196, 196, 0.5); }
