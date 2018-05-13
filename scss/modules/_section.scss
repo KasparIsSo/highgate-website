@@ -61,7 +61,7 @@
 
   @include e('aboutFeature') {
     position: relative;
-    width: calc(100vw - (100vw - 100%)/2);
+    // width: calc(100vw - (100vw - 100%)/2);
 
     // @media screen and (max-width: $break-desktop-s) {
     //   width: 120vw;
@@ -94,16 +94,20 @@
   }
 
   @include e('aboutFeatureImg') {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    @include bg-solo;
+    // height: 100%;
+    position: relative;
     // display: inline-block;
-    background-image: url('../assets/img/about-man.png');
-    width: 50%;
+    float: right;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // @include bg-solo;
+    // display: inline-block;
+    // background-image: url('../assets/img/about-man.png');
+    // width: 50%;
     // float: right;
     //
+
     @media screen and (max-width: $break-tablet-s) {
       display: none;
     }

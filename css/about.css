@@ -850,8 +850,7 @@ body {
     position: relative;
     display: inline-block; }
   .section__aboutFeature {
-    position: relative;
-    width: calc(100vw - (100vw - 100%)/2); }
+    position: relative; }
   .section__aboutFeatureText {
     display: inline-block;
     vertical-align: top; }
@@ -868,15 +867,8 @@ body {
       .section__aboutFeatureText {
         width: 260px; } }
   .section__aboutFeatureImg {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../assets/img/about-man.png");
-    width: 50%; }
+    position: relative;
+    float: right; }
     @media screen and (max-width: 800px) {
       .section__aboutFeatureImg {
         display: none; } }
