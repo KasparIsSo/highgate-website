@@ -874,9 +874,6 @@ body {
         display: none; } }
   .section__about {
     padding-bottom: 135px; }
-    @media screen and (max-width: 800px) {
-      .section__about {
-        padding-bottom: 0; } }
   .section__heading {
     font-size: 36px;
     line-height: 48px;
@@ -1220,7 +1217,7 @@ body {
   width: 30%;
   margin-right: 2.5%;
   margin-left: 2.5%;
-  margin-bottom: 35px;
+  margin-bottom: 5%;
   overflow: hidden; }
   .card:first-child {
     margin-left: 0; }
