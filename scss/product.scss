@@ -51,9 +51,28 @@
     margin-bottom: 20px;
   }
 
+  @include e('dropdownShow') {
+    // display: none;
+    @media screen and (max-width: $break-mobile-l) {
+      // padding-top: 20px;
+      max-height: 0;
+      overflow: hidden;
+      @include f-size-xs;
+      transition: max-height $dtd;
+    }
+  }
+
   @include e('filters') {
     list-style: none;
     margin-bottom:15px;
+
+    @media screen and (max-width: $break-mobile-l) {
+      // overflow: hidden;
+      // height: 34px;
+      position: relative;
+      background-color: $white;
+      border: 1px solid $gunmetal;
+    }
   }
 
   @include e('filtersOptions') {
@@ -77,11 +96,84 @@
     &:after {
       color: $gunmetal;
       content: " /";
+
+      @media screen and (max-width: $break-mobile-l) {
+        content: "";
+      }
     }
 
     &:last-child {
       &:after {
         content: "";
+      }
+    }
+
+    @media screen and (max-width: $break-mobile-l) {
+      display: block;
+      padding: {
+        left: 10px;
+        right: 10px;
+      }
+    }
+
+    @include m('active') {
+      @include f-size-m;
+      cursor: pointer;
+      font: {
+        family: $p-font;
+      }
+      display: none;
+      &:after {
+        content: "";
+      }
+
+      @media screen and (max-width: $break-mobile-l) {
+        padding: {
+          left: 10px;
+          right: 10px;
+        }
+        display: block;
+        position: relative;
+        color: $sienna;
+      }
+    }
+
+    @include m('arrow') {
+      display: none;
+
+      @media screen and (max-width: $break-mobile-l) {
+        display: inline-block;
+        color: $gunmetal;
+        @include transition($dtd);
+        position: absolute;
+        right: 10px;
+        top: 17px;
+        transform: translateY(-50%);
+        transform-origin: center;
+        @include f-size-l;
+        // cursor: pointer;
+        pointer-events: none;
+
+        &.active {
+          top: 0;
+          transform: none;
+          transform: rotate(180deg);
+        }
+
+        @include m('dropdown') {
+          // transform: rotate(90deg);
+          @include transition($dtd);
+          right: auto;
+          transform: none;
+          top: auto;
+          transform-origin: center;
+          position: relative;
+          float: right;
+
+          &.active {
+            transform: rotate(180deg);
+          }
+        }
       }
     }
   }

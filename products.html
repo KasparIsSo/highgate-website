@@ -50,7 +50,7 @@
             <a class = "nav__menuOption" href = "news.html">
               <li>News <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
-            <a class = "nav__menuOption" href = "#">
+            <a class = "nav__menuOption" href = "contact.html">
               <li>Contact Us <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
             </a>
           </ul>
@@ -68,11 +68,14 @@
       <div class = "productNav__content col_12 center">
         <h2 class = "productNav__heading">Products &amp; Services</h2>
         <ul class = "productNav__filters">
-          <li class = "productNav__filtersOptions active" data-category-name = "all">All Products</li>
-          <li class = "productNav__filtersOptions" data-category-name = "lending">Lending</li>
-          <li class = "productNav__filtersOptions" data-category-name = "banking">Banking</li>
-          <li class = "productNav__filtersOptions" data-category-name = "channel">Channel Management</li>
-          <li class = "productNav__filtersOptions" data-category-name = "services">Services</li>
+          <li class = "productNav__filtersOptions--active">All Products</li><i class = "material-icons productNav__filtersOptions--arrow">keyboard_arrow_down</i>
+          <div class = "productNav__dropdownShow">
+            <li class = "productNav__filtersOptions active" data-category-name = "all">All Products</li>
+            <li class = "productNav__filtersOptions" data-category-name = "lending">Lending</li>
+            <li class = "productNav__filtersOptions" data-category-name = "banking">Banking</li>
+            <li class = "productNav__filtersOptions" data-category-name = "channel">Channel Management</li>
+            <li class = "productNav__filtersOptions" data-category-name = "services">Services</li>
+          </div>
         </ul>
         <h6 class = "productNav__submessage">For more information on our products and services. Contact us at <a href = "mailto:contact@highgatesystems.com">contact@highgatesystems.com</a></h6>
       </div>
@@ -401,6 +404,8 @@
         }
       }
 
+      document.querySelector('.productNav__filtersOptions--active').innerHTML = this.innerHTML;
+
       var filterCategory = this.dataset['categoryName'];
       var allProducts = document.getElementsByClassName('product__container');
       for(var i = 0; i < allProducts.length; i++) {
@@ -441,6 +446,18 @@
       // var rel = document.querySelectorAll("[data-category-name=" + this.dataset['categoryName'] + "]");
     })
   }
+
+  //mobile dropdownShow
+  var mobileProdNav = document.querySelector('.productNav__filtersOptions--active');
+  mobileProdNav.addEventListener('click', function() {
+    this.parentNode.querySelector('.productNav__filtersOptions--arrow').classList.toggle('active');
+    var hiddenContent = this.parentNode.querySelector('.productNav__dropdownShow');
+    if (hiddenContent.style.maxHeight){
+      hiddenContent.style.maxHeight = null;
+    } else {
+      hiddenContent.style.maxHeight = hiddenContent.scrollHeight + "px";
+    }
+  })
 </script>
 
 <script>
