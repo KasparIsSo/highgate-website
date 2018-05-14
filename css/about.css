@@ -609,7 +609,8 @@ body {
   position: relative;
   display: block;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #273138; }
   .footer__bg {
     background-color: #273138;
     position: absolute;

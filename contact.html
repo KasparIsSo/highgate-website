@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <link rel = "shortcut icon" href = "/images/favicon.ico" />
+  <title>Highgate Systems – Contact Us</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|PT+Sans:400,700" rel="stylesheet">
+  <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+  <link rel = "stylesheet" href = "css/clear.css" type = "text/css">
+  <link rel = "stylesheet" href = "css/contact.css" type = "text/css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116586869-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116586869-1');
+  </script>
+
+</head>
+
+<body>
+
+  <div class = "container">
+    <div class = "nav">
+      <div class = "nav__wrapper col_12 center">
+        <a class = "nav__logo col_3" href = "index.html">
+            <div class = "nav__logoImg"></div>
+        </a><div class = "nav__mobileMenuWrapper col_3">
+          <div class = "nav__mobileMenu">
+            <span class = "nav__mobileMenuBar nav__mobileMenuBar--1"></span>
+            <span class = "nav__mobileMenuBar nav__mobileMenuBar--2"></span>
+            <span class = "nav__mobileMenuBar nav__mobileMenuBar--3"></span>
+          </div>
+        </div><div class = "nav__links col_9">
+          <ul class = "nav__menu">
+            <a class = "nav__menuOption" href = "index.html">
+              <li>Home <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            </a>
+            <a class = "nav__menuOption active" href = "#">
+              <li>About <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            </a>
+            <a class = "nav__menuOption" href = "products.html">
+              <li>Products <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            </a>
+            <a class = "nav__menuOption" href = "news.html">
+              <li>News <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            </a>
+            <a class = "nav__menuOption" href = "#">
+              <li>Contact Us <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class = "nav--buffer">
+      <div class = "nav__logo col_3">
+        <div class = "nav__logoImg"></div>
+      </div>
+    </div>
+
+    <div class = "splash col_12 center">
+      <div class = "col_12--fullbleed">
+        <div class="bgImg bgImg__mainSplash"></div>
+      </div>
+      <div class = "splash__content splash__content--textCenter center">
+        <h2 class = "splash__heading splash__heading--solo">Get to Know Us</h2>
+      </div>
+    </div>
+
+    <div class = "section section__about col_12 center">
+      <div class = "section__content col_12 col_12--c">
+        <h4 class = "section__subheading">Contact Us</h4>
+        <h6 class = "section__heading col_6 col_6--c">Get in touch with us</h6>
+        <div class = "section__aboutFeatureText col_6 col_6--c">
+          <p class = "section__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class = "contactInfo col_5 col_5--c">
+          <a href="tel:+14166206683">+1 416 620 6683</a>
+          <a href="mailto:contact@highgatesystems.com">contact@highgatesystems.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class = "section section__about col_12 center">
+      <h4 class = "section__subheading">We are here to help</h4>
+      <h6 class = "section__heading col_6 col_6--c">Send us a message</h6>
+      <form id = "emailForm" action = "mailto:contact@highgatesystems.com" method = "post" enctype = "text/plain" class = "contactForm col_6 col_6--c">
+        <div class = "contactForm__entry contactForm__half col_3">
+          <h6 class = "contactForm__nameTitle section__body">First Name*</h6>
+          <input class = "contactForm__input section__body" type = "text" name = "First Name">
+        </div><div class = "contactForm__half col_3">
+          <h6 class = "contactForm__entry contactForm__nameTitle section__body">Last Name*</h6>
+          <input class = "contactForm__input section__body" type = "text" name = "Last Name">
+        </div><div class = "contactForm__half col_3">
+          <h6 class = "contactForm__entry contactForm__nameTitle section__body">Email*</h6>
+          <input class = "contactForm__input section__body" type = "text" name = "Email">
+        </div><div class = "contactForm__half col_3">
+          <h6 class = "contactForm__entry contactForm__nameTitle section__body">Subject</h6>
+          <input class = "contactForm__input section__body" type = "text" name = "Subject">
+        </div><div class = "contactForm__entry contactForm__full">
+          <h6 class = "contactForm__nameTitle section__body">Message*</h6>
+          <!-- <input type = "text" name = "First Name"> -->
+          <textarea class = "contactForm__textarea section__body" name = "Message" form = "emailForm"></textarea>
+        </div>
+        <input type = "submit" class = "button contactForm__submit" value = "submit">
+      </form>
+    </div>
+  </div>
+
+  <div class = "contactMap col_12 center">
+    <div id = "map" class = "contactMap__embed"></div>
+  </div>
+
+  <div class = "footer">
+    <div class = "footer__cont col_12 center">
+      <div class = "footer__info col_4">
+        <img class = "footer__logo col_3 col_3--c footer__menu--mHid" src = "assets/img/footerlogo.png">
+        <p class = "footer__desc footer__desc--canada"><img src = "assets/img/canada.svg" class = "footer__canada">Proud to be Canadian<p>
+        <p class = "footer__desc">
+          <a class = "footer__descLink">Site Map</a> | <a class = "footer__descLink">Terms of Service</a>
+        </p>
+        <p class = "footer__desc">Copyright 2018. All Rights Reserved<p>
+      </div><div class = "footer__links col_8">
+        <ul class = "footer__menu">
+          <h6 class = "footer__menuCategory">Contact</h6>
+          <a href = "mailto:contact@highgatesystems.com" class = "footer__menuOption" href = "#">
+            <li>contact@highgatesystems.com</li>
+          </a>
+          <a class = "footer__menuOption" href = "#">
+            <li>1.416.620.6683</li>
+          </a>
+          <a class = "footer__menuOption" href = "#">
+            <li>5025 Orbitor Drive, Mississauga, ON,</li>
+            <li>Canada, L4W 4Y5</li>
+          </a>
+          <div class = "footer__social">
+            <a class = "footer__menuIcon">
+              <img href = "https://www.linkedin.com/company/highgate-systems-inc-/" src = "assets/img/icons/linkedin.svg">
+            </a>
+            <a class = "footer__menuIcon">
+              <img href = "https://twitter.com/highgate5025" src = "assets/img/icons/twitter.svg">
+            </a>
+          </div>
+        </ul>
+        <ul class = "footer__menu footer__menu--mHide">
+          <h6 class = "footer__menuCategory">Menu</h6>
+          <a class = "footer__menuOption" href = "index.html">
+            <li>Home</li>
+          </a>
+          <a class = "footer__menuOption" href = "products.html">
+            <li>Products</li>
+          </a>
+          <a class = "footer__menuOption" href = "about.html">
+            <li>About Us</li>
+          </a>
+          <a class = "footer__menuOption" href = "news.html">
+            <li>News</li>
+          </a>
+          <a class = "footer__menuOption" href = "#">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type = "text/javascript">
+  document.querySelector('.nav__mobileMenuWrapper').addEventListener('click', function(){
+  // document.querySelector('."nav__mobileMenu').classList.toggle('active');
+  this.parentNode.querySelector('.nav__links').classList.toggle('active');
+  var bars = this.querySelectorAll('.nav__mobileMenuBar');
+  if (!bars[0].classList.contains('rotate')){
+      for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.toggle('center');
+      }
+      setTimeout(function(){
+        for (var i = 0; i < bars.length; i++) {
+          bars[i].classList.toggle('rotate');
+        }
+      }, 300);
+    } else {
+      for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.toggle('rotate');
+      }
+      setTimeout(function(){
+        for (var i = 0; i < bars.length; i++) {
+          bars[i].classList.toggle('center');
+        }
+      }, 300);
+    }
+  })
+</script>
+
+<script>
+function initMap() {
+      // Styles a map in night mode.
+      var highgate = {lat: 43.66, lng: -79.60};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: highgate,
+        zoom: 16,
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ]
+      });
+
+      var marker = new google.maps.Marker({
+        position: highgate,
+        map: map
+      });
+    }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaQXbn_tSuOGRgO02R7P4DXkKJAeS_VMM&callback=initMap">
+</script>
+
+</html>

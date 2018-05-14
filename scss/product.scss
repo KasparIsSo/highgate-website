@@ -241,4 +241,9 @@
       }
     }
   }
+
+  @include e('link') {
+    text-decoration: underline;
+    color: $sienna;
+  }
 }

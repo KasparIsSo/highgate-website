@@ -1,0 +1,32 @@
+.bgImg {
+  @include bg-solo;
+
+  @include e('mainSplash') {
+    background-image: url('../assets/img/contact_header.png');
+    padding-top: 25.6%;
+    @media screen and (max-width: $break-desktop-s) {
+  		padding-top: 25.6%;
+  	}
+
+  	@media screen and (max-width: $break-tablet-l) {
+  		padding-top: 25.6%;
+  	}
+
+    @media screen and (max-width: $break-tablet-s) {
+  		padding-top: 37%;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		padding-top: 43%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+      // background-image: url('../assets/img/contact_header_mobile.jpg');
+  		padding-top: 50%;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+      padding-top: 50%;
+  	}
+  }
+}

@@ -1,0 +1,137 @@
+@import 'mixins.scss';
+
+@import 'modules/grid.scss';
+@import 'modules/font.scss';
+@import 'modules/nav.scss';
+@import 'modules/section.scss';
+@import 'modules/inputs.scss';
+
+@import 'img/img_contact.scss';
+
+.contactInfo {
+  float: right;
+  background-color: $sienna;
+  padding: 30px 25px;
+
+  &>a {
+    display: block;
+    @include f-size-xs;
+    color: $white;
+    font: {
+      family: $s-font;
+      weight: 400;
+    }
+    text-decoration: none;
+    // margin-bottom: 20px;
+  }
+}
+
+.contactForm {
+
+  width: 6 * $col-desktop-l + 10 * $margin-desktop-l;
+
+	@media screen and (max-width: $break-desktop-s) {
+		width: 6 * $col-desktop-s + 10 * $margin-desktop-s;
+	}
+
+  @media screen and (max-width: $break-tablet-l) {
+		width: 12 * $col-tablet-l + 22 * $margin-desktop-s;
+	}
+
+  @media screen and (max-width: $break-tablet-s) {
+		width: 12 * $col-tablet-s + 22 * $margin-tablet-s;
+	}
+
+  @media screen and (max-width: $break-tablet-xs) {
+		width: 6 * $col-tablet-xs + 10 * $margin-tablet-xs;
+	}
+
+	@media screen and (max-width: $break-mobile-l) {
+		width: 6 * $col-mobile-l + 10 * $margin-desktop-s;
+	}
+
+	@media screen and (max-width: $break-mobile-s) {
+		width: 6 * $col-mobile-s + 10 * $margin-mobile-s;
+	}
+
+  @include e('entry') {
+    margin-bottom: 20px;
+  }
+
+  @include e('half') {
+    display: inline-block;
+
+    width: 3 * $col-desktop-l + 4 * $margin-desktop-l;
+
+    @media screen and (max-width: $break-desktop-s) {
+      width: 3 * $col-desktop-s + 4 * $margin-desktop-s;
+    }
+
+    @media screen and (max-width: $break-tablet-l) {
+      width: 6 * $col-tablet-l + 10 * $margin-desktop-s;
+    }
+
+    @media screen and (max-width: $break-tablet-s) {
+  		width: 6 * $col-tablet-s + 10 * $margin-tablet-s;
+  	}
+
+    @media screen and (max-width: $break-tablet-xs) {
+  		width: 3 * $col-tablet-xs + 4 * $margin-tablet-xs;
+  	}
+
+  	@media screen and (max-width: $break-mobile-l) {
+  		width: 3 * $col-mobile-l + 4 * $margin-desktop-s;
+  	}
+
+  	@media screen and (max-width: $break-mobile-s) {
+  		width: 3 * $col-mobile-s + 4 * $margin-mobile-s;
+  	}
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @include e('nameTitle') {
+    color: $greyBlue;
+    margin-bottom: 10px;
+  }
+
+  @include e('input') {
+    border: none;
+    border-bottom: 1px solid $greyBlue;
+    background: $white0op;
+    width: calc(100% - 20px);
+  }
+
+  @include e('textarea') {
+    border: none;
+    border-bottom: 1px solid $greyBlue;
+    background: $white0op;
+    width: calc(100% - 20px);
+    resize: none;
+  }
+
+  @include e('submit') {
+    background: $white0op;
+  }
+}
+
+.contactMap {
+  margin-bottom: 150px;
+  @media screen and (max-width: $break-tablet-l) {
+    width: 100vw;
+    margin-bottom: 0;
+  }
+  @include e('embed') {
+    width: 100%;
+    height: 450px;
+    @media screen and (max-width: $break-mobile-l) {
+      height: 300px;
+    }
+  }
+}

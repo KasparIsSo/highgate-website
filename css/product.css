@@ -609,7 +609,8 @@ body {
   position: relative;
   display: block;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #273138; }
   .footer__bg {
     background-color: #273138;
     position: absolute;
@@ -1468,5 +1469,8 @@ body {
         .product__dropdownShow > ul > li:before {
           content: "\2022";
           margin-right: 10px; }
+  .product__link {
+    text-decoration: underline;
+    color: #a74f25; }
 
 /*# sourceMappingURL=product.css.map */
