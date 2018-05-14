@@ -144,6 +144,10 @@
     padding-bottom: 0px;
   }
 
+  @include e('form') {
+    padding-top: 140px;
+  }
+
   @media screen and (max-width: $break-tablet-l) {
     margin: 0;
     margin-bottom: 30px;

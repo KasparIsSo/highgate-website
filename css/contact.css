@@ -1198,6 +1198,8 @@ body {
   vertical-align: top; }
   .contactTxt__wrap {
     padding-bottom: 0px; }
+  .contactTxt__form {
+    padding-top: 140px; }
   @media screen and (max-width: 980px) {
     .contactTxt {
       margin: 0;
