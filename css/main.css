@@ -931,6 +931,7 @@ body {
   .section__caption {
     font-size: 16px;
     line-height: 30px;
+    color: #455560;
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 300;
     font-style: italic; }
@@ -984,13 +985,16 @@ body {
         font-size: 12px;
         line-height: 28px; } }
     .section__body--splash {
-      letter-spacing: 1.7px; }
+      letter-spacing: 1.7px;
+      margin-bottom: 45px; }
+    .section__body--bold {
+      font-weight: bold; }
     .section__body--italic {
       font-style: italic; }
     .section__body--white {
       color: #ffffff; }
-    .section__body--splash {
-      margin-bottom: 45px; }
+    .section__body--pCard {
+      line-height: 22px; }
     @media screen and (max-width: 800px) {
       .section__body {
         width: 100%; } }
@@ -1215,6 +1219,7 @@ body {
   text-align: center;
   background-color: #ffffff;
   padding: 25px 25px;
+  text-decoration: none;
   width: 30%;
   margin-right: 2.5%;
   margin-left: 2.5%;
@@ -1400,8 +1405,8 @@ body {
 
 .brands {
   position: relative;
-  padding-top: 135px;
-  padding-bottom: 135px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
   background-color: #a74f25; }
   @media screen and (max-width: 800px) {
@@ -1421,32 +1426,38 @@ body {
     padding: 30px;
     transition-duration: 0.3s; }
     .brands__logo--cinfo {
-      width: 30%; }
-      @media screen and (max-width: 800px) {
-        .brands__logo--cinfo {
-          width: 60%; } }
-    .brands__logo--ncds {
       width: 20%; }
       @media screen and (max-width: 800px) {
+        .brands__logo--cinfo {
+          margin-left: 0px;
+          width: 60%; } }
+    .brands__logo--ncds {
+      margin-left: 20px;
+      width: 15%; }
+      @media screen and (max-width: 800px) {
         .brands__logo--ncds {
+          margin-left: 0px;
           width: 60%;
           height: auto; } }
     .brands__logo--bevertec {
       margin-left: 20px;
-      width: 28%; }
+      width: 20%; }
       @media screen and (max-width: 800px) {
         .brands__logo--bevertec {
+          margin-left: 0px;
           width: 60%; } }
     .brands__logo--bizedocs {
-      width: 22%; }
+      margin-left: 20px;
+      width: 15%; }
       @media screen and (max-width: 800px) {
         .brands__logo--bizedocs {
+          margin-left: 0px;
           width: 60%; } }
     .brands__logo--centrilogic {
-      margin-left: 20px;
-      width: 28%; }
+      width: 20%; }
       @media screen and (max-width: 800px) {
         .brands__logo--centrilogic {
+          margin-left: 0px;
           width: 60%; } }
     .brands__logo:hover {
       transform: scale(1.14); }

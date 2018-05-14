@@ -931,6 +931,7 @@ body {
   .section__caption {
     font-size: 16px;
     line-height: 30px;
+    color: #455560;
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 300;
     font-style: italic; }
@@ -984,13 +985,16 @@ body {
         font-size: 12px;
         line-height: 28px; } }
     .section__body--splash {
-      letter-spacing: 1.7px; }
+      letter-spacing: 1.7px;
+      margin-bottom: 45px; }
+    .section__body--bold {
+      font-weight: bold; }
     .section__body--italic {
       font-style: italic; }
     .section__body--white {
       color: #ffffff; }
-    .section__body--splash {
-      margin-bottom: 45px; }
+    .section__body--pCard {
+      line-height: 22px; }
     @media screen and (max-width: 800px) {
       .section__body {
         width: 100%; } }
@@ -1188,5 +1192,71 @@ body {
     @media screen and (max-width: 420px) {
       .contactMap__embed {
         height: 300px; } }
+
+.contactTxt {
+  display: inline-block;
+  vertical-align: top; }
+  .contactTxt__wrap {
+    padding-bottom: 0px; }
+  @media screen and (max-width: 980px) {
+    .contactTxt {
+      margin: 0;
+      margin-bottom: 30px; } }
+  .contactTxt > a {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #455560;
+    font-family: Lato, Helvetica, Sans-serif;
+    font-weight: 400;
+    text-decoration: none; }
+    @media screen and (max-width: 1320px) {
+      .contactTxt > a {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 1180px) {
+      .contactTxt > a {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 980px) {
+      .contactTxt > a {
+        font-size: 14px;
+        line-height: 28px; } }
+    @media screen and (max-width: 420px) {
+      .contactTxt > a {
+        font-size: 12px;
+        line-height: 28px; } }
+    @media screen and (max-width: 320px) {
+      .contactTxt > a {
+        font-size: 12px;
+        line-height: 28px; } }
+  .contactTxt > p {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #455560;
+    font-family: Lato, Helvetica, Sans-serif;
+    font-weight: 400;
+    text-decoration: none; }
+    @media screen and (max-width: 1320px) {
+      .contactTxt > p {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 1180px) {
+      .contactTxt > p {
+        font-size: 16px;
+        line-height: 30px; } }
+    @media screen and (max-width: 980px) {
+      .contactTxt > p {
+        font-size: 14px;
+        line-height: 28px; } }
+    @media screen and (max-width: 420px) {
+      .contactTxt > p {
+        font-size: 12px;
+        line-height: 28px; } }
+    @media screen and (max-width: 320px) {
+      .contactTxt > p {
+        font-size: 12px;
+        line-height: 28px; } }
 
 /*# sourceMappingURL=contact.css.map */

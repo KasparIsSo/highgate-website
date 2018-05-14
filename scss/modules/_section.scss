@@ -165,6 +165,7 @@
 
   @include e('caption') {
     @include f-size-xs;
+    color: $gunmetal;
     font: {
       family: $p-font;
       weight: 300;
@@ -187,6 +188,11 @@
 
     @include m('splash') {
       letter-spacing: 1.7px;
+      margin-bottom: 45px;
+    }
+
+    @include m('bold') {
+      font-weight: bold;
     }
 
     @include m('italic') {
@@ -197,8 +203,8 @@
       color: $white;
     }
 
-    @include m('splash') {
-      margin-bottom: 45px;
+    @include m('pCard') {
+      line-height: 22px;
     }
 
     @media screen and (max-width: $break-tablet-s) {

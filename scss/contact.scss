@@ -135,3 +135,39 @@
     }
   }
 }
+
+.contactTxt {
+  display: inline-block;
+  vertical-align: top;
+
+  @include e('wrap') {
+    padding-bottom: 0px;
+  }
+
+  @media screen and (max-width: $break-tablet-l) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &>a {
+    display: block;
+    @include f-size-xs;
+    color: $gunmetal;
+    font: {
+      family: $s-font;
+      weight: 400;
+    }
+    text-decoration: none;
+  }
+
+  &>p {
+    display: block;
+    @include f-size-xs;
+    color: $gunmetal;
+    font: {
+      family: $s-font;
+      weight: 400;
+    }
+    text-decoration: none;
+  }
+}
