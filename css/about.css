@@ -1018,6 +1018,7 @@ body {
   padding: 12px 33px 10px;
   font-family: "PT Sans", Helvetica, Sans-Serif;
   font-weight: 400;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
