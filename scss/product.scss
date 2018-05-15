@@ -72,6 +72,7 @@
     @media screen and (max-width: $break-mobile-l) {
       // overflow: hidden;
       // height: 34px;
+      width: 100%;
       position: relative;
       background-color: $white;
       border: 1px solid $gunmetal;
@@ -233,7 +234,7 @@
 
   @include e('container') {
     @include defaultDropshadow;
-    background-color: $featureWhite;
+    // background-color: $featureWhite;
     display: block;
     @include transition($dtd);
     text-decoration: none;

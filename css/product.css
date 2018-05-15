@@ -1252,6 +1252,7 @@ body {
     margin-bottom: 15px; }
     @media screen and (max-width: 420px) {
       .productNav__filters {
+        width: 100%;
         position: relative;
         background-color: #ffffff;
         border: 1px solid #455560; } }
@@ -1456,7 +1457,6 @@ body {
     display: none; }
   .product__container {
     box-shadow: 0 4px 18px rgba(196, 196, 196, 0.5);
-    background-color: #f9f9f9;
     display: block;
     transition-duration: 0.3s;
     text-decoration: none;

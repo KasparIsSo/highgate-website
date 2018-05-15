@@ -89,6 +89,9 @@
           >5025 Orbitor Drive</a>
           <a href =
           https://www.google.ca/maps/place/5025+Orbitor+Dr+Building+6,+Mississauga,+ON+L4W+4Y5/@43.6569214,-79.6005877,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3853996d4917:0x9e0c5a69a70a915b!8m2!3d43.656921!4d-79.598399
+          >Building 6, Suite 200</a>
+          <a href =
+          https://www.google.ca/maps/place/5025+Orbitor+Dr+Building+6,+Mississauga,+ON+L4W+4Y5/@43.6569214,-79.6005877,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3853996d4917:0x9e0c5a69a70a915b!8m2!3d43.656921!4d-79.598399
           >Missisauga, ON, Canada,</a>
           <a href =
           https://www.google.ca/maps/place/5025+Orbitor+Dr+Building+6,+Mississauga,+ON+L4W+4Y5/@43.6569214,-79.6005877,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3853996d4917:0x9e0c5a69a70a915b!8m2!3d43.656921!4d-79.598399
@@ -124,7 +127,11 @@
   </div>
 
   <div class = "contactMap col_12 center">
-    <div id = "map" class = "contactMap__embed"></div>
+    <!-- <div id = "map" class = "contactMap__embed"></div> -->
+    <iframe class = "contactMap__embed"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBaQXbn_tSuOGRgO02R7P4DXkKJAeS_VMM&q=5025+Orbitor+Dr,Building+6,Suite+200,Missisauga+ON" allowfullscreen>
+    </iframe>
   </div>
 
   <div class = "footer">
@@ -210,7 +217,8 @@
   })
 </script>
 
-<script>
+<!-- <script>
+//for grey map
 function initMap() {
       // Styles a map in night mode.
       var highgate = {lat: 43.66, lng: -79.60};
@@ -404,6 +412,6 @@ function initMap() {
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaQXbn_tSuOGRgO02R7P4DXkKJAeS_VMM&callback=initMap">
-</script>
+</script> -->
 
 </html>
