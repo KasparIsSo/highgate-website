@@ -42,6 +42,9 @@
       family: $p-font;
       weight: 400;
     }
+    @media screen and (max-width: $break-tablet-l) {
+      width: 100%;
+    }
   }
 
   @include e('heading') {

@@ -1184,6 +1184,9 @@ body {
   .productNav__content {
     font-family: "PT Sans", Helvetica, Sans-Serif;
     font-weight: 400; }
+    @media screen and (max-width: 980px) {
+      .productNav__content {
+        width: 100%; } }
   .productNav__heading {
     font-size: 64px;
     line-height: 74px;
