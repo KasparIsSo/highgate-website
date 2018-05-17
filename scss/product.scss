@@ -334,6 +334,26 @@
         }
         padding-left: 10px;
         width: calc(100% - 30px);
+
+        &>a {
+          display: inline-block;
+          text-decoration: none;
+          margin-bottom: 0;
+          color: $sienna;
+          font: {
+            style: italic;
+          }
+        }
+      }
+    }
+
+    &>a {
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      color: $sienna;
+      font: {
+        style: italic;
       }
     }
   }

@@ -1615,6 +1615,18 @@ body {
         .product__dropdownShow > ul > li:before {
           content: "\2022";
           margin-right: 10px; }
+        .product__dropdownShow > ul > li > a {
+          display: inline-block;
+          text-decoration: none;
+          margin-bottom: 0;
+          color: #a74f25;
+          font-style: italic; }
+    .product__dropdownShow > a {
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      color: #a74f25;
+      font-style: italic; }
   .product__link {
     text-decoration: underline;
     color: #a74f25; }
