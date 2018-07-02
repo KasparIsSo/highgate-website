@@ -13,7 +13,7 @@ body {
   z-index: 1000;
   background-color: #455560;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   position: fixed; }
   .preloader.fade {
     transition-duration: 0.5s;
@@ -483,8 +483,8 @@ body {
       .nav__mobileMenuWrapper {
         width: 122px; } }
   .nav__mobileMenu {
-    padding-top: 37.5%;
-    width: 37.5%;
+    padding-top: 30%;
+    width: 30%;
     float: right;
     position: relative; }
   .nav__mobileMenuBar {
@@ -666,13 +666,6 @@ body {
     top: 0px;
     height: 100%;
     z-index: -10; }
-  .footer__logoImg {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("./assets/img/footerlogo.png");
-    padding-top: 37.5%; }
   .footer__info {
     display: inline-block;
     margin-left: 0; }

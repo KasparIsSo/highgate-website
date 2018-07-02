@@ -13,7 +13,7 @@ body {
   z-index: 1000;
   background-color: #455560;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   position: fixed; }
   .preloader.fade {
     transition-duration: 0.5s;
