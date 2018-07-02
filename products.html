@@ -162,7 +162,7 @@
       </div>
 
       <div class = "product product__container product__dropdown col_12 col_12--c" data-category = "services">
-        <h4 class = "product__heading product__heading--dropdown">Disaster Recovery (RaaS)</h4>
+        <h4 class = "product__heading product__heading--dropdown">Disaster Recovery (DRaaS)</h4>
         <i class = "material-icons product__arrow product__arrow--dropdown">keyboard_arrow_down</i>
         <div class = "product__dropdownShow col_10 col_10--c">
           <p>Highgate Systems can be your DR partner, providing you with a level of security that your data is safe and retrievable in the event of a disaster.</p>
@@ -173,7 +173,7 @@
             <li>Access is provided via Citrix across the internet and all the necessary firewalls and antivirus protection are in place.</li>
             <li>Solutions starting from five (5) Highgate Banking simultaneous users to as many users as needed by your organization.</li>
           </ul>
-          <a href = "./downloads/brochures/Disaster%20Recovery%20(RaaS)%20Brochure.pdf" class = "section__body" target = "_blank">Read More…</a>
+          <a href = "./downloads/brochures/Disaster-Recovery-DRaaS-Brochure.pdf" class = "section__body" target = "_blank">Read More…</a>
         </div>
       </div>
 
@@ -426,6 +426,7 @@
       }
 
       document.querySelector('.productNav__filtersOptions--active').innerHTML = this.innerHTML;
+      document.querySelector('.productNav__dropdownShow').style.maxHeight = null;
 
       var filterCategory = this.dataset['categoryName'];
       var allProducts = document.getElementsByClassName('product__container');
@@ -500,14 +501,11 @@
   var toBeFiltered = location.hash.substr(1);
   var targetObj;
 
-  console.log(toBeFiltered);
-
   var productFilters = document.getElementsByClassName('productNav__filtersOptions');
 
   for(var f of productFilters) {
     f.classList.remove('active');
     if (f.dataset.categoryName === toBeFiltered) {
-      console.log('ye');
       f.classList.add('active');
       targetObj = f;
     }
