@@ -12,7 +12,6 @@
   <link rel = "stylesheet" href = "css/clear.css" type = "text/css">
   <link rel = "stylesheet" href = "css/main.css" type = "text/css">
 
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116586869-1"></script>
   <script>
@@ -22,11 +21,22 @@
 
     gtag('config', 'UA-116586869-1');
   </script>
-
+  <noscript>
+      <style>
+          #preloader {
+            display:none;
+          }
+      </style>
+  </noscript>
 </head>
 
 <body>
-
+  <div id = "preloader" class = "preloader">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+  </div>
   <div class = "container">
     <div class = "nav">
       <div class = "nav__wrapper col_12 center">
@@ -299,6 +309,8 @@
     </div>
   </div>
 </body>
+
+<script src = "js/preloader.js"></script>
 
 <script>
   document.querySelector('.nav__mobileMenuWrapper').addEventListener('click', function(){
