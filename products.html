@@ -5,7 +5,7 @@
   <meta charset = "utf-8">
   <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
   <link rel = "shortcut icon" type="image/png" href = "./assets/img/fav/favicon.png" />
-  <title>Highgate Systems – About</title>
+  <title>Highgate Systems – Products</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|PT+Sans:400,700" rel="stylesheet">
   <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
   <link rel = "stylesheet" href = "css/clear.css" type = "text/css">
@@ -79,7 +79,7 @@
     <div class = "productNav col_12 center">
       <div class = "productNav__content col_12 col_12--c">
         <h2 class = "productNav__heading">Products &amp; Services</h2>
-        <ul class = "productNav__filters col_8 col_8--c">
+        <ul class = "productNav__filters col_12 col_12--c">
           <li class = "productNav__filtersOptions--active">All Products</li><i class = "material-icons productNav__filtersOptions--arrow">keyboard_arrow_down</i>
           <div class = "productNav__dropdownShow">
             <li class = "productNav__filtersOptions active" data-category-name = "all">All Products</li>
@@ -88,7 +88,6 @@
             <li class = "productNav__filtersOptions" data-category-name = "credit">Credit Solutions</li>
             <li class = "productNav__filtersOptions" data-category-name = "management">Management</li>
             <li class = "productNav__filtersOptions" data-category-name = "services">Services</li>
-            <!-- <li class = "productNav__filtersOptions" data-category-name = "saas">SaaS</li> -->
           </div>
         </ul>
         <h6 class = "productNav__submessage">For more information on our products and services. Contact us at <a href = "mailto:contact@highgatesystems.com">contact@highgatesystems.com</a></h6>
@@ -205,6 +204,14 @@
         <div class = "product col_12 col_12--c">
           <h4 class = "product__heading">Highgate Collections</h4>
           <p class = "product__body col_10 col_10--c">A Collection Management Solutions must include both the ability to identify delinquencies and actively pursue, follow up and collect funds in a timely and cost effective manner. Highgate Collections has been designed to solve these problems, and more.</p>
+          <i class = "material-icons product__arrow">keyboard_arrow_right</i>
+        </div>
+      </a>
+
+      <a href = "./downloads/brochures/Highgate%20SaaS%20Services%20Brochure.pdf" class = "product__container" data-category = "services" target = "_blank">
+        <div class = "product col_12 col_12--c">
+          <h4 class = "product__heading">Highgate SaaS</h4>
+          <p class = "product__body col_10 col_10--c">Software as a Service (SaaS) is a software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted. The Highgate SaaS Model delivers functionally rich solutions, speed of deployment, scalability and right pricing. Our ability to grow with your organization makes us the optimal partner to provide an effective and efficient suite of solutions that can be tailored to your specific needs.</p>
           <i class = "material-icons product__arrow">keyboard_arrow_right</i>
         </div>
       </a>
@@ -394,6 +401,16 @@
 <script src = 'js/nav.js'></script>
 
 <script>
+  window.sr = ScrollReveal({
+    scale: 1
+  });
+  sr.reveal('.splash');
+  sr.reveal('.productNav');
+  sr.reveal('.product__container');
+  sr.reveal('.footer');
+</script>
+
+<script>
   var productFilters = document.getElementsByClassName('productNav__filtersOptions');
 
   for(var f of productFilters) {
@@ -418,6 +435,9 @@
         } else {
           if(allProducts[i].dataset['category'] == filterCategory) {
             allProducts[i].classList.remove('hide');
+            if (i<3) {
+              allProducts[i].style.opacity = 1;
+            }
           } else {
             allProducts[i].classList.add('fade');
           }
@@ -445,8 +465,11 @@
             }
           }
         }
+        sr.sync();
       }, 300);
       // var rel = document.querySelectorAll("[data-category-name=" + this.dataset['categoryName'] + "]");
+
+      // window.scrollTo(window.scrollX, window.scrollY+5);
     })
   }
 
@@ -480,9 +503,10 @@
 <script>
 (function() {
   var toBeFiltered = location.hash.substr(1);
-  var targetObj;
 
   var productFilters = document.getElementsByClassName('productNav__filtersOptions');
+
+  var targetObj = productFilters[0];
 
   for(var f of productFilters) {
     f.classList.remove('active');
@@ -530,18 +554,10 @@
         }
       }
     }
+    sr.sync();
   }, 300);
 })()
-</script>
 
-<script>
-  window.sr = ScrollReveal({
-    scale: 1
-  });
-  sr.reveal('.splash');
-  sr.reveal('.productNav');
-  sr.reveal('.product__container');
-  sr.reveal('.footer');
 </script>
 
 </html>

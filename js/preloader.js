@@ -1,5 +1,3 @@
-console.log('hi');
-
 window.addEventListener("load", function() {
     document.getElementById('preloader').classList.toggle('fade');
     setTimeout(function(){

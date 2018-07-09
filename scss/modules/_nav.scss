@@ -3,8 +3,8 @@
 	top: 0;
 	display: block;
 	padding: {
-		top: 25px;
-		bottom: 10px;
+		top: 20px;
+		bottom: 20px;
 	}
 	z-index: 100;
 	width: 100vw;
@@ -50,7 +50,7 @@
 		@include bg-solo;
 		background-size: contain;
 		background-image: url('../assets/img/logo.svg');
-		padding-top: 30%;
+		padding-top: 35%;
 	}
 
 	@include e('mobileMenuWrapper') {
@@ -79,8 +79,8 @@
 	}
 
 	@include e('mobileMenu') {
-		padding-top: 30%;
-		width: 30%;
+		padding-top: 35%;
+		width: 35%;
 		float: right;
 		position: relative;
 	}
@@ -107,8 +107,6 @@
     @include m('2'){
       top: 50%;
       transform: translateY(-50%);
-      &.center {
-      }
       &.rotate {
         transform: rotate(45deg);
       }
@@ -161,7 +159,7 @@
 	}
 
 	@include e('menuOption') {
-		@include f-size-xs;
+		@include f-size-nav;
 		@include transition($dtd);
 		color: $gunmetal;
 		display: inline-block;
@@ -193,24 +191,6 @@
 			margin: 40px auto 0;
 			width: 100%;
 		}
-
-		// @media screen and (max-width: $break-tablet-s) {
-		// 	width: 12 * $col-tablet-s + 22 * $margin-tablet-s;
-		// 	margin: 40px auto 0;
-		// }
-		//
-	  // @media screen and (max-width: $break-tablet-xs) {
-		// 	width: 6 * $col-tablet-xs + 10 * $margin-tablet-xs;
-		// }
-		//
-		// @media screen and (max-width: $break-mobile-l) {
-		// 	width: 6 * $col-mobile-l + 10 * $margin-tablet-xs;
-		// }
-		//
-		// @media screen and (max-width: $break-mobile-s) {
-		// 	width: 6 * $col-mobile-s + 10 * $margin-mobile-s;
-		// }
-
 
 		&>li {
 			width: 100%;

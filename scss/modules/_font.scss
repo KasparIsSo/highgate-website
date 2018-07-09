@@ -178,16 +178,31 @@
   }
 }
 
+@mixin f-size-nav {
+  font-size: 18px;
+  line-height: 18px;
+
+  @media screen and (max-width: $break-tablet-l) {
+    font-size: 16px;
+    line-height: 0px;
+  }
+
+  @media screen and (max-width: $break-mobile-l) {
+    font-size: 14px;
+    line-height: 0px;
+  }
+
+  @media screen and (max-width: $break-mobile-s) {
+    font-size: 14px;
+    line-height: 0px;
+  }
+}
+
 @mixin f-size-xs {
   font-size: 16px;
   line-height: 30px;
 
   @media screen and (max-width: $break-desktop-l) {
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  @media screen and (max-width: $break-desktop-s) {
     font-size: 16px;
     line-height: 30px;
   }
