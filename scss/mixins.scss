@@ -12,12 +12,12 @@ $break-mobile-s: 320px;
 $p-font: "PT Sans", Helvetica, Sans-Serif;
 $s-font: Lato, Helvetica, Sans-serif;
 
-$dtd: .3s;
+$dtd: 0.3s;
 
 $white: #ffffff;
 $featureWhite: #f9f9f9;
 $offWhite: #fafafa;
-$shadow: hsla(0, 0, 77, .5);
+$shadow: hsla(0, 0, 77, 0.5);
 $gunmetal: #455560;
 $dropdownBG: rgba(39, 49, 56, 0.99);
 $greyBlue: #687f8f;
@@ -27,11 +27,11 @@ $darkGrey: #384045;
 $darkestGrey: #273138;
 $black: #000000;
 
-$lBlack30op: hsla(0, 0, 0, .3);
+$lBlack30op: hsla(0, 0, 0, 0.3);
 $lBlack0op: hsla(0, 0, 0, 0);
 $white0op: hsla(0, 0, 100, 0);
 
-$duration: .4s;
+$duration: 0.4s;
 
 * {
   box-sizing: border-box;
@@ -44,15 +44,15 @@ body {
 }
 
 @mixin e($element) {
-    &__#{$element} {
-        @content;
-    }
+  &__#{$element} {
+    @content;
+  }
 }
 
 @mixin m($modifier) {
-    &--#{$modifier} {
-        @content;
-    }
+  &--#{$modifier} {
+    @content;
+  }
 }
 
 @mixin bg-solo {
@@ -72,9 +72,10 @@ body {
 }
 
 .container {
-	display: block;
-	margin: 0 auto;
-  overflow-x: hidden;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  // overflow-x: hidden;
   // background-color: $offWhite;
 }
 
@@ -88,9 +89,9 @@ body {
   position: fixed;
 
   &.fade {
-    @include transition(.5s);
+    @include transition(0.5s);
     background-color: $offWhite;
-    opacity: 0; 
+    opacity: 0;
 
     &.hidden {
       display: none;
@@ -107,7 +108,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.double-bounce1, .double-bounce2 {
+.double-bounce1,
+.double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -116,27 +118,34 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 @-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }

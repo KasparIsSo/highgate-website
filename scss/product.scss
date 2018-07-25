@@ -1,12 +1,12 @@
-@import 'mixins.scss';
+@import "mixins.scss";
 
-@import 'modules/grid.scss';
-@import 'modules/font.scss';
-@import 'modules/nav.scss';
-@import 'modules/section.scss';
-@import 'modules/inputs.scss';
+@import "modules/grid.scss";
+@import "modules/font.scss";
+@import "modules/nav.scss";
+@import "modules/section.scss";
+@import "modules/inputs.scss";
 
-@import 'img/img_about.scss';
+@import "img/img_about.scss";
 
 .productNav {
   position: relative;
@@ -37,7 +37,7 @@
     bottom: 65px;
   }
 
-  @include e('content') {
+  @include e("content") {
     font: {
       family: $p-font;
       weight: 400;
@@ -47,14 +47,14 @@
     }
   }
 
-  @include e('heading') {
+  @include e("heading") {
     @include f-size-xxl;
     color: $gunmetal;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
 
-  @include e('dropdownShow') {
+  @include e("dropdownShow") {
     // display: none;
     @media screen and (max-width: $break-mobile-l) {
       // padding-top: 20px;
@@ -65,9 +65,9 @@
     }
   }
 
-  @include e('filters') {
+  @include e("filters") {
     list-style: none;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 
     @media screen and (max-width: $break-mobile-l) {
       // overflow: hidden;
@@ -79,7 +79,7 @@
     }
   }
 
-  @include e('filtersOptions') {
+  @include e("filtersOptions") {
     @include transition($dtd);
     display: inline-block;
     color: $gunmetal;
@@ -120,7 +120,7 @@
       }
     }
 
-    @include m('active') {
+    @include m("active") {
       @include f-size-m;
       cursor: pointer;
       font: {
@@ -142,7 +142,7 @@
       }
     }
 
-    @include m('arrow') {
+    @include m("arrow") {
       display: none;
 
       @media screen and (max-width: $break-mobile-l) {
@@ -164,7 +164,7 @@
           transform: rotate(180deg);
         }
 
-        @include m('dropdown') {
+        @include m("dropdown") {
           // transform: rotate(90deg);
           @include transition($dtd);
           right: auto;
@@ -182,9 +182,9 @@
     }
   }
 
-  @include e('submessage') {
+  @include e("submessage") {
     @include f-size-xs;
-    &>a {
+    & > a {
       color: $sienna;
       text-decoration: underline;
     }
@@ -215,12 +215,12 @@
   }
 
   &:hover {
-    &>i {
+    & > i {
       color: $sienna;
     }
   }
 
-  &>h4 {
+  & > h4 {
     transform: translateY(5px);
   }
 
@@ -232,7 +232,7 @@
     display: none;
   }
 
-  @include e('container') {
+  @include e("container") {
     @include defaultDropshadow;
     // background-color: $featureWhite;
     display: block;
@@ -248,11 +248,11 @@
     }
   }
 
-  @include e('wrapper') {
+  @include e("wrapper") {
     margin-bottom: 120px;
   }
 
-  @include e('heading') {
+  @include e("heading") {
     @include f-size-m;
     font: {
       weight: 700;
@@ -260,7 +260,7 @@
     margin-bottom: 10px;
     letter-spacing: 1px !important;
 
-    @include m('dropdown') {
+    @include m("dropdown") {
       display: inline-block;
 
       @media screen and (max-width: $break-mobile-l) {
@@ -269,12 +269,12 @@
     }
   }
 
-  @include e('body') {
+  @include e("body") {
     @include f-size-xs;
     font: {
       weight: 400;
     }
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 
     @media screen and (max-width: $break-tablet-xs) {
       // width: 80%;
@@ -282,7 +282,7 @@
     }
   }
 
-  @include e('arrow') {
+  @include e("arrow") {
     @include transition($dtd);
     position: absolute;
     right: 30px;
@@ -291,7 +291,7 @@
     @include f-size-xl;
     cursor: pointer;
 
-    @include m('dropdown') {
+    @include m("dropdown") {
       // transform: rotate(90deg);
       @include transition($dtd);
       right: auto;
@@ -307,25 +307,24 @@
     }
   }
 
-  @include e('dropdown') {
+  @include e("dropdown") {
     @include defaultDropshadow;
   }
 
-  @include e('dropdownShow') {
+  @include e("dropdownShow") {
     // display: none;
     max-height: 0;
     overflow: hidden;
     @include f-size-xs;
     transition: max-height $dtd;
 
-
-    &>p {
+    & > p {
       margin-top: 30px;
     }
 
-    &>ul {
+    & > ul {
       margin-top: 30px;
-      &>li {
+      & > li {
         &:before {
           content: "\2022";
           margin: {
@@ -335,7 +334,7 @@
         padding-left: 10px;
         width: calc(100% - 30px);
 
-        &>a {
+        & > a {
           display: inline-block;
           text-decoration: none;
           margin-bottom: 0;
@@ -347,7 +346,7 @@
       }
     }
 
-    &>a {
+    & > a {
       margin-top: 30px;
       display: inline-block;
       text-decoration: none;
@@ -358,7 +357,7 @@
     }
   }
 
-  @include e('link') {
+  @include e("link") {
     text-decoration: underline;
     color: $sienna;
   }

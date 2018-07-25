@@ -1,12 +1,12 @@
-@import 'mixins.scss';
+@import "mixins.scss";
 
-@import 'modules/grid.scss';
-@import 'modules/font.scss';
-@import 'modules/nav.scss';
-@import 'modules/section.scss';
-@import 'modules/inputs.scss';
+@import "modules/grid.scss";
+@import "modules/font.scss";
+@import "modules/nav.scss";
+@import "modules/section.scss";
+@import "modules/inputs.scss";
 
-@import 'img/img_main.scss';
+@import "img/img_main.scss";
 
 // * {
 //   outline: 1px solid red;
@@ -17,7 +17,7 @@
     top: 135px;
     bottom: 135px;
   }
-  @include e('content') {
+  @include e("content") {
     position: relative;
     display: inline-block;
   }
@@ -46,7 +46,7 @@
     }
   }
 
-  @include m('roadmap') {
+  @include m("roadmap") {
     padding: {
       top: 40px;
       bottom: 60px;
@@ -66,10 +66,9 @@
         top: 0px;
       }
     }
-
   }
 
-  @include e('content') {
+  @include e("content") {
     position: relative;
     margin-bottom: 170px;
 
@@ -78,7 +77,7 @@
     }
   }
 
-  @include e('bg') {
+  @include e("bg") {
     background-color: $offWhite;
     position: absolute;
     top: 0px;
@@ -86,7 +85,7 @@
     z-index: -10;
   }
 
-  @include e('heading') {
+  @include e("heading") {
     margin-bottom: 60px;
   }
 }
@@ -117,13 +116,13 @@
     margin-right: 0;
   }
 
-  @include m('pd') {
+  @include m("pd") {
     @media screen and (min-width: $break-tablet-l) {
-      &:nth-child(3n+1) {
+      &:nth-child(3n + 1) {
         margin-left: 0;
       }
 
-      &:nth-child(3n+3) {
+      &:nth-child(3n + 3) {
         margin-right: 0;
       }
     }
@@ -157,7 +156,7 @@
     padding: 20px 20px 20px;
   }
 
-  @include m('roadmap') {
+  @include m("roadmap") {
     border-top: $gunmetal 10px solid;
     padding: 25px 30px 35px;
 
@@ -166,7 +165,7 @@
     }
   }
 
-  @include m('news') {
+  @include m("news") {
     text-align: left;
     background-color: $lBlack0op;
     border: none;
@@ -193,7 +192,7 @@
         display: none;
       }
 
-      &>a {
+      & > a {
         text-decoration: underline;
         font: {
           style: italic;
@@ -202,21 +201,21 @@
     }
   }
 
-  @include e('icon') {
+  @include e("icon") {
     // @include f-size-xxl;
     // color: $gunmetal;
     margin-bottom: 15px;
 
     @media screen and (max-width: $break-tablet-l) {
-  		width: 2 * $col-tablet-l + 2 * $margin-desktop-s;
-  	}
+      width: 2 * $col-tablet-l + 2 * $margin-desktop-s;
+    }
 
     @media screen and (max-width: $break-tablet-s) {
-  		width: 2 * $col-tablet-s + 2 * $margin-tablet-s;
-  	}
+      width: 2 * $col-tablet-s + 2 * $margin-tablet-s;
+    }
   }
 
-  @include e('title') {
+  @include e("title") {
     @include f-size-m;
     font: {
       family: $p-font;
@@ -225,12 +224,12 @@
     color: $gunmetal;
     margin-bottom: 15px;
 
-    @include m('roadmap') {
+    @include m("roadmap") {
       margin-bottom: 0;
     }
   }
 
-  @include e('subtitle') {
+  @include e("subtitle") {
     @include f-size-l;
     font: {
       family: $p-font;
@@ -240,8 +239,8 @@
     margin-bottom: 15px;
   }
 
-  @include e('list') {
-    &>li {
+  @include e("list") {
+    & > li {
       @include f-size-xs;
       font: {
         family: $p-font;
@@ -254,17 +253,17 @@
 .news {
   @include bg-solo;
   position: relative;
-  background-image: url('../assets/img/news-landing.png');
+  background-image: url("../assets/img/news-landing.png");
   padding: {
     top: 90px;
     bottom: 90px;
   }
 
-  @include e('content') {
+  @include e("content") {
     text-align: left;
   }
 
-  @include e('bg') {
+  @include e("bg") {
     background-color: $offWhite;
     position: absolute;
     top: 0px;
@@ -272,7 +271,7 @@
     z-index: -10;
   }
 
-  @include e('text') {
+  @include e("text") {
     display: none;
     @media screen and (max-width: $break-tablet-l) {
       display: block;
@@ -305,25 +304,25 @@
     }
   }
 
-  @include e('content') {
+  @include e("content") {
     position: relative;
   }
 
-  @include e('logoContainer') {
+  @include e("logoContainer") {
     margin-top: 30px;
     @media screen and (max-width: $break-tablet-s) {
       height: auto;
     }
   }
 
-  @include e('logo') {
+  @include e("logo") {
     vertical-align: middle;
     display: inline-block;
     padding: 30px;
 
     @include transition($dtd);
 
-    @include m('cinfo') {
+    @include m("cinfo") {
       // width: 300px;
       width: 23%;
       @media screen and (max-width: $break-tablet-s) {
@@ -338,7 +337,7 @@
       }
     }
 
-    @include m('ncds') {
+    @include m("ncds") {
       margin-left: 1%;
       width: 17%;
 
@@ -354,7 +353,7 @@
       }
     }
 
-    @include m('bevertec') {
+    @include m("bevertec") {
       margin-left: 1%;
       width: 20%;
 
@@ -370,7 +369,7 @@
       }
     }
 
-    @include m('bizedocs') {
+    @include m("bizedocs") {
       margin-left: 1%;
       width: 17%;
 
@@ -386,7 +385,7 @@
       }
     }
 
-    @include m('centrilogic') {
+    @include m("centrilogic") {
       width: 20%;
 
       @media screen and (max-width: $break-tablet-s) {
@@ -409,34 +408,34 @@
     }
   }
 
-  @include e('logoImg') {
+  @include e("logoImg") {
     @include bg-solo;
     display: inline-block;
     width: 100%;
 
-    @include m('cinfo') {
+    @include m("cinfo") {
       padding-top: 28.5%;
-      background-image: url('../assets/img/partnerLogos/cinfo_white.png');
+      background-image: url("../assets/img/partnerLogos/cinfo_white.png");
     }
 
-    @include m('ncds') {
+    @include m("ncds") {
       padding-top: 60%;
-      background-image: url('../assets/img/partnerLogos/ncds_white.png');
+      background-image: url("../assets/img/partnerLogos/ncds_white.png");
     }
 
-    @include m('bevertec') {
+    @include m("bevertec") {
       padding-top: 25.2%;
-      background-image: url('../assets/img/partnerLogos/bevertec_white.png');
+      background-image: url("../assets/img/partnerLogos/bevertec_white.png");
     }
 
-    @include m('bizedocs') {
+    @include m("bizedocs") {
       padding-top: 39%;
-      background-image: url('../assets/img/partnerLogos/bizedocs_white.png');
+      background-image: url("../assets/img/partnerLogos/bizedocs_white.png");
     }
 
-    @include m('centrilogic') {
+    @include m("centrilogic") {
       padding-top: 23.3%;
-      background-image: url('../assets/img/partnerLogos/centrilogic_white.png');
+      background-image: url("../assets/img/partnerLogos/centrilogic_white.png");
     }
   }
 }
@@ -446,11 +445,11 @@
   // margin-top: 120px;
   // overflow-x: hidden;
 
-  @include e('testimonials') {
+  @include e("testimonials") {
     // height: 300px;
   }
 
-  @include e('indicator') {
+  @include e("indicator") {
     // text-align: center;
     display: inline-block;
     @include f-size-s;
@@ -458,7 +457,7 @@
     transform: translateY(-1px);
   }
 
-  @include e('ui') {
+  @include e("ui") {
     margin: {
       top: 30px;
       bottom: 30px;
@@ -468,12 +467,12 @@
       family: $p-font;
     }
 
-    @include m('left') {
+    @include m("left") {
       text-align: left;
     }
   }
 
-  @include e('button') {
+  @include e("button") {
     @include f-size-m;
     appearance: none;
     -webkit-appearance: none;
@@ -485,7 +484,7 @@
     color: $gunmetal;
   }
 
-  @include e('cardContainer') {
+  @include e("cardContainer") {
     white-space: nowrap;
     position: relative;
     // overflow: visible;
@@ -493,7 +492,7 @@
     @include transition($dtd);
     text-align: left;
 
-    @include m('text') {
+    @include m("text") {
       overflow: visible;
     }
 
@@ -502,34 +501,34 @@
     // }
     width: 12 * $col-desktop-l + 22 * $margin-desktop-l;
 
-  	@media screen and (max-width: $break-desktop-s) {
-  		width: 12 * $col-desktop-s + 22 * $margin-desktop-s;
-  	}
+    @media screen and (max-width: $break-desktop-s) {
+      width: 12 * $col-desktop-s + 22 * $margin-desktop-s;
+    }
 
-  	@media screen and (max-width: $break-tablet-l) {
+    @media screen and (max-width: $break-tablet-l) {
       overflow: visible;
-  		width: 10 * $col-tablet-l + 18 * $margin-desktop-s;
+      width: 10 * $col-tablet-l + 18 * $margin-desktop-s;
       // left: calc(-.5 * (100vw - #{12 * $col-tablet-l + 22 * $margin-desktop-s}));
-  	}
+    }
 
     @media screen and (max-width: $break-tablet-s) {
       width: 10 * $col-tablet-s + 18 * $margin-tablet-s;
-  	}
+    }
 
     @media screen and (max-width: $break-tablet-xs) {
-  		width: 5 * $col-tablet-xs + 8 * $margin-tablet-xs;
-  	}
+      width: 5 * $col-tablet-xs + 8 * $margin-tablet-xs;
+    }
 
-  	@media screen and (max-width: $break-mobile-l) {
-  		width: 5 * $col-mobile-l + 8 * $margin-desktop-s;
-  	}
+    @media screen and (max-width: $break-mobile-l) {
+      width: 5 * $col-mobile-l + 8 * $margin-desktop-s;
+    }
 
-  	@media screen and (max-width: $break-mobile-s) {
-  		width: 5 * $col-mobile-s + 8 * $margin-mobile-s;
-  	}
+    @media screen and (max-width: $break-mobile-s) {
+      width: 5 * $col-mobile-s + 8 * $margin-mobile-s;
+    }
   }
 
-  @include e('card') {
+  @include e("card") {
     @include transition($dtd);
     overflow: hidden;
     position: relative;
@@ -538,7 +537,7 @@
     width: 100%;
     white-space: normal;
 
-    @include m('text') {
+    @include m("text") {
       padding: {
         top: 40px;
         bottom: 40px;
@@ -560,7 +559,7 @@
       }
     }
 
-    @include m('img') {
+    @include m("img") {
       width: 33.34%;
       left: -33.34%;
       // @media screen and (max-width: $break-tablet-l) {
@@ -582,20 +581,26 @@
       }
 
       @media screen and (max-width: $break-tablet-xs) {
-    		left: calc(-.5 * (100vw - #{5 * $col-tablet-xs + 8 * $margin-tablet-xs}) - 100vw);
-    	}
+        left: calc(
+          -0.5 * (100vw - #{5 * $col-tablet-xs + 8 * $margin-tablet-xs}) - 100vw
+        );
+      }
 
-    	@media screen and (max-width: $break-mobile-l) {
-    		left: calc(-.5 * (100vw - #{5 * $col-mobile-l + 8 * $margin-desktop-s}) - 100vw);
-    	}
+      @media screen and (max-width: $break-mobile-l) {
+        left: calc(
+          -0.5 * (100vw - #{5 * $col-mobile-l + 8 * $margin-desktop-s}) - 100vw
+        );
+      }
 
-    	@media screen and (max-width: $break-mobile-s) {
-    		left: calc(-.5 * (100vw - #{5 * $col-mobile-s + 8 * $margin-mobile-s}) - 100vw);
-    	}
+      @media screen and (max-width: $break-mobile-s) {
+        left: calc(
+          -0.5 * (100vw - #{5 * $col-mobile-s + 8 * $margin-mobile-s}) - 100vw
+        );
+      }
     }
   }
 
-  @include e('cardText') {
+  @include e("cardText") {
     // text-align: center;
     display: block;
     width: 100%;

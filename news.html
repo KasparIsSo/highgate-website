@@ -1,292 +1,360 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-  <meta charset = "utf-8">
-  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-  <link rel = "shortcut icon" type="image/png" href = "./assets/img/fav/favicon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <link rel="shortcut icon" type="image/png" href="./assets/img/fav/favicon.png" />
   <title>Highgate Systems – News</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|PT+Sans:400,700" rel="stylesheet">
-  <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
-  <link rel = "stylesheet" href = "css/clear.css" type = "text/css">
-  <link rel = "stylesheet" href = "css/news.css" type = "text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/clear.css" type="text/css">
+  <link rel="stylesheet" href="css/news.css" type="text/css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116586869-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-116586869-1');
   </script>
   <noscript>
-      <style>
-          #preloader {
-            display:none;
-          }
-      </style>
-    </noscript>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <style>
+      #preloader {
+        display: none;
+      }
+    </style>
+  </noscript>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
-  <div id = "preloader" class = "preloader">
+  <div id="preloader" class="preloader">
     <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
   </div>
-  <div class = "container">
-    <div class = "nav">
-      <div class = "nav__wrapper col_12 center">
-        <a class = "nav__logo col_3" href = "index.html">
-            <div class = "nav__logoImg"></div>
-        </a><div class = "nav__mobileMenuWrapper col_3">
-          <div class = "nav__mobileMenu">
-            <span class = "nav__mobileMenuBar nav__mobileMenuBar--1"></span>
-            <span class = "nav__mobileMenuBar nav__mobileMenuBar--2"></span>
-            <span class = "nav__mobileMenuBar nav__mobileMenuBar--3"></span>
+  <div class="container">
+    <div class="nav">
+      <div class="nav__wrapper col_12 center">
+        <a class="nav__logo col_3" href="index.html">
+          <div class="nav__logoImg"></div>
+        </a><div class="nav__mobileMenuWrapper col_3">
+          <div class="nav__mobileMenu">
+            <span class="nav__mobileMenuBar nav__mobileMenuBar--1"></span>
+            <span class="nav__mobileMenuBar nav__mobileMenuBar--2"></span>
+            <span class="nav__mobileMenuBar nav__mobileMenuBar--3"></span>
           </div>
-        </div><div class = "nav__links col_9">
-          <ul class = "nav__menu">
-            <a class = "nav__menuOption" href = "index.html">
-              <li>Home <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+        </div><div class="nav__links col_9">
+          <ul class="nav__menu">
+            <a class="nav__menuOption" href="index.html">
+              <li>Home
+                <i class="material-icons nav__menuOptionIcon">keyboard_arrow_right</i>
+              </li>
             </a>
-            <a class = "nav__menuOption" href = "about.html">
-              <li>About <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            <a class="nav__menuOption" href="about.html">
+              <li>About
+                <i class="material-icons nav__menuOptionIcon">keyboard_arrow_right</i>
+              </li>
             </a>
-            <a class = "nav__menuOption" href = "products.html">
-              <li>Products <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            <a class="nav__menuOption" href="products.html">
+              <li>Products
+                <i class="material-icons nav__menuOptionIcon">keyboard_arrow_right</i>
+              </li>
             </a>
-            <a class = "nav__menuOption active" href = "news.html">
-              <li>News <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            <a class="nav__menuOption active" href="news.html">
+              <li>News
+                <i class="material-icons nav__menuOptionIcon">keyboard_arrow_right</i>
+              </li>
             </a>
-            <a class = "nav__menuOption" href = "contact.html">
-              <li>Contact Us <i class = "material-icons nav__menuOptionIcon">keyboard_arrow_right</i></li>
+            <a class="nav__menuOption" href="contact.html">
+              <li>Contact Us
+                <i class="material-icons nav__menuOptionIcon">keyboard_arrow_right</i>
+              </li>
             </a>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class = "nav--buffer">
-      <div class = "nav__logo col_3">
-        <div class = "nav__logoImg"></div>
+    <div class="nav--buffer">
+      <div class="nav__logo col_3">
+        <div class="nav__logoImg"></div>
       </div>
     </div>
 
-    <div class = "productNav">
-      <div class = "productNav__content col_12 center">
-        <h2 class = "productNav__heading">News</h2>
-        <ul class = "productNav__filters">
-          <li class = "productNav__filtersOptions active" data-category-name = "all">All</li>
-          <li class = "productNav__filtersOptions" data-category-name = "newsletters">Newsletters</li>
-          <li class = "productNav__filtersOptions" data-category-name = "2018">2018</li>
-          <li class = "productNav__filtersOptions" data-category-name = "2017">2017</li>
-          <li class = "productNav__filtersOptions" data-category-name = "2016">2016</li>
-          <li class = "productNav__filtersOptions" data-category-name = "2015">2015</li>
-          <li class = "productNav__filtersOptions" data-category-name = "2014">2014</li>
+    <div class="productNav">
+      <div class="productNav__content col_12 center">
+        <h2 class="productNav__heading">News</h2>
+        <ul class="productNav__filters">
+          <li class="productNav__filtersOptions active" data-category-name="all">All</li>
+          <li class="productNav__filtersOptions" data-category-name="newsletters">Newsletters</li>
+          <li class="productNav__filtersOptions" data-category-name="2018">2018</li>
+          <li class="productNav__filtersOptions" data-category-name="2017">2017</li>
+          <li class="productNav__filtersOptions" data-category-name="2016">2016</li>
+          <li class="productNav__filtersOptions" data-category-name="2015">2015</li>
+          <li class="productNav__filtersOptions" data-category-name="2014">2014</li>
         </ul>
       </div>
     </div>
 
-    <div class = "news section section--news col_12 center" data-category= "newsletters">
-      <h4 class = "section__heading section__heading--bold">Newsletters</h4>
-      <div class = "section__cardContainer">
-        <div class = "card">
-          <h6 class = "section__caption">Sept. 20, 2017</h6>
+    <div class="news section section--news col_12 center" data-category="newsletters">
+      <h4 class="section__heading section__heading--bold">Newsletters</h4>
+      <div class="section__cardContainer">
+        <div class="card">
+          <h6 class="section__caption">Sept. 20, 2017</h6>
           <hr>
-          <h6 class = "section__subheading">Highgate Newsletter Sep. 2017</h6>
-          <p class = "section__body">When we have something to say, you’ll read about it here! Our Newsletters are filled with not only Highgate News but Industry News. Read our latest Newsletter simply by clicking</p>
-          <a href = "./downloads/newsletters/Newsletter-September-2017.pdf" class = "section__body" target = "_blank">Read More</a>
+          <h6 class="section__subheading">Highgate Newsletter Sep. 2017</h6>
+          <p class="section__body">When we have something to say, you’ll read about it here! Our Newsletters are filled with not only Highgate News
+            but Industry News. Read our latest Newsletter simply by clicking</p>
+          <a href="./downloads/newsletters/Newsletter-September-2017.pdf" class="section__body" target="_blank">Read More</a>
         </div>
       </div>
     </div>
 
-    <div class = "news section section--news col_12 center" data-category= "2018">
-      <h4 class = "section__heading section__heading--bold">2018</h4>
-      <div class = "section__cardContainer">
-        <div class = "card">
-          <h6 class = "section__caption">May 14, 2018</h6>
+    <div class="news section section--news col_12 center" data-category="2018">
+      <h4 class="section__heading section__heading--bold">2018</h4>
+      <div class="section__cardContainer">
+        <div class="card">
+          <h6 class="section__caption">May 14, 2018</h6>
           <hr>
-          <h6 class = "section__subheading">HIGHGATE ANNOUNCES ITS ‘NEW’ CORE SOLUTION – ALPHA LITE</h6>
-          <p class = "section__body">Highgate is extremely excited to present to you our NEW! Alpha Lite. Alpha Lite offers a secure and fully integrated core banking solution. It includes real-time processing, document management, and interfaces with both internal and external systems. Delivered in an easy to use Graphical User Interface. Alpha Lite is a member centric banking solution that allows the flexibility to create products quickly and is available as a hosted or data centre solution.</p>
+          <h6 class="section__subheading">HIGHGATE ANNOUNCES ITS ‘NEW’ CORE SOLUTION – ALPHA LITE</h6>
+          <p class="section__body">Highgate is extremely excited to present to you our NEW! Alpha Lite. Alpha Lite offers a secure and fully integrated
+            core banking solution. It includes real-time processing, document management, and interfaces with both internal
+            and external systems. Delivered in an easy to use Graphical User Interface. Alpha Lite is a member centric banking
+            solution that allows the flexibility to create products quickly and is available as a hosted or data centre solution.</p>
 
-          <p class = "section__body">Alpha Lite consists of four major components and several complimentary modules. The major components are Front Office, Back Office, User Administration, and Reporting.</p>
-          <a href = "./downloads/brochures/Alpha%20Lite%20Brochure.pdf" class = "section__body" target = "_blank">Read More</a>
-        </div><div class = "card">
-          <h6 class = "section__caption">May 14, 2018</h6>
+          <p class="section__body">Alpha Lite consists of four major components and several complimentary modules. The major components are Front
+            Office, Back Office, User Administration, and Reporting.</p>
+          <a href="./downloads/brochures/Alpha%20Lite%20Brochure.pdf" class="section__body" target="_blank">Read More</a>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">May 14, 2018</h6>
           <hr>
-          <h6 class = "section__subheading">HIGHGATE ANNOUNCES ITS ‘NEW’ IFRS 9 MODULE</h6>
-          <p class = "section__body">Highgate is extremely excited to present to you our NEW! IFRS 9 Module. IFRS 9 is an International Financial Reporting Standard (IFRS) promulgated by the International Accounting Standards Board (IASB). It addresses the accounting for financial instruments.</p>
-          <p class = "section__body">IFRS 9 is the response from the International Accounting Standards Board (IASB) to the disruption of the global financial systems and networks that resulted from the failure of certain financial institutions and the near failure of critical industries. The new regulations are intended to improve the health of financial institutions through more appropriate classifications of impaired assets. Improved reporting provides regulators with tools intended to avoid systemic sector and geographic risk.</p>
-          <a href = "./downloads/brochures/Highgate%20IFRS%209%20Module.pdf" class = "section__body" target = "_blank">Read More</a>
+          <h6 class="section__subheading">HIGHGATE ANNOUNCES ITS ‘NEW’ IFRS 9 MODULE</h6>
+          <p class="section__body">Highgate is extremely excited to present to you our NEW! IFRS 9 Module. IFRS 9 is an International Financial Reporting
+            Standard (IFRS) promulgated by the International Accounting Standards Board (IASB). It addresses the accounting
+            for financial instruments.</p>
+          <p class="section__body">IFRS 9 is the response from the International Accounting Standards Board (IASB) to the disruption of the global
+            financial systems and networks that resulted from the failure of certain financial institutions and the near
+            failure of critical industries. The new regulations are intended to improve the health of financial institutions
+            through more appropriate classifications of impaired assets. Improved reporting provides regulators with tools
+            intended to avoid systemic sector and geographic risk.</p>
+          <a href="./downloads/brochures/Highgate%20IFRS%209%20Module.pdf" class="section__body" target="_blank">Read More</a>
         </div>
       </div>
     </div>
 
-    <div class = "news section section--news col_12 center" data-category= "2017">
-      <h4 class = "section__heading section__heading--bold">2017</h4>
-      <div class = "section__cardContainer">
-        <div class = "card">
-          <h6 class = "section__caption">Sept. 20, 2017</h6>
+    <div class="news section section--news col_12 center" data-category="2017">
+      <h4 class="section__heading section__heading--bold">2017</h4>
+      <div class="section__cardContainer">
+        <div class="card">
+          <h6 class="section__caption">Sept. 20, 2017</h6>
           <hr>
-          <h6 class = "section__subheading">Highgate Newsletter Sep. 2017</h6>
-          <p class = "section__body">When we have something to say, you’ll read about it here! Our Newsletters are filled with not only Highgate News but Industry News. Read our latest Newsletter simply by clicking</p>
-          <a href = "./downloads/newsletters/Newsletter-September-2017.pdf" class = "section__body" target = "_blank">Read More</a>
-        </div><div class = "card">
-          <h6 class = "section__caption">Sept. 20, 2017</h6>
+          <h6 class="section__subheading">Highgate Newsletter Sep. 2017</h6>
+          <p class="section__body">When we have something to say, you’ll read about it here! Our Newsletters are filled with not only Highgate News
+            but Industry News. Read our latest Newsletter simply by clicking</p>
+          <a href="./downloads/newsletters/Newsletter-September-2017.pdf" class="section__body" target="_blank">Read More</a>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">Sept. 20, 2017</h6>
           <hr>
-          <h6 class = "section__subheading">PETYA Ransomware</h6>
-          <p class = "section__body">Many organizations throughout Europe and the US have been crippled by a ransomware attack known as “Petya”. The malicious software has spread through large firms including the advertiser WPP, food company Mondelez, French construction materials company Saint-Gobain and Russian steel and oil firms Evraz and Rosneft, legal firm DLA Piper, Danish shipping and transport firm Maersk and now targeting government and financial institutions, leading to PCs and data being locked up and held for ransom.</p>
-          <a href = "./downloads/newsletters/PETYA-Ransomware-Article.pdf" class = "section__body" target = "_blank">PETYA Ransomware Article</a>
-        </div><div class = "card">
-          <h6 class = "section__caption">June 9, 2017</h6>
+          <h6 class="section__subheading">PETYA Ransomware</h6>
+          <p class="section__body">Many organizations throughout Europe and the US have been crippled by a ransomware attack known as “Petya”. The
+            malicious software has spread through large firms including the advertiser WPP, food company Mondelez, French
+            construction materials company Saint-Gobain and Russian steel and oil firms Evraz and Rosneft, legal firm DLA
+            Piper, Danish shipping and transport firm Maersk and now targeting government and financial institutions, leading
+            to PCs and data being locked up and held for ransom.</p>
+          <a href="./downloads/newsletters/PETYA-Ransomware-Article.pdf" class="section__body" target="_blank">PETYA Ransomware Article</a>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">June 9, 2017</h6>
           <hr>
-          <h6 class = "section__subheading">Our ‘NEW’ Loan Origination Solutions</h6>
-          <p class = "section__body">We are extremely excited to announce the launch of our FOUR new lending solutions!</p>
-          <ul class = "section__body">
+          <h6 class="section__subheading">Our ‘NEW’ Loan Origination Solutions</h6>
+          <p class="section__body">We are extremely excited to announce the launch of our FOUR new lending solutions!</p>
+          <ul class="section__body">
             <li>Retail Lending</li>
             <li>Commercial Lending</li>
             <li>Micro-credit Lending</li>
             <li>Vehicle Lending</li>
           </ul>
-          <p class = "section__body"><a class = "card__link" href="products.html">Visit our Products & Services page for more details.</a></p>
+          <p class="section__body">
+            <a class="card__link" href="products.html">Visit our Products & Services page for more details.</a>
+          </p>
         </div>
       </div>
     </div>
 
-    <div class = "news section section--news col_12 center" data-category = "2016">
-      <h4 class = "section__heading section__heading--bold">2016</h4>
-      <div class = "section__cardContainer">
-        <div class = "card">
-          <h6 class = "section__caption">Sept 28, 2016</h6>
+    <div class="news section section--news col_12 center" data-category="2016">
+      <h4 class="section__heading section__heading--bold">2016</h4>
+      <div class="section__cardContainer">
+        <div class="card">
+          <h6 class="section__caption">Sept 28, 2016</h6>
           <hr>
-          <h6 class = "section__subheading">Highgate Banking Version 2.37 is here!</h6>
-          <p class = "section__body">Highgate is excited to announce the release of Highgate Banking 2.37. Release 2.37 contains enhancements and fixes to existing functionality, plus ’NEW’ Modules and ‘NEW’ Services!</p>
-          <p class = "section__body">Since our last release in 2014, we have made some substantial changes to our core solution Highgate Banking. This document will provide you with a list some of those enhancements. So let’s take a look as some of the ‘key’ enhancements that we’ve made over the past couple of year</p>
-          <a href = "./downloads/newsletters/highgate-banking-release-2.37-annoucement.pdf" class = "section__body" target = "_blank">Read More…</a>
-        </div><div class = "card">
-          <h6 class = "section__caption">Sept. 28, 2016</h6>
+          <h6 class="section__subheading">Highgate Banking Version 2.37 is here!</h6>
+          <p class="section__body">Highgate is excited to announce the release of Highgate Banking 2.37. Release 2.37 contains enhancements and fixes
+            to existing functionality, plus ’NEW’ Modules and ‘NEW’ Services!</p>
+          <p class="section__body">Since our last release in 2014, we have made some substantial changes to our core solution Highgate Banking. This
+            document will provide you with a list some of those enhancements. So let’s take a look as some of the ‘key’ enhancements
+            that we’ve made over the past couple of year</p>
+          <a href="./downloads/newsletters/highgate-banking-release-2.37-annoucement.pdf" class="section__body" target="_blank">Read More…</a>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">Sept. 28, 2016</h6>
           <hr>
-          <h6 class = "section__subheading">Welcome to the Highgate “Request Tracker”</h6>
-          <p class = "section__body">Highgate is extremely excited to present to you our NEW! Request Tracker. Request Tracker provides a means for communication between Highgate and its Clients to identify and track requests for system enhancement, training, support questions, defect identification and resolution. Users will be able to easily find and follow the progress of requests from initiation to completion.</p>
+          <h6 class="section__subheading">Welcome to the Highgate “Request Tracker”</h6>
+          <p class="section__body">Highgate is extremely excited to present to you our NEW! Request Tracker. Request Tracker provides a means for
+            communication between Highgate and its Clients to identify and track requests for system enhancement, training,
+            support questions, defect identification and resolution. Users will be able to easily find and follow the progress
+            of requests from initiation to completion.</p>
 
-          <p class = "section__body">It’s easy to get started; call your Account Manager to register. Once registered, simply click on the link: <br>
-            <a class = "card__link" href="https://www.highgatesystems.com/rt"> https://www.highgatesystems.com/rt</a><br>
-           to gain access to the Login screen. A User Guide will be provided to you at time of registration.</p>
-        </div><div class = "card">
-          <h6 class = "section__caption">Sept. 28, 2016</h6>
+          <p class="section__body">It’s easy to get started; call your Account Manager to register. Once registered, simply click on the link:
+            <br>
+            <a class="card__link" href="https://www.highgatesystems.com/rt"> https://www.highgatesystems.com/rt</a>
+            <br> to gain access to the Login screen. A User Guide will be provided to you at time of registration.</p>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">Sept. 28, 2016</h6>
           <hr>
-          <h6 class = "section__subheading">MASSY OPENS IN ST. LUCIA!</h6>
-          <p class = "section__body">We are pleased to announce that Massy have opened a ‘NEW’ location in Gablewoods, Castries, St. Lucia. Massy will be offering their Hire Purchase services with the support of our Highgate Banking and ESP-Link™ Suite of financial services products.</p>
-          <p class = "section__body">We would like to welcome Massy St. Lucia to Highgate and thank them for their confidence and continued commitment with respect to both our people and technology.</p>
-          <p class = "section__body">Stay tuned for more exciting news from Highgate!</p>
-        </div><div class = "card">
-          <h6 class = "section__caption">Sept. 20, 2016</h6>
+          <h6 class="section__subheading">MASSY OPENS IN ST. LUCIA!</h6>
+          <p class="section__body">We are pleased to announce that Massy have opened a ‘NEW’ location in Gablewoods, Castries, St. Lucia. Massy will
+            be offering their Hire Purchase services with the support of our Highgate Banking and ESP-Link™ Suite of financial
+            services products.</p>
+          <p class="section__body">We would like to welcome Massy St. Lucia to Highgate and thank them for their confidence and continued commitment
+            with respect to both our people and technology.</p>
+          <p class="section__body">Stay tuned for more exciting news from Highgate!</p>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">Sept. 20, 2016</h6>
           <hr>
-          <h6 class = "section__subheading">Caribbean Association of Banks 2015 Conference</h6>
-          <p class = "section__body">Highgate sponsored the Caribbean Association of Banks Inc. 42nd AGM & Conference from November 11th – 14th, 2015 at the Marriott Resort & The Royal Beach Casino, St. Kitts. These conferences are designed for the benefit of Caribbean financial institutions and delivered by the Caribbean Association of Banks. It brings together participants with a special interest in meeting the needs of clients in the Caribbean Region, and Highgate has been a major sponsor for many years.</p>
+          <h6 class="section__subheading">Caribbean Association of Banks 2015 Conference</h6>
+          <p class="section__body">Highgate sponsored the Caribbean Association of Banks Inc. 42nd AGM & Conference from November 11th – 14th, 2015
+            at the Marriott Resort & The Royal Beach Casino, St. Kitts. These conferences are designed for the benefit of
+            Caribbean financial institutions and delivered by the Caribbean Association of Banks. It brings together participants
+            with a special interest in meeting the needs of clients in the Caribbean Region, and Highgate has been a major
+            sponsor for many years.</p>
 
-          <p class = "section__body">As always, we met with old friends and made many new ones. Regulations change, technology evolves, but the friendships made at CAB do not. Through two days of useful presentations and discussions attendees learned more about the challenges facing their regions and the ways that Highgate Systems can help to address them.</p>
+          <p class="section__body">As always, we met with old friends and made many new ones. Regulations change, technology evolves, but the friendships
+            made at CAB do not. Through two days of useful presentations and discussions attendees learned more about the
+            challenges facing their regions and the ways that Highgate Systems can help to address them.</p>
         </div>
       </div>
     </div>
 
-    <div class = "news section section--news col_12 center" data-category = "2015">
-      <h4 class = "section__heading section__heading--bold">2015</h4>
-      <div class = "section__cardContainer">
-        <div class = "card">
-          <h6 class = "section__caption">Oct 21, 2015</h6>
+    <div class="news section section--news col_12 center" data-category="2015">
+      <h4 class="section__heading section__heading--bold">2015</h4>
+      <div class="section__cardContainer">
+        <div class="card">
+          <h6 class="section__caption">Oct 21, 2015</h6>
           <hr>
-          <h6 class = "section__subheading">MASSY SIGNS WITH HIGHGATE!</h6>
-          <p class = "section__body">We are pleased to announce that Massy Credit Plus Ltd. (Massy), which currently operates in Trinidad and Barbados, has selected our Highgate Banking and ESPLink ™ Suite of financial services products.</p>
+          <h6 class="section__subheading">MASSY SIGNS WITH HIGHGATE!</h6>
+          <p class="section__body">We are pleased to announce that Massy Credit Plus Ltd. (Massy), which currently operates in Trinidad and Barbados,
+            has selected our Highgate Banking and ESPLink ™ Suite of financial services products.</p>
 
-          <p class = "section__body">Our ESP-Link™ Suite of technology manages ATM terminals and provides transaction switching (acquiring) services for both domestic and international transactions. Along with Collection Management, the AMS product provides real-time SMS alerts for things such as customer transaction activity to registered smartphones and much more.</p>
+          <p class="section__body">Our ESP-Link™ Suite of technology manages ATM terminals and provides transaction switching (acquiring) services
+            for both domestic and international transactions. Along with Collection Management, the AMS product provides
+            real-time SMS alerts for things such as customer transaction activity to registered smartphones and much more.</p>
 
-          <p class = "section__body">With this new technology, Massy Credit Plus Ltd. (Massy) will now be able to provide their customers with real-time loan and credit payments, decisions on credit and to communicate directly with their customers via SMS and much more.</p>
+          <p class="section__body">With this new technology, Massy Credit Plus Ltd. (Massy) will now be able to provide their customers with real-time
+            loan and credit payments, decisions on credit and to communicate directly with their customers via SMS and much
+            more.</p>
 
-          <p class = "section__body">We would like to welcome Massy as Highgate newest client and thank them for their confidence and commitment with respect to both our people and technology.</p>
+          <p class="section__body">We would like to welcome Massy as Highgate newest client and thank them for their confidence and commitment with
+            respect to both our people and technology.</p>
 
         </div>
       </div>
     </div>
 
-    <div class = "news section section--news col_12 center" data-category= "2014">
-      <h4 class = "section__heading section__heading--bold">2014</h4>
-      <div class = "section__cardContainer">
-        <div class = "card">
-          <h6 class = "section__caption">Dec. 17, 2014</h6>
+    <div class="news section section--news col_12 center" data-category="2014">
+      <h4 class="section__heading section__heading--bold">2014</h4>
+      <div class="section__cardContainer">
+        <div class="card">
+          <h6 class="section__caption">Dec. 17, 2014</h6>
           <hr>
-          <h6 class = "section__subheading">2014 Client Conference</h6>
-          <p class = "section__body">Our Client Conference was a complete success. We brought together banking and financial industry experts from around the globe. The conference was held August 12th -15th at the Sheraton Toronto Airport Hotel and Conference Centre in Toronto.</p>
+          <h6 class="section__subheading">2014 Client Conference</h6>
+          <p class="section__body">Our Client Conference was a complete success. We brought together banking and financial industry experts from around
+            the globe. The conference was held August 12th -15th at the Sheraton Toronto Airport Hotel and Conference Centre
+            in Toronto.</p>
 
-          <p class = "section__body">Our ‘Building Your Business’ theme drove the discussion, and was accentuated by presentations from renowned banking specialists. With representatives from Africa, Middle East, Asia, Latin America and the Caribbean the conversations were wide-ranging and the sharing of learning was a help to everyone who attended.</p>
+          <p class="section__body">Our ‘Building Your Business’ theme drove the discussion, and was accentuated by presentations from renowned banking
+            specialists. With representatives from Africa, Middle East, Asia, Latin America and the Caribbean the conversations
+            were wide-ranging and the sharing of learning was a help to everyone who attended.</p>
 
-          <p class = "section__body">Our team would like to thank everyone who attended, participated in presentations, group discussions and played a key role in our ‘Build Your Business’ theme.</p>
+          <p class="section__body">Our team would like to thank everyone who attended, participated in presentations, group discussions and played
+            a key role in our ‘Build Your Business’ theme.</p>
 
-        </div><div class = "card">
-          <h6 class = "section__caption">Dec. 15, 2014</h6>
+        </div>
+        <div class="card">
+          <h6 class="section__caption">Dec. 15, 2014</h6>
           <hr>
-          <h6 class = "section__subheading">Highgate Systems Announces Alpha Banking</h6>
-          <p class = "section__body">It’s here. Our customers have told us what they need, and Highgate has delivered.</p>
+          <h6 class="section__subheading">Highgate Systems Announces Alpha Banking</h6>
+          <p class="section__body">It’s here. Our customers have told us what they need, and Highgate has delivered.</p>
 
-          <p class = "section__body">Highgate Systems is proud to announce the rollout of its new banking platform, Alpha Banking. Our first new customer – never before a Highgate client – is already ‘up and running’ in a 44-branch environment, and we are in the process of delivering the second implementation to another new customer.</p>
+          <p class="section__body">Highgate Systems is proud to announce the rollout of its new banking platform, Alpha Banking. Our first new customer
+            – never before a Highgate client – is already ‘up and running’ in a 44-branch environment, and we are in the
+            process of delivering the second implementation to another new customer.</p>
 
-          <p class = "section__body">Alpha Banking is both ‘evolutionary’ and ‘revolutionary’. It builds on the capabilities of the current Highgate Banking system using Highgate’s knowledge of customer requirements and the needs they have expressed to us.</p>
+          <p class="section__body">Alpha Banking is both ‘evolutionary’ and ‘revolutionary’. It builds on the capabilities of the current Highgate
+            Banking system using Highgate’s knowledge of customer requirements and the needs they have expressed to us.</p>
 
-          <a href = "./downloads/newsletters/Alpha%20Banking%20Brochure.pdf" class = "section__body" target = "_blank">Read More…</a>
+          <a href="./downloads/newsletters/Alpha%20Banking%20Brochure.pdf" class="section__body" target="_blank">Read More…</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class = "footer">
-    <div class = "footer__cont col_12 center">
-      <div class = "footer__info col_4">
-        <img class = "footer__logo col_3 col_3--c footer__menu--mHid" src = "assets/img/footerlogo.png">
-        <p class = "footer__desc footer__desc--canada"><img src = "assets/img/canada.svg" class = "footer__canada">Proudly Canadian<p>
-        <p class = "footer__desc">Copyright 2018. All Rights Reserved<p>
-      </div><div class = "footer__links col_8">
-        <ul class = "footer__menu">
-          <h6 class = "footer__menuCategory">Contact</h6>
-          <a href = "mailto:contact@highgatesystems.com" class = "footer__menuOption" href = "#">
+  <div class="footer">
+    <div class="footer__cont col_12 center">
+      <div class="footer__info col_4">
+        <img class="footer__logo col_3 col_3--c footer__menu--mHid" src="assets/img/footerlogo.png">
+        <p class="footer__desc footer__desc--canada">
+          <img src="assets/img/canada.svg" class="footer__canada">Proudly Canadian
+          <p>
+            <p class="footer__desc">Copyright 2018. All Rights Reserved
+              <p>
+      </div><div class="footer__links col_8">
+        <ul class="footer__menu">
+          <h6 class="footer__menuCategory">Contact</h6>
+          <a href="mailto:contact@highgatesystems.com" class="footer__menuOption" href="#">
             <li>contact@highgatesystems.com</li>
           </a>
-          <a class = "footer__menuOption" href="tel:+14166206683">
+          <a class="footer__menuOption" href="tel:+14166206683">
             <li>1.416.620.6683</li>
           </a>
-          <a class = "footer__menuOption" href = "https://www.google.ca/maps/place/5025+Orbitor+Dr+Building+6,+Mississauga,+ON+L4W+4Y5/@43.6569214,-79.6005877,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3853996d4917:0x9e0c5a69a70a915b!8m2!3d43.656921!4d-79.598399">
+          <a class="footer__menuOption" href="https://www.google.ca/maps/place/5025+Orbitor+Dr+Building+6,+Mississauga,+ON+L4W+4Y5/@43.6569214,-79.6005877,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3853996d4917:0x9e0c5a69a70a915b!8m2!3d43.656921!4d-79.598399">
             <li>5025 Orbitor Drive</li>
             <li>Building 6, Suite 200</li>
             <li>Mississauga, ON,</li>
             <li>Canada, L4W 4Y5</li>
           </a>
-          <div class = "footer__social">
-            <a href = "https://www.linkedin.com/company/highgate-systems-inc-/" class = "footer__menuIcon" target = "_blank">
-              <img src = "assets/img/icons/linkedin.svg">
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/highgate-systems-inc-/" class="footer__menuIcon" target="_blank">
+              <img src="assets/img/icons/linkedin.svg">
             </a>
-            <a href = "https://twitter.com/highgate5025" class = "footer__menuIcon" target = "_blank">
-              <img src = "assets/img/icons/twitter.svg">
+            <a href="https://twitter.com/highgate5025" class="footer__menuIcon" target="_blank">
+              <img src="assets/img/icons/twitter.svg">
             </a>
           </div>
         </ul>
-        <ul class = "footer__menu footer__menu--mHide">
-          <h6 class = "footer__menuCategory">Menu</h6>
-          <a class = "footer__menuOption" href = "index.html">
+        <ul class="footer__menu footer__menu--mHide">
+          <h6 class="footer__menuCategory">Menu</h6>
+          <a class="footer__menuOption" href="index.html">
             <li>Home</li>
           </a>
-          <a class = "footer__menuOption" href = "products.html">
+          <a class="footer__menuOption" href="products.html">
             <li>Products</li>
           </a>
-          <a class = "footer__menuOption" href = "about.html">
+          <a class="footer__menuOption" href="about.html">
             <li>About Us</li>
           </a>
-          <a class = "footer__menuOption" href = "news.html">
+          <a class="footer__menuOption" href="news.html">
             <li>News</li>
           </a>
-          <a class = "footer__menuOption" href = "contact.html">
+          <a class="footer__menuOption" href="contact.html">
             <li>Contact</li>
           </a>
         </ul>
@@ -295,16 +363,16 @@
   </div>
 </body>
 
-<script src = "js/preloader.js"></script>
-<script src = 'js/nav.js'></script>
+<script src="js/preloader.js"></script>
+<script src='js/nav.js'></script>
 
 <script>
   var productFilters = document.getElementsByClassName('productNav__filtersOptions');
 
-  for(var f of productFilters) {
-    f.addEventListener('click', function() {
+  for (var f of productFilters) {
+    f.addEventListener('click', function () {
       // console.log(this.dataset['categoryName']);
-      for(var f of productFilters) {
+      for (var f of productFilters) {
         f.classList.remove('active');
         if (f === this) {
           f.classList.add('active');
@@ -313,12 +381,12 @@
 
       var filterCategory = this.dataset['categoryName'];
       var allProducts = document.getElementsByClassName('news');
-      for(var i = 0; i < allProducts.length; i++) {
+      for (var i = 0; i < allProducts.length; i++) {
 
-        if(filterCategory == "all") {
+        if (filterCategory == "all") {
           allProducts[i].classList.remove('hide');
         } else {
-          if(allProducts[i].dataset['category'] == filterCategory) {
+          if (allProducts[i].dataset['category'] == filterCategory) {
             allProducts[i].classList.remove('hide');
           } else {
             allProducts[i].classList.add('fade');
@@ -326,21 +394,21 @@
         }
       }
 
-      if(filterCategory == "all") {
-        window.requestAnimationFrame(function(){
-          window.requestAnimationFrame(function(){
-            for(var i = 0; i < allProducts.length; i++) {
+      if (filterCategory == "all") {
+        window.requestAnimationFrame(function () {
+          window.requestAnimationFrame(function () {
+            for (var i = 0; i < allProducts.length; i++) {
               allProducts[i].classList.remove('fade');
             }
           })
         });
       }
 
-      setTimeout(function() {
-        for(var i = 0; i < allProducts.length; i++) {
-          if(filterCategory == "all") {
+      setTimeout(function () {
+        for (var i = 0; i < allProducts.length; i++) {
+          if (filterCategory == "all") {
           } else {
-            if(allProducts[i].dataset['category'] == filterCategory) {
+            if (allProducts[i].dataset['category'] == filterCategory) {
               allProducts[i].classList.remove('fade');
             } else {
               allProducts[i].classList.add('hide');
