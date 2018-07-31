@@ -1680,7 +1680,11 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    overflow: hidden;
-    transition-duration: 0; }
+    overflow: hidden; }
+    .gallery__cardText > a {
+      text-decoration: none;
+      font-family: "PT Sans", Helvetica, Sans-Serif;
+      font-style: italic;
+      color: #a74f25; }
 
 /*# sourceMappingURL=main.css.map */
