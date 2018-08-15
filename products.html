@@ -460,16 +460,13 @@
           } else {
             if(allProducts[i].dataset['category'] == filterCategory) {
               allProducts[i].classList.remove('fade');
+              sr.reveal(allProducts[i]);
             } else {
               allProducts[i].classList.add('hide');
             }
           }
         }
-        sr.sync();
       }, 300);
-      // var rel = document.querySelectorAll("[data-category-name=" + this.dataset['categoryName'] + "]");
-
-      // window.scrollTo(window.scrollX, window.scrollY+5);
     })
   }
 
@@ -549,12 +546,12 @@
       } else {
         if(allProducts[i].dataset['category'] == filterCategory) {
           allProducts[i].classList.remove('fade');
+          sr.reveal(allProducts[i]);
         } else {
           allProducts[i].classList.add('hide');
         }
       }
     }
-    sr.sync();
   }, 300);
 })()
 
