@@ -367,7 +367,7 @@
 <script src='js/nav.js'></script>
 
 <script>
-  var productFilters = document.getElementsByClassName('productNav__filtersOptions');
+  var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
 
   for (var f of productFilters) {
     f.addEventListener('click', function () {

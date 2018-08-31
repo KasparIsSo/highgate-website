@@ -227,21 +227,19 @@
         </div>
       </a>
 
-      <a href = "./downloads/brochures/Mobile%20Banking%20Brochure.pdf" class = "product__container" data-category = "channel" target = "_blank">
-        <div class = "product col_12 col_12--c">
-          <h4 class = "product__heading">Internet and Mobile Banking</h4>
-          <p class = "product__body col_10 col_10--c">Today’s youth are ‘wired’ and demand that you do business with them via the devices they carry. Valuable today, these customers will be even more valuable as they mature and become major consumers of financial products.</p>
-          <i class = "material-icons product__arrow">keyboard_arrow_right</i>
-        </div>
-      </a>
+      <div class = "product product__container product__dropdown col_12 col_12--c" data-category = "channel">
+        <h4 class = "product__heading product__heading--dropdown">Internet and Mobile Banking</h4>
+        <i class = "material-icons product__arrow product__arrow--dropdown">keyboard_arrow_down</i>
+        <div class = "product__dropdownShow col_10 col_10--c">
+          <p>Today’s youth are ‘wired’ and demand that you do business with them via the devices they carry. Valuable today, these customers will be even more valuable as they mature and become major consumers of financial products.</p>
 
-      <a href = "./downloads/brochures/RADIUS%20Internet%20Banking%20Brochure.pdf" class = "product__container" data-category = "channel" target = "_blank">
-        <div class = "product col_12 col_12--c">
-          <h4 class = "product__heading">RADIUS Real-Time Internet Banking</h4>
-          <p class = "product__body col_10 col_10--c">RADIUS delivers Internet Banking quickly and cost-effectively. It is a full-featured application that has been architected to be secure and to interface to a variety of banking systems.</p>
-          <i class = "material-icons product__arrow">keyboard_arrow_right</i>
+          <a href = "./downloads/brochures/Mobile%20Banking%20Brochure.pdf" class = "section__body" target = "_blank">Read More...</a>
+
+          <ul>
+            <li>RADIUS Real-Time Internet Banking <a href = "./downloads/brochures/RADIUS%20Internet%20Banking%20Brochure.pdf" class = "section__body" target = "_blank">(Read More...)</a></li>
+          </ul>
         </div>
-      </a>
+      </div>
 
       <a href = "./downloads/brochures/Micro-Credit%20Lending%20Brochure.pdf" class = "product__container" data-category = "credit" target = "_blank">
         <div class = "product col_12 col_12--c">
@@ -411,11 +409,10 @@
 </script>
 
 <script>
-  var productFilters = document.getElementsByClassName('productNav__filtersOptions');
+  var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
 
   for(var f of productFilters) {
     f.addEventListener('click', function() {
-      // console.log(this.dataset['categoryName']);
       for(var f of productFilters) {
         f.classList.remove('active');
         if (f === this) {
@@ -484,7 +481,7 @@
 </script>
 
 <script>
-  var productDropdowns = document.getElementsByClassName('product__dropdown');
+  var productDropdowns = Array.from(document.getElementsByClassName('product__dropdown'));
   for(var pd of productDropdowns) {
     pd.addEventListener('click', function() {
       this.querySelector('.product__arrow--dropdown').classList.toggle('active');
@@ -501,7 +498,7 @@
 (function() {
   var toBeFiltered = location.hash.substr(1);
 
-  var productFilters = document.getElementsByClassName('productNav__filtersOptions');
+  var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
 
   var targetObj = productFilters[0];
 
