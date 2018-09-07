@@ -409,14 +409,20 @@
 </script>
 
 <script>
+  if (!Array.from) {
+    Array.from = function (object) {
+        'use strict';
+        return [].slice.call(object);
+    };
+  }
   var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
 
-  for(var f of productFilters) {
-    f.addEventListener('click', function() {
-      for(var f of productFilters) {
-        f.classList.remove('active');
-        if (f === this) {
-          f.classList.add('active');
+  for(var i = 0; i < productFilters.length; i++) {
+    productFilters[i].addEventListener('click', function() {
+      for(var j = 0; j < productFilters.length; j++) {
+        productFilters[j].classList.remove('active');
+        if (productFilters[j] === this) {
+          productFilters[j].classList.add('active');
         }
       }
 
@@ -481,9 +487,10 @@
 </script>
 
 <script>
+	var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
   var productDropdowns = Array.from(document.getElementsByClassName('product__dropdown'));
-  for(var pd of productDropdowns) {
-    pd.addEventListener('click', function() {
+  for(var i = 0; i < productDropdowns.length; i++) {
+    productDropdowns[i].addEventListener('click', function() {
       this.querySelector('.product__arrow--dropdown').classList.toggle('active');
       var hiddenContent = this.querySelector('.product__dropdownShow');
       if (hiddenContent.style.maxHeight){
@@ -502,11 +509,11 @@
 
   var targetObj = productFilters[0];
 
-  for(var f of productFilters) {
-    f.classList.remove('active');
-    if (f.dataset.categoryName === toBeFiltered) {
-      f.classList.add('active');
-      targetObj = f;
+  for(var i = 0; i < productFilters.length; i++) {
+    productFilters[i].classList.remove('active');
+    if (productFilters[i].dataset.categoryName === toBeFiltered) {
+      productFilters[i].classList.add('active');
+      targetObj = productFilters[i];
     }
   }
 

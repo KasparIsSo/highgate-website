@@ -367,26 +367,43 @@
 <script src='js/nav.js'></script>
 
 <script>
-  var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
+    window.sr = ScrollReveal({
+    viewFactor: 0.05,
+      scale: 1
+    });
+    sr.reveal('.splash');
+    sr.reveal('.productNav');
+    sr.reveal('.card');
+    sr.reveal('.footer');
+    sr.sync();
+  </script>
 
-  for (var f of productFilters) {
-    f.addEventListener('click', function () {
-      // console.log(this.dataset['categoryName']);
-      for (var f of productFilters) {
-        f.classList.remove('active');
-        if (f === this) {
-          f.classList.add('active');
+<script>
+  if (!Array.from) {
+    Array.from = function (object) {
+        'use strict';
+        return [].slice.call(object);
+    };
+  }
+	var productFilters = Array.from(document.getElementsByClassName('productNav__filtersOptions'));
+
+  for(var i = 0; i < productFilters.length; i++) {
+		productFilters[i].addEventListener('click', function() {
+      for(var j = 0; j < productFilters.length; j++) {
+        productFilters[j].classList.remove('active');
+        if (productFilters[j] === this) {
+          productFilters[j].classList.add('active');
         }
       }
 
       var filterCategory = this.dataset['categoryName'];
       var allProducts = document.getElementsByClassName('news');
-      for (var i = 0; i < allProducts.length; i++) {
+      for(var i = 0; i < allProducts.length; i++) {
 
-        if (filterCategory == "all") {
+        if(filterCategory == "all") {
           allProducts[i].classList.remove('hide');
         } else {
-          if (allProducts[i].dataset['category'] == filterCategory) {
+          if(allProducts[i].dataset['category'] == filterCategory) {
             allProducts[i].classList.remove('hide');
           } else {
             allProducts[i].classList.add('fade');
@@ -394,22 +411,23 @@
         }
       }
 
-      if (filterCategory == "all") {
-        window.requestAnimationFrame(function () {
-          window.requestAnimationFrame(function () {
-            for (var i = 0; i < allProducts.length; i++) {
+      if(filterCategory == "all") {
+        window.requestAnimationFrame(function(){
+          window.requestAnimationFrame(function(){
+            for(var i = 0; i < allProducts.length; i++) {
               allProducts[i].classList.remove('fade');
-            }
+			}
           })
         });
       }
 
-      setTimeout(function () {
-        for (var i = 0; i < allProducts.length; i++) {
-          if (filterCategory == "all") {
+      setTimeout(function() {
+        for(var i = 0; i < allProducts.length; i++) {
+          if(filterCategory == "all") {
           } else {
-            if (allProducts[i].dataset['category'] == filterCategory) {
+            if(allProducts[i].dataset['category'] == filterCategory) {
               allProducts[i].classList.remove('fade');
+			  sr.reveal(allProducts[i]);
             } else {
               allProducts[i].classList.add('hide');
             }
@@ -417,18 +435,7 @@
         }
       }, 300);
     })
-  }
-</script>
-
-<script>
-  window.sr = ScrollReveal({
-    scale: 1
-  });
-  sr.reveal('.splash');
-  sr.reveal('.productNav');
-  sr.reveal('.news');
-  sr.reveal('.card');
-  sr.reveal('.footer');
+	}
 </script>
 
 </html>
